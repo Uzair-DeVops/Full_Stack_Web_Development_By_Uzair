@@ -2011,6 +2011,77 @@ There are two steps to start using the Google font API:
 
 
 
+# CSS @font-face Rule
+
+The `@font-face` CSS at-rule is used to associate a font name that can be used in a stylesheet. It allows you to define custom fonts that can be downloaded and used within a website.
+
+## Syntax:
+```css
+@font-face {
+  font-family: fontName;
+  src: url(fontFile path);
+  font-stretch: font-stretch Property;
+  font-weight: font-weight Property;
+  font-style: font-style Property;
+}
+```
+
+### Parameters:
+- **font-family**: Specifies the name of the custom font.
+- **src**: Specifies the location (URL) of the external font file.
+- **font-stretch**: Controls the width of the font (wider or narrower).
+- **font-weight**: Sets the weight or thickness of the font.
+- **font-style**: Specifies the style of the text (normal, italic, or oblique).
+
+## Example:
+```html
+<html>
+	<head>
+		<title>@Font-face</title>
+		<style>
+			@font-face{
+				font-family: openSans;
+				src: url(fonts/OpenSans-Regular-webfont.eot),
+					 url(fonts/OpenSans-Regular-webfont.woff);
+			}
+			
+			h1{
+				font-family: openSans;
+			}
+			
+			#box{
+				font-family: openSans;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Yahoo Baba : CSS @font-face Rule</h1>
+		
+		<div id="box">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. 
+		</div>
+		
+	</body>	
+</html>
+```
+
+### Additional Data:
+- The `@font-face` rule allows web developers to define custom fonts that are downloaded from a URL, ensuring a consistent font appearance across different devices.
+- The font files specified in the `src` attribute can be in multiple formats, like `.eot`, `.woff`, or `.ttf`, ensuring broader compatibility with various browsers.
+- You can define multiple variations of a font using the `font-weight`, `font-style`, and `font-stretch` properties to create a more flexible and comprehensive font style.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2429,3 +2500,112 @@ writing-mode: horizontal-tb | vertical-rl | vertical-lr;
 ### Additional Data:
 - The `writing-mode` property is useful for languages that are written in vertical direction, like Japanese, Chinese, and Korean.
 - You can also use values like `sideways-rl` and `sideways-lr` to achieve rotated text in specific orientations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS List-Style
+
+In CSS, there are various properties to style lists, which can be categorized into **ordered lists** and **unordered lists**. In ordered lists, the items are marked with numbers or letters, while unordered lists use bullets to mark the items.
+
+### CSS Properties for List Styling:
+
+- **list-style-type**: Controls the appearance and shape of the marker.
+- **list-style-image**: Sets an image for the marker instead of the number or bullet.
+- **list-style-position**: Specifies the position of the marker.
+- **list-style**: The shorthand property for the above properties.
+- **marker-offset**: Specifies the distance between the text and the marker (unsupported in IE6 or Netscape 7).
+
+### list-style-type Property
+This property changes the default list type of markers (such as squares, circles, roman numerals, Latin letters, etc.). By default:
+- **Ordered lists** are numbered with Arabic numerals (1, 2, 3, etc.).
+- **Unordered lists** are marked with round bullets (•).
+If set to `none`, it removes the markers or bullets.
+
+### list-style-position Property
+This property determines the position of the markers:
+- **inside**: The bullet points are inside the list item. If the text wraps, it will be under the marker.
+- **outside**: The bullet points are outside the list item (default behavior).
+
+### list-style-image Property
+This property sets an image as the marker. If the specified image is not found, default bullets will be used.
+
+### list-style Property
+The shorthand property for setting all list-related properties in one declaration. The values are set in the order: `type`, `position`, and `image`. If any property value is missing, the default value is used.
+
+## Example:
+```html
+<html>
+	<head>
+		<title>List Style</title>		
+		<style>		
+			ul{
+				list-style: none inside url(IMAGE_PATH);
+				border: 2px solid red;
+			}
+			
+			ul li{
+				padding: 3px 0;
+			}
+			
+			ol{
+				list-style-type: upper-alpha;
+				list-style-position: inside;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Yahoo Baba : CSS List Style</h1>
+		
+		<ul>
+			<li>Orange</li>
+			<li>Banana</li>
+			<li>Mango</li>
+			<li>Apple</li>
+			<li>Guava</li>
+		</ul>
+		
+		<ol>
+			<li>Orange</li>
+			<li>Banana</li>
+			<li>Mango</li>
+			<li>Apple</li>
+			<li>Guava</li>
+		</ol>
+		
+	</body>	
+</html>
+```
+
+### Additional Data:
+- The `list-style` property is very helpful for controlling list appearance with minimal code.
+- `list-style-type` allows for creative list markers such as roman numerals (`upper-roman`) or letters (`upper-alpha`).
+- `list-style-position: inside` can be useful when you want to visually align the text and markers for compact list designs.
+
+
+
+![alt text](image-7.png)
