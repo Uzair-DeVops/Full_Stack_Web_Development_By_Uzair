@@ -2756,3 +2756,620 @@ background-attachment: fixed;
 ```
 
 In this example, the background image will remain fixed while the page content scrolls.
+
+
+
+
+
+
+
+
+
+# CSS background-size property
+
+The `background-size` CSS property is used to set the size of a background image of an element. The background image can be stretched or constrained to fit into the existing space. It allows us to control the scaling of the background image.
+
+This property can be defined using length, percentage, or keyword values. It has two possible keyword values: `contain` and `cover`. Its single-value syntax defines the width of the image (in this case, the height is set to `auto`), whereas the double values define both the height and width, with the first value setting the width and the second setting the height.
+
+If an element has multiple background images, we can define comma-separated values to set the different sizes of each one.
+
+- The `cover` value of the `background-size` property is used to cover the entire background area of the element. 
+- The `contain` value of this property scales the image as much as possible without clipping it.
+
+### Syntax
+```css
+background-size: auto | length | cover | contain | initial | inherit;
+```
+
+### Property Values
+- **auto**: This is the default value, which displays the background image in its original size.
+- **length**: It is used to set the width and height of the background image. This value stretches the image in the corresponding dimension of the given length. Its single value specifies the width of the image, and the height is set to `auto`. If two values are given, the first value sets the width, and the second value sets the height. Negative values are not allowed.
+- **percentage**: This value defines the width and height of the background image as a percentage (%) of the background positioning area. Negative values are not allowed.
+- **cover**: This value is used to resize the background image to cover the entire container. Sometimes, it crops a little bit off one of the edges or stretches the image. It resizes the image to ensure the element is completely covered.
+- **contain**: Without stretching or cropping, it resizes the background image to ensure the image is completely visible.
+- **initial**: It sets the property to its default value.
+- **inherit**: It inherits the property from its parent element.
+
+### Example Code
+
+```html
+<html>
+	<head>
+		<title>Background Size</title>		
+		<style>		
+			body {				
+				background: tan;
+			}
+			#box {
+				width: 800px;
+				height: 400px;
+				padding: 15px;
+				border: 2px solid black;
+				background-color: white;
+				background-image: url(IMAGE_PATH);
+				background-repeat: no-repeat;
+				background-size: cover;
+				-moz-background-size: cover;
+				-webkit-background-size: cover;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Yahoo Baba : CSS Background-Size</h1>
+		
+		<div id="box">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat.</p>
+		</div>
+		
+	</body>	
+</html>
+```
+
+### Additional Data
+
+- The `background-size` property is a powerful tool for making background images responsive and visually appealing.
+- Using `cover` is common when you want to ensure the background image fills the entire container without concern for aspect ratio. However, this may result in parts of the image being cropped.
+- `contain` is useful when you want to ensure that the entire image fits inside the container without cropping, but it may leave empty space on the sides or top/bottom.
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Background-Origin Property
+
+The `background-origin` CSS property helps adjust the background image of a webpage. It specifies the background positioning area, i.e., the origin of a background image. This property will not work when the value of `background-attachment` is set to `fixed`.
+
+The `background-origin` property is similar to the `background-clip` property, but it resizes the background instead of clipping it. By default, the origin of an element is the top-left corner of the screen.
+
+If the element has more than one background image, we can specify a different value of the `background-origin` property for each background image, separated by commas. Each image will match the corresponding value of the `background-origin` property.
+
+### Syntax
+```css
+background-origin: padding-box | border-box | content-box | initial | inherit;
+```
+
+### Property Values
+
+| Value         | Description                                                                                   |
+|---------------|-----------------------------------------------------------------------------------------------|
+| **padding-box** | This is the default value. It positions the background relative to the padding-box. The background starts from the top-left corner of the padding edge. |
+| **border-box**  | It positions the background relative to the border-box. The background starts from the top-left corner of the border. |
+| **content-box** | It positions the background relative to the content-box. The background starts from the top-left corner of the content. |
+| **initial**     | It sets the property to its default value.                                                    |
+| **inherit**     | It inherits the property from its parent element.                                             |
+
+### Example Code
+
+```html
+<html>
+	<head>
+		<title>Background Origin</title>		
+		<style>		
+			body {				
+				background: tan;
+			}
+			#box {
+				width: 800px;
+				height: 400px;
+				padding: 25px;
+				text-align: justify;
+				border: 20px dotted black;
+				background-color: white;
+				background-image: url(IMAGE_PATH);
+				background-repeat: no-repeat;
+				background-size: 200px;
+				background-origin: content-box;
+			}
+			p {
+				margin: 0;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Yahoo Baba : CSS Background-Origin</h1>
+		
+		<div id="box">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat.</p>
+		</div>
+		
+	</body>	
+</html>
+```
+
+### Additional Data
+
+- The `background-origin` property allows more control over the placement of a background image relative to the element's box model.
+- Using the `content-box` value ensures that the background only applies within the content area, leaving padding and border areas unaffected.
+- The `border-box` value is useful when you want the background to extend into the border area, while `padding-box` restricts it to the padding area.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Background-Clip Property
+
+The `background-clip` CSS property specifies the painting area of the background. It limits the area in which the background color or image appears by applying a clipping box. Anything outside the box will be discarded and invisible.
+
+It sets whether the background of an element extends under the border-box, padding-box, or content-box.
+
+### Syntax
+```css
+background-clip: border-box | padding-box | content-box | inherit;
+```
+
+### Property Values
+
+| Value          | Description                                                                                               |
+|----------------|-----------------------------------------------------------------------------------------------------------|
+| **border-box** | This is the default value. It means the background image and color will be drawn inside the border-box, covering the entire division. |
+| **padding-box**| The background will be drawn inside the padding-box, which means the background will stop at the border. |
+| **content-box**| The background will be painted only within the content area. It will not extend into the padding or border areas. |
+| **inherit**    | The background-clip value will be inherited from the parent element. |
+
+### Example Code
+
+```html
+<html>
+	<head>
+		<title>Background Clip</title>		
+		<style>		
+			body {				
+				background-color: slategrey;
+			}
+			h1 {
+				color: white;
+				background-image: url(IMAGE_PATH);
+				font-size: 150px;
+				font-family: impact;
+				-webkit-background-clip: text;
+				-moz-background-clip: text;
+			}
+			#box {
+				width: 800px;
+				height: 300px;
+				padding: 30px;
+				color: black;
+				text-align: justify;
+				border: 20px dotted black;
+				background-color: white;
+				
+				background-clip: padding-box;
+			}
+			p {
+				margin: 0;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Yahoo Baba : CSS Background-Clip</h1>
+		
+		<div id="box">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat.</p>
+		</div>
+		
+	</body>	
+</html>
+```
+
+### Additional Data
+
+- The `background-clip` property helps in controlling the visibility of the background in relation to the element’s box model.
+- Using `padding-box` ensures that the background does not extend under the border area.
+- The `content-box` value can be useful when you want the background to cover only the content area, excluding padding and borders.
+- The `background-clip: text` can be used for creative text effects by clipping the background image to the text itself (with `-webkit` and `-moz` prefixes).
+
+
+![alt text](image-8.png)
+
+
+
+
+
+
+
+
+# CSS Gradient Background
+
+CSS gradients allow you to display smooth transitions between two or more specified colors.
+
+CSS defines three types of gradients:
+
+- **Linear Gradients** (goes down/up/left/right/diagonally)
+- **Radial Gradients** (defined by their center)
+- **Conic Gradients** (rotated around a center point)
+
+### CSS Linear Gradients
+
+To create a linear gradient, you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.
+
+#### Syntax
+```css
+background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+```
+
+- **Direction** - Top to Bottom (default)
+- **Direction** - Left to Right
+- **Direction** - Diagonal
+
+#### Repeating a Linear Gradient
+The `repeating-linear-gradient()` function is used to repeat linear gradients:
+
+```css
+background-image: repeating-linear-gradient(to right, red, yellow 10%, green 20%);
+```
+
+### CSS Radial Gradients
+
+A radial gradient is defined by its center.
+
+To create a radial gradient, you must define at least two color stops.
+
+#### Syntax
+```css
+background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+```
+
+By default, shape is `ellipse`, size is `farthest-corner`, and position is `center`.
+
+#### Radial Gradient - Evenly Spaced Color Stops (default)
+```css
+background-image: radial-gradient(farthest-corner at 50% 50%, red, yellow, green);
+```
+
+#### Radial Gradient - Differently Spaced Color Stops
+```css
+background-image: radial-gradient(circle, red, yellow 50px, green 100px);
+```
+
+#### Repeating a Radial Gradient
+The `repeating-radial-gradient()` function is used to repeat radial gradients.
+
+```css
+background-image: repeating-radial-gradient(circle, red, yellow 50px, green 100px);
+```
+
+### Example Code
+
+```html
+<html>
+	<head>
+		<title>CSS Gradient</title>		
+		<style>	
+			body {
+				font-family: arial;				
+			}
+			#box {
+				width: 800px;
+				height: 300px;
+				padding: 30px;
+				border: 3px solid black;	
+				/*background: linear-gradient(-45deg, red, yellow, green, blue);*/
+				/*background: linear-gradient(red, rgba(255,0,0,0.5));*/
+				background: repeating-linear-gradient(to right, red, yellow 10%, green 20%);
+			}	
+			#box2 {
+				width: 800px;
+				height: 300px;
+				padding: 30px;
+				border: 3px solid black;	
+				/*background: radial-gradient(farthest-side at 50% 50%, red, yellow, green);*/
+				background: repeating-radial-gradient(circle, red, yellow 50px, green 100px);	
+			}			
+		</style>
+	</head>
+	
+	<body>
+		<h1>Yahoo Baba : CSS Gradient Background</h1>
+		
+		<div id="box">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor.</p>
+		</div>
+
+		<div id="box2">
+			<h2>Radial Gradient</h2>
+		</div>
+		
+	</body>	
+</html>
+```
+
+### Additional Data
+
+- **Linear Gradient**: Gradients that transition in a straight line between two or more colors, typically used for backgrounds or buttons.
+- **Radial Gradient**: Gradients that radiate outwards from a central point. Often used to create circular backgrounds or highlight effects.
+- **Repeating Gradients**: Both linear and radial gradients can be repeated to create a pattern effect. This can be particularly useful for background designs.
+- **Shape and Size in Radial Gradients**: The shape can be `circle` or `ellipse`, and the size can be `closest-side`, `farthest-corner`, or custom.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Opacity
+
+The opacity in CSS is a property of an element that describes its transparency. It is the opposite of transparency and represents the degree to which the content will be hidden behind an element.
+
+We can apply the opacity with different styling properties to the elements. Below are a few examples:
+
+### Image Opacity
+The opacity property is used in an image to describe its transparency. The value of opacity lies between `0.0` and `1.0`, where a low value represents high transparency and a high value represents low transparency. The percentage of opacity is calculated as:
+
+```
+Opacity% = Opacity * 100
+```
+
+### Transparency Box and Transparency Using RGBA Values
+- **Transparency Box**: In the transparency box, the child property inherits the property from the parent.
+- **Transparency Using RGBA**: In this case, only the opacity property is used or applied to add transparency to the background of an element.
+
+### Example Code
+
+```html
+<html>
+	<head>
+		<title>CSS Opacity</title>		
+		<style>	
+			body {
+				font-family: arial;				
+			}
+			#box {
+				width: 800px;
+				height: 200px;
+				padding: 30px;
+				margin-bottom: 15px;
+				border: 3px solid black;	
+				background: Tan;
+				opacity: 0.5;
+				filter: alpha(opacity=50);
+			}	
+			#box2 {
+				width: 800px;
+				height: 200px;
+				padding: 30px;
+				margin-bottom: 15px;
+				border: 3px solid black;	
+				background: rgba(180, 0, 0, 0);
+			}	
+			img {
+				float: left;
+				margin-right: 15px;
+			}			
+		</style>
+	</head>
+	
+	<body>
+		<h1>Yahoo Baba : CSS Opacity</h1>
+		
+		<div id="box">
+			<img src="IMAGE_PATH" width="200px" alt="">
+			<h2>Opacity</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor.</p>
+		</div>
+	
+		<div id="box2">
+			<img src="IMAGE_PATH" width="200px" alt="">
+			<h2>Opacity</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor.</p>
+		</div>
+		
+	</body>	
+</html>
+```
+
+### Additional Data
+
+- **Opacity Range**: The opacity property can take values from `0` (fully transparent) to `1` (fully opaque). It can also be applied to any element, including images, text, and background colors.
+- **RGBA**: The `rgba()` function defines a color using the red, green, and blue components along with an alpha (transparency) value. This is particularly useful for setting background transparency while keeping other elements solid.
+- **Filter Property**: The `filter: alpha(opacity=50);` is used in older browsers to control opacity. However, `opacity` in CSS is the standard method in modern browsers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Background-Blend-Mode
+
+The `background-blend-mode` CSS property sets the blend mode for each background layer (image/color) of an element. It defines how the background image of an element blends with the background color. We can blend the background images together or blend them with the background color.
+
+**Note:** This property is not supported in Edge/Internet Explorer.
+
+### Syntax
+
+```css
+background-blend-mode: normal | multiply | screen | 
+color-dodge | difference | darken | lighten | 
+saturation | luminosity | overlay | 
+hard-light | soft-light | exclusion |
+hue | color-burn | color;
+```
+
+### Blend Mode Descriptions
+
+- **normal**: The default value which sets the property mode to normal.
+- **multiply**: Multiplies the background-color and background-images, leading to a darker image.
+- **screen**: Inverts both the image and color, creating a lightened effect, similar to projecting two images on a screen.
+- **color-dodge**: Similar to the screen blend mode but the result is dividing the background-color by the inverse of the background-image.
+- **difference**: Subtracts the dark color from the lightest one to create a contrasting effect.
+- **darken**: Creates a darker result by selecting the darker colors from both the image and background.
+- **lighten**: Creates a lighter result by selecting the lighter colors from both the image and background.
+- **saturation**: Sets the final result to the saturation of the top color, while using the hue and luminosity of the bottom color.
+- **luminosity**: Uses the luminosity of the top color and the hue and saturation of the bottom color.
+- **overlay**: Combines multiply and screen blend modes depending on the image and background.
+- **hard-light**: Similar to the overlay mode but with a more intense contrast effect.
+- **soft-light**: A gentler version of the hard-light blend mode.
+- **exclusion**: Similar to difference but with softer results.
+- **hue**: Combines the hue of the background-image with the luminosity and saturation of the background-color.
+- **color-burn**: Creates a burn effect by increasing contrast based on the background-image and background-color.
+- **color**: Keeps the luminosity of the background-color and the hue and saturation of the background-image.
+
+### Example Code
+
+```html
+<html>
+	<head>
+		<title>CSS Background-Blend-Mode</title>		
+		<style>	
+			body {
+				font-family: arial;				
+			}
+			#box {
+				width: 440px;
+				height: 440px;
+				border: 2px solid black;			
+				background-image: linear-gradient(to right, red, yellow), url('IMAGE_PATH');
+				background-blend-mode: screen;
+			}	
+		</style>
+	</head>
+	
+	<body>
+		<h1>Yahoo Baba : CSS Background-Blend-Mode</h1>
+		
+		<div id="box">
+			<h2 class="red">Background-Blend-Mode</h2>
+		</div>		
+		
+	</body>	
+</html>
+```
+
+### Additional Data
+
+- **`background-blend-mode`** works by blending the background image(s) with the background color of an element. It’s very useful when you want to create visually engaging effects by mixing colors and images dynamically.
+- **`linear-gradient()`** and **`url()`** in `background-image` allow you to blend gradient colors with an image.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Mix-Blend-Mode
+
+The `mix-blend-mode` CSS property defines how an element’s content blends with its parent's content and the element’s background. It describes how the content of an element should interact with the content behind it and its background.
+
+The `mix-blend-mode` property is used to specify how an element's background blends with the background of its parent. It has various values, such as `normal`, `multiply`, `exclusion`, `overlay`, `lighten`, `darken`, `color-dodge`, `color-burn`, `hard-light`, `soft-light`, `difference`, `hue`, `saturation`, `color`, `screen`, and `luminosity`.
+
+### Example Code
+
+```html
+<html>
+	<head>
+		<title>CSS Mix-Blend-Mode</title>		
+		<style>	
+			body {
+				font-family: arial;				
+			}
+			#box {
+				width: 1500px;
+				height: 440px;
+				border: 2px solid black;			
+			}	
+			
+			h2 {
+				font-size: 150px;
+				margin: 0;
+			}
+			h2.first {
+				color: red;
+			}
+			h2.second {
+				color: gold;
+				margin-top: -100px;
+				margin-left: 5px;
+				mix-blend-mode: color;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Yahoo Baba : CSS Mix-Blend-Mode</h1>
+		
+		<div id="box">				
+			<h2 class="first">Mix-Blend-Mode</h2>
+			<h2 class="second">Mix-Blend-Mode</h2>
+		</div>		
+		
+	</body>	
+</html>
+```
+
+### Additional Data
+
+- The `mix-blend-mode` property allows you to create interesting visual effects by blending the colors and content of an element with its surrounding content.
+- This property is widely used for creating effects like overlays and blending images or text with backgrounds.
