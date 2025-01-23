@@ -1635,3 +1635,130 @@ This property can have from one to four values. Here are the rules:
 
 - The `border-radius: 50%;` is shorthand for making a circular shape, which works best on square elements (like the `#box2` div in the example).
 - The property can also be prefixed for older browsers, such as `-webkit-border-radius` and `-moz-border-radius`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Box-Shadow
+
+The `box-shadow` CSS property adds shadow effects around an element’s frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color. In its simplest use, you only specify a horizontal and a vertical shadow. The default color of the shadow is the current text-color. Here is an example of how to specify a horizontal and a vertical shadow:
+
+```html
+<html>
+  <head>
+    <title>Box-Shadow</title>
+    <style>
+        #box{
+            width: 350px;
+            height: 350px;
+            margin: 50px 0 0 100px;
+            border: 2px solid black;
+            background-color: pink;
+            box-shadow: 10px 10px 3px red inset;
+            -moz-box-shadow: 10px 10px 3px red inset;
+            -webkit-box-shadow: 10px 10px 3px red inset;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Yahoo Baba : CSS Box-Shadow</h1>
+    <div id="box">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
+    </div>
+  </body>
+</html>
+```
+
+### Additional Data:
+
+- The `box-shadow` property can also take multiple values for multiple shadows, separated by commas. For example: `box-shadow: 10px 10px 5px red, -10px -10px 5px blue;`
+- The `inset` keyword makes the shadow appear inside the element, while by default the shadow appears outside.
+- For better browser support, the property has vendor-specific prefixes: `-moz-box-shadow` for Firefox and `-webkit-box-shadow` for Webkit-based browsers like Chrome and Safari.
+
+
+
+
+
+
+
+
+
+
+
+# CSS Float
+
+The `float` property is a positioning property. It is used to push an element to the left or right, allowing other elements to wrap around it. It is generally used with images and layouts.
+
+## How it works
+
+- Elements are floated only horizontally, meaning they can only float to the left or right, not up or down.
+- A floated element may be moved as far to the left or the right as possible. 
+- The elements after the floating element will flow around it.
+- The elements before the floating element will not be affected.
+- If the image is floated to the right, the text will flow around it to the left; if the image is floated to the left, the text will flow around it to the right.
+
+```html
+<html>
+  <head>
+    <title>Float</title>
+    <style>
+        #first{
+            border: 2px solid black;
+            width: 500px;
+            float: left;
+            margin-right: 10px;
+        }
+        #second{
+            border: 2px solid red;
+            width: 600px;
+            float: left;
+        }
+        #third{
+            border: 2px solid green;
+            width: 200px;
+            float: right;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>Yahoo Baba : Float</h1>
+
+    <div id="first">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
+    </div>
+
+    <div id="second">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
+    </div>
+
+    <div id="third">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
+    </div>
+  </body>
+</html>
+```
+
+### Additional Data:
+
+- The `float` property can be cleared by using the `clear` property, which specifies whether an element can be next to a floated element or if it should be moved below it. For example, `clear: both;` will ensure that the element does not float beside any other element.
+- The `float` property is commonly used for creating layouts, such as multi-column designs or wrapping text around images.
+
+
+
+
+
+
+
+
