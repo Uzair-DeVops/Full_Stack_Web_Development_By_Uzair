@@ -2072,7 +2072,91 @@ These are the following text formatting properties:
 </html>
 ```
 
-### Additional Data:
-- You can use **text-align** to set the alignment of text to left, right, center, or justify within a block container.
-- **text-transform** includes values like `uppercase`, `lowercase`, `capitalize`, etc., to manipulate text case.
-- **text-shadow** allows you to apply a shadow effect to text, where the syntax includes horizontal and vertical offsets, blur radius, and color.
+# CSS3 Text-Decoration-Thickness
+
+This property sets the width of the stroke of the decorated line below, above, or through the text. The different values that this option can take are as follows:
+
+- **auto**: The thickness of the text-decoration line depends on the browser.
+- **font-file**: Some font files include the values for preferred thickness. If the font file provides a value, it is applied; otherwise, `auto` is used.
+- **custom values**: 
+  - **length**: The thickness can be applied using values in units like px, rem, em, pt, etc.
+  - **percentage**: The thickness can be applied using percentage values of 1em of the current font. If the whole page has different font sizes, the thickness would scale with the font size.
+- **global values**: These values are globally set and used frequently.
+  - **initial**: Resets to the default, which may be `auto` or `font-file`, whichever applies.
+  - **inherit**: Inherits the thickness value from its parent.
+  - **unset**: If the text-decoration-thickness has an inherited value, it will be used; otherwise, the initial value will be used.
+
+## Syntax:
+```css
+text-decoration-thickness: auto | font-file | length | percentage | global values;
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Text Underline Thickness</title>
+	<style>
+		body{ font-family: arial; }
+
+   		h1{
+			text-align: center;
+			margin: 50px 0 0 20px;
+			text-decoration-line : underline overline;
+			text-decoration-color : red;
+			text-decoration-style : solid;
+			text-decoration-thickness : 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>CSS Text-Decoration-Thickness</h1>
+
+</body>
+</html>
+
+
+
+
+
+```
+
+
+
+
+
+# CSS Text-Overflow
+
+The `text-overflow` property specifies how overflowed content that is not displayed should be signaled to the user. It can be clipped, display an ellipsis (...), or display a custom string.
+
+Both of the following properties are required for `text-overflow` to work:
+
+- **white-space: nowrap;**
+- **overflow: hidden;**
+
+## Example:
+```html
+<html>
+	<head>
+		<title>Text-Overflow</title>
+		<style>
+		  #box{
+				width:400px;
+				border:2px solid black;
+				white-space:nowrap;
+				overflow:hidden;
+				text-overflow:clip;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Yahoo Baba : CSS Text-Overflow</h1>
+		
+		<div id="box">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis.Curabitur aliquam commodo dolor vulputate porttitor.Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. 	
+		</div>
+		
+	</body>	
+</html>
