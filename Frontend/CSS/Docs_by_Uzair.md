@@ -1958,3 +1958,51 @@ In a small-caps font, all lowercase letters are converted to uppercase letters. 
 
 
 
+
+
+# CSS With Google Fonts
+
+It is an important aspect of any web design to choose the right font for the webpage. The use of Google fonts is advantageous because we get elegant fonts for our website. The Google fonts API makes it easier and quicker for everyone to use web-fonts. These fonts have been tested on various browser configurations.
+
+Instead of doing any programming, we simply have to add a special stylesheet link to our HTML document, then refer to the font family of our choice in the CSS style.
+
+## Steps to Use Google Fonts:
+
+There are two steps to start using the Google font API:
+
+1. First, we have to add a stylesheet link for requesting the desired web font.
+   ```html
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
+   ```
+2. Then we can style an element with the desired web font, either in a stylesheet or by inline style.
+
+```html
+<html>
+	<head>
+		<title>Google Fonts</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+		<style>		
+			h1{
+				font-family: 'Oswald', sans-serif;
+			}
+			#box{
+				font-family: 'Open Sans', sans-serif;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Yahoo Baba : CSS with Google Fonts</h1>
+		
+		<div id="box">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis.Curabitur aliquam commodo dolor vulputate porttitor.Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. 	
+		</div>
+		
+	</body>	
+</html>
+```
+
+### Additional Data:
+- Google Fonts provides over 1,000 free fonts that can be easily integrated into a website.
+- You can choose multiple fonts in one link, as demonstrated in the example (`Open Sans | Oswald`).
+- The `font-family` property in CSS is used to apply the chosen font to specific elements in the HTML.
