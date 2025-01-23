@@ -1819,3 +1819,142 @@ The `clear` property is used to specify which side of floating elements are not 
   - `none` (default): The element can float next to any floated element.
 
 - The `clear` property is particularly useful in preventing layout issues when floated elements are used and you need to control how the following elements behave in relation to those floats.
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Font
+
+CSS Font
+CSS Font property is used to control the look of texts. By the use of CSS font property you can change the text size, color, style and more. You have already studied how to make text bold or underlined. Here, you will also know how to resize your font using percentage.
+
+These are some important font attributes:
+
+- **CSS Font color**: This property is used to change the color of the text. (standalone attribute)
+- **CSS Font family**: This property is used to change the face of the font.
+- **CSS Font size**: This property is used to increase or decrease the size of the font.
+- **CSS Font style**: This property is used to make the font bold, italic or oblique.
+- **CSS Font variant**: This property creates a small-caps effect.
+- **CSS Font weight**: This property is used to increase or decrease the boldness and lightness of the font.
+
+### 1) CSS Font Color
+CSS font color is a standalone attribute in CSS although it seems that it is a part of CSS fonts. It is used to change the color of the text.
+
+There are three different formats to define a color:
+- By a color name
+- By hexadecimal value
+- By RGB
+
+### 2) CSS Font Family
+CSS font family can be divided into two types:
+
+- **Generic family**: It includes Serif, Sans-serif, and Monospace.
+- **Font family**: It specifies the font family name like Arial, New Times Roman etc.
+
+- **Serif**: Serif fonts include small lines at the end of characters. Example of serif: Times new roman, Georgia etc.
+- **Sans-serif**: A sans-serif font doesn't include the small lines at the end of characters. Example of Sans-serif: Arial, Verdana etc.
+
+### 3) Font Size
+The font-size property sets the size of the text. Being able to manage the text size is important in web design. However, you should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs.
+
+Always use the proper HTML tags, like `<h1>` - `<h6>` for headings and `<p>` for paragraphs.
+
+The font-size value can be an absolute, or relative size.
+
+- **Absolute size**:
+    - Sets the text to a specified size.
+    - Does not allow a user to change the text size in all browsers (bad for accessibility reasons).
+    - Absolute size is useful when the physical size of the output is known.
+  
+- **Relative size**:
+    - Sets the size relative to surrounding elements.
+    - Allows a user to change the text size in browsers.
+
+### 4) Font Style
+The font-style property is mostly used to specify italic text.
+
+This property has three values:
+- `normal`: The text is shown normally.
+- `italic`: The text is shown in italics.
+- `oblique`: The text is "leaning" (oblique is very similar to italic, but less supported).
+
+### 5) CSS Font Weight
+CSS font weight property defines the weight of the font and specifies how bold a font is. The possible values of font weight may be normal, bold, bolder, lighter, or a number (100, 200..... upto 900).
+
+### 6) Font Variant
+The font-variant property specifies whether or not a text should be displayed in a small-caps font.
+
+In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appear in a smaller font size than the original uppercase letters in the text.
+
+```html
+<html>
+  <head>
+    <title>Font Properties</title>
+    <style>
+        body{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        #box{
+            width: 400px;
+            padding: 25px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+            /* font-size: 1em;
+            font-family: arial;
+            line-height: 35px;
+            font-weight: normal;
+            font-style: oblique;
+            font-variant: small-caps; */
+            
+            /*shorthand*/
+            font: bold small-caps normal 1em/35px arial,verdana;
+        }
+        #box2{
+            width: 400px;
+            padding: 25px;
+            border: 2px solid black;
+        }
+        #box2 span{
+            font-size: 2em;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>Yahoo Baba : Font</h1>
+
+    <div id="box">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
+    </div>
+
+    <div id="box2">
+      Lorem <span>ipsum <span>dolor sit</span> amet</span>, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
+    </div>
+
+  </body>
+</html>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
