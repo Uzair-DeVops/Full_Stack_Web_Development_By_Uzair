@@ -1517,7 +1517,6 @@ The element resizes according to the screen width, with padding and borders incl
 
 
 
-```markdown
 # CSS Overflow
 
 The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
