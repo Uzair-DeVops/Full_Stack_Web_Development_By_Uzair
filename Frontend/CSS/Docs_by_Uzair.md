@@ -2160,3 +2160,62 @@ Both of the following properties are required for `text-overflow` to work:
 		
 	</body>	
 </html>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Text-Shadow
+
+As its name implies, the `text-shadow` property adds shadows to the text. It accepts a comma-separated list of shadows that are applied to the text. Its default property is `none`. The property allows one or more text-shadow effects to be applied on the element's text content.
+
+## Syntax:
+```css
+text-shadow: h-shadow v-shadow blur-radius color | none | initial | inherit;
+```
+
+## Values:
+- **h-shadow**: This required value specifies the position of the horizontal shadow and allows negative values.
+- **v-shadow**: This required value specifies the position of the vertical shadow and does not allow negative values.
+- **blur-radius**: This optional value sets the blur-radius, with a default value of 0.
+- **color**: This optional value defines the color of the shadow.
+- **none**: This is the default value, meaning no shadow will be applied.
+- **initial**: It resets the property to its default value.
+- **inherit**: It inherits the property from its parent element.
+
+## Example:
+```html
+<html>
+	<head>
+		<title>Text-Shadow</title>
+		<style>
+			h1{
+				color:white;
+				font-family:arial;
+				font-size:80px;
+				text-shadow : 2px 2px 1px red, 4px 4px 1px green, 6px 6px 1px blue;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Yahoo Baba : CSS Text-Shadow</h1>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat.
+		</p>
+
+	</body>
+</html>
+```
+
+### Additional Data:
+- **Multiple Shadows**: You can add multiple shadows by separating them with commas, as shown in the example with red, green, and blue shadows.
