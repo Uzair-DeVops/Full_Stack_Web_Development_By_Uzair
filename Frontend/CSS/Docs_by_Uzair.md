@@ -1556,3 +1556,82 @@ The overflow property has the following values:
 - The `overflow-x` property in the style specifies that the horizontal overflow will show a scrollbar if the content overflows the container's width.
 - To apply vertical scrolling, the `overflow-y` property could be used. For example, you can set `overflow-y: scroll;` for vertical scrolling in the container.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Border-Radius
+
+The `border-radius` property defines the radius of the element's corners.
+
+**Tip**: This property allows you to add rounded corners to elements!
+
+This property can have from one to four values. Here are the rules:
+
+- **Four values** - `border-radius: 15px 50px 30px 5px;` (first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner):
+  
+- **Three values** - `border-radius: 15px 50px 30px;` (first value applies to top-left corner, second value applies to top-right and bottom-left corners, and third value applies to bottom-right corner):
+  
+- **Two values** - `border-radius: 15px 50px;` (first value applies to top-left and bottom-right corners, and the second value applies to top-right and bottom-left corners):
+  
+- **One value** - `border-radius: 15px;` (the value applies to all four corners, which are rounded equally):
+
+```html
+<html>
+  <head>
+    <title>Box-Radius</title>
+    <style>
+        #box{
+            width: 300px;
+            border: 2px solid black;
+            padding: 25px;
+            /* border-top-left-radius: 30px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 30px; */
+
+            /*shorthand*/
+            border-radius: 50%;
+
+            /*shorthand with prefix*/
+            /* -webkit-border-radius: 30px 50px;
+            -moz-border-radius: 30px 50px; */
+        }
+        #box2{
+            width: 150px;
+            height: 150px;
+            border: 2px solid red;
+            border-radius: 50%;
+            background-color: pink;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>Yahoo Baba : Box-Radius</h1>
+
+    <div id="box">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
+    </div>
+
+    <div id="box2"></div>
+  </body>
+</html>
+```
+
+### Additional Data:
+
+- The `border-radius: 50%;` is shorthand for making a circular shape, which works best on square elements (like the `#box2` div in the example).
+- The property can also be prefixed for older browsers, such as `-webkit-border-radius` and `-moz-border-radius`.
