@@ -2006,3 +2006,73 @@ There are two steps to start using the Google font API:
 - Google Fonts provides over 1,000 free fonts that can be easily integrated into a website.
 - You can choose multiple fonts in one link, as demonstrated in the example (`Open Sans | Oswald`).
 - The `font-family` property in CSS is used to apply the chosen font to specific elements in the HTML.
+
+
+
+
+
+
+
+
+
+
+
+# CSS Text Formatting
+
+The CSS text formatting properties are used to format text, style the text, and perform different types of manipulations like word spacing, alignment, justification, and text transformation.
+
+## CSS Text Formatting Properties:
+These are the following text formatting properties:
+
+- **Text Color**: This property is used to set the color of the text. The color can be set by using a color name like “red”, hex value “#ff0000”, or by its RGB value “rgb(255,0,0)”;
+- **text-align**: This property in CSS is used to specify the horizontal alignment of text in an element inside a block element or table-cell box.
+- **text-align-last**: It is used to set the last line of the paragraph just before the line break. It sets the alignment of all the last lines occurring in the element in which the text-align-last property is applied.
+- **text-decoration**: The text-decoration property is used to “decorate” the content of the text.
+- **text-decoration-color**: It is used to set the color of the decorations (overlines, underlines, and line-throughs) over the text.
+- **text-decoration-line**: It is used to set the various kinds of text decorations. This may include many values such as underline, overline, line-through, etc.
+- **text-decoration-style**: This property is used to set the text-decoration of the element. It is the combination of the text-decoration-line and text-decoration-color properties.
+- **text-indent**: It is used to indent the first line of the paragraph, and the size can be in px, cm, pt.
+- **text-justify**: This property is used to set the text-align to justify. It spreads the words into complete lines.
+- **text-overflow**: This property of text formatting specifies that some text has overflown and is hidden from view.
+- **text-transform**: It is used to control the capitalization of the text.
+- **text-shadow**: It is used to add shadow to the text.
+- **letter-spacing**: This property is used to specify the space between the characters of the text.
+- **line-height**: It is used to set the space between the lines.
+- **direction**: This property is used to set the direction of the text.
+- **word-spacing**: It is used to specify the space between the words of the line.
+
+```html
+<html>
+  <head>
+    <title>Text Properties</title>
+    <style>
+        #box{
+            width: 400px;
+            padding: 25px;
+            border: 2px solid black;
+            font-family: arial,helvetica;
+            text-align: center;
+            text-align-last: auto;
+            text-transform: uppercase; 
+            text-indent: 50px;
+            word-spacing: 20px;
+            letter-spacing: 10px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>Yahoo Baba : CSS Text Properties</h1>
+
+    <div id="box">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
+    </div>
+
+  </body>
+</html>
+```
+
+### Additional Data:
+- You can use **text-align** to set the alignment of text to left, right, center, or justify within a block container.
+- **text-transform** includes values like `uppercase`, `lowercase`, `capitalize`, etc., to manipulate text case.
+- **text-shadow** allows you to apply a shadow effect to text, where the syntax includes horizontal and vertical offsets, blur radius, and color.
