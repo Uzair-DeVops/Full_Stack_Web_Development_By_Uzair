@@ -2219,3 +2219,213 @@ text-shadow: h-shadow v-shadow blur-radius color | none | initial | inherit;
 
 ### Additional Data:
 - **Multiple Shadows**: You can add multiple shadows by separating them with commas, as shown in the example with red, green, and blue shadows.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Word
+
+### Word Wrap:
+The `word-wrap` property in CSS is used to break long words and wrap them onto the next line. This is helpful to prevent overflow when an unbreakable string is too long to fit in the containing box.
+
+## Syntax:
+```css
+word-wrap: normal | break-word | initial | inherit;
+```
+
+### Values:
+- **normal**: The default value, which breaks words only at allowed breakpoints.
+- **break-word**: Breaks unbreakable words when necessary.
+- **initial**: Resets the property to its default value.
+- **inherit**: Inherits the property from its parent element.
+
+### Word Break:
+The `word-break` property specifies how words should break at the end of a line, defining line break rules. It controls how lines that don't fit in the content box will break.
+
+## Syntax:
+```css
+word-break: normal | keep-all | break-all | inherit;
+```
+
+### Values:
+- **normal**: Default value, breaks words at normal word break points.
+- **keep-all**: Prevents breaking words, especially for CJK (Chinese/Japanese/Korean) text.
+- **break-all**: Forces breaks anywhere in long words to prevent overflow. It breaks words even from the middle if the word exceeds the container's width.
+- **initial**: Resets the property to its default value.
+- **inherit**: Inherits the property from its parent element.
+
+## Example:
+```html
+<html>
+  <head>
+    <title>Word-wrap & Word-break</title>
+    <style>
+        #box{
+            width: 400px;
+            border: 2px solid black;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>Yahoo Baba : CSS Word-wrap & Word-break</h1>
+
+    <div id="box">
+      Lorem vvvvvvvvvvvvvvvvvvvvvvvvvvveryloooooooooooooooooooooooooooooooong ipsum dolor sit amet, consecteturkshdgjvltkehf adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
+    </div>
+
+  </body>
+</html>
+```
+
+### Additional Data:
+- **word-wrap** is essential for managing overflow in texts with long, unbreakable words.
+- **word-break** helps to break the text in a more flexible way to avoid text clipping or overflow, especially useful when dealing with long strings like URLs or long words in various languages.
+
+
+
+
+
+
+
+
+
+
+
+# CSS White-Space
+
+The `white-space` property in CSS is used to control text wrapping and white-spacing. It helps manage how the white space inside elements is handled.
+
+## Syntax:
+```css
+white-space: normal | nowrap | pre | pre-line | pre-wrap | break-spaces | initial | inherit;
+```
+
+### Property Values:
+- **normal**: Default value. Multiple white spaces are collapsed into a single space, and text wraps when needed.
+- **nowrap**: Similar to `normal`, but text will not wrap onto a new line unless explicitly specified.
+- **pre**: Acts like the `<pre>` tag in HTML. Text will wrap only when a line break is inserted manually.
+- **pre-line**: Collapses multiple white spaces into a single space, but text will wrap when required or explicitly specified.
+- **pre-wrap**: White spaces are preserved as they are. Text will wrap when necessary or explicitly specified.
+- **initial**: Sets the `white-space` property to its default value (`normal`).
+- **inherit**: Inherits the `white-space` property from its parent element.
+
+## Example:
+```html
+<html>
+	<head>
+		<title>White-Space</title>
+		<style>
+			#box{
+				width:300px;
+				border:2px solid black;
+				white-space: normal;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Yahoo Baba : CSS White-Space</h1>
+		
+		<div id="box">
+			Lorem ipsum dolor sit amet, consectetur                 adipiscing elit. 
+			Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. 
+			Curabitur aliquam commodo dolor vulputate porttitor.
+			Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat.
+		</div>
+		
+	</body>	
+</html>
+```
+
+### Additional Data:
+- The `white-space` property is useful for controlling how text and whitespace are treated inside an element.
+- Use `pre-wrap` when you want to preserve both spaces and line breaks, ensuring that the content wraps properly when necessary.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Writing-Mode
+
+The `writing-mode` CSS property defines the direction in which the lines of text are laid out and the direction of block progression.
+
+## Syntax:
+```css
+writing-mode: horizontal-tb | vertical-rl | vertical-lr;
+```
+
+### Property Values:
+- **horizontal-tb**: Default value. Content flows horizontally from left to right and vertically from top to bottom. Each new horizontal line is positioned below the previous one.
+- **vertical-rl**: Content flows vertically from top to bottom and horizontally from right to left. The next vertical line is positioned to the left of the previous line.
+- **vertical-lr**: Content flows vertically from top to bottom and horizontally from left to right. The next vertical line is positioned to the right of the previous line.
+
+## Example:
+```html
+<html>
+	<head>
+		<title>Writing-Mode</title>
+		<style>
+			h1{
+				writing-mode: sideways-rl;
+			}
+			#box{
+				width:1000px;
+				border:2px solid black;
+				writing-mode: horizontal-tb;
+			}			
+		</style>
+	</head>
+	
+	<body>
+		<h1>Yahoo Baba : CSS Writing-Mode</h1>
+		
+		<div id="box">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. 
+		</div>
+		
+	</body>	
+</html>
+```
+
+### Additional Data:
+- The `writing-mode` property is useful for languages that are written in vertical direction, like Japanese, Chinese, and Korean.
+- You can also use values like `sideways-rl` and `sideways-lr` to achieve rotated text in specific orientations.
