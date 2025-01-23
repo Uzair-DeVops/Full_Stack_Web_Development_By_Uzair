@@ -1762,3 +1762,60 @@ The `float` property is a positioning property. It is used to push an element to
 
 
 
+# CSS Clear
+
+The `clear` property is used to specify which side of floating elements are not allowed to float. It sets or returns the position of the element in relation to floating objects. If the element can fit horizontally in the space next to another element which is floated.
+
+```html
+<html>
+  <head>
+    <title>Clear</title>
+    <style>
+        #box{
+            width: 400px;
+            border: 2px solid black;
+            background-color: pink;
+            float: left;
+        }
+        #box2{
+            width: 400px;
+            border: 2px solid black;
+            background-color: green;
+            float: right;
+        }
+        #box3{
+            width: 100%;
+            border: 2px solid black;
+            background-color: gold;
+            clear: both;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>Yahoo Baba : CSS Clear</h1>
+
+    <div id="box">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
+    </div>
+
+    <div id="box2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
+    </div>
+
+    <div id="box3">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
+    </div>
+  </body>
+</html>
+```
+
+### Additional Data:
+
+- The `clear` property can accept the following values:
+  - `left`: The element will not be allowed to float next to elements that are floated to the left.
+  - `right`: The element will not be allowed to float next to elements that are floated to the right.
+  - `both`: The element will not be allowed to float next to elements floated on either side.
+  - `none` (default): The element can float next to any floated element.
+
+- The `clear` property is particularly useful in preventing layout issues when floated elements are used and you need to control how the following elements behave in relation to those floats.
