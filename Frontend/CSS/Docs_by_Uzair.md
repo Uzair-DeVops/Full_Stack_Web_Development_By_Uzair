@@ -1555,3 +1555,4 @@ The overflow property has the following values:
 
 - The `overflow-x` property in the style specifies that the horizontal overflow will show a scrollbar if the content overflows the container's width.
 - To apply vertical scrolling, the `overflow-y` property could be used. For example, you can set `overflow-y: scroll;` for vertical scrolling in the container.
+
