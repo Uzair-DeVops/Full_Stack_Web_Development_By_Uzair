@@ -5102,7 +5102,7 @@ In this example, we have used the `font-size` property with each glyphicon class
 </html>
 ```
 
-**Output**: Bootstrap Icons Example
+
 
 ### Example 2:
 In this example, we have used the `glyphicon glyphicon-thumbs-up` class with the thumbs-up shape & all the values are set to different numbers.
@@ -5124,5 +5124,3 @@ In this example, we have used the `glyphicon glyphicon-thumbs-up` class with the
 </html>
 ```
 
-**Output**: Bootstrap Icons Example
-```
