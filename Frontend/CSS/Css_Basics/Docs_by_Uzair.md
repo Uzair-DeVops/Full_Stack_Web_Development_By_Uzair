@@ -4502,3 +4502,627 @@ It is used to define the type of mouse cursor when the mouse pointer is on the e
 
 - The cursor property is very useful for improving the user experience and visual feedback during interaction with elements on the page.
 - It is widely used with interactive elements like buttons, links, drag-and-drop functionality, and more.
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Media Queries
+
+The Media query in CSS is used to create a responsive web design. It means that the view of a web page differs from system to system based on screen or media types. The breakpoint specifies for what device-width size, the content is just starting to break or deform.
+
+Media queries can be used to check many things:
+
+- width and height of the viewport
+- width and height of the device
+- Orientation
+- Resolution
+
+A media query consists of a media type that can contain one or more expressions, which can be either true or false. The result of the query is true if the specified media matches the type of device the document is displayed on. If the media query is true, then a style sheet is applied.
+
+## Syntax:
+```css
+@media not | only mediatype and (expression) { // Code content }
+```
+
+## Media Types in CSS:
+There are many types of media types which are listed below:
+
+- **all**: It is used for all media devices
+- **print**: It is used for printers.
+- **screen**: It is used for computer screens, smartphones, etc.
+- **speech**: It is used for screen readers that read the screen aloud.
+
+## Features of Media Query:
+There are many features of media query which are listed below:
+
+- **color**: The number of bits per color component for the output device.
+- **grid**: Checks whether the device is grid or bitmap.
+- **height**: The viewport height.
+- **aspect ratio**: The ratio between width and height of the viewport.
+- **color-index**: The number of colors the device can display.
+- **max-resolution**: The maximum resolution of the device using dpi and dpcm.
+- **monochrome**: The number of bits per color on a monochrome device.
+- **scan**: The scanning of output devices.
+- **update**: How quickly can the output device modify.
+- **width**: The viewport width.
+
+## Supported Browsers:
+The browsers supported by CSS media query are listed below:
+
+- Chrome 21.0 and above
+- Mozilla 3.5 and above
+- Microsoft Edge 12.0
+- Opera 9.0 and above
+- Internet Explorer 9.0 and above
+- Safari 4.0 and above
+
+---
+
+### Example 1: Simple Media Queries Example
+
+```html
+<html>
+	<head>
+		<title>@media Query</title>		
+		<style>	
+			body {				
+				background: white;	
+				font-family: arial;
+				font-size: 100px;
+			}			
+			@media screen and (max-width: 1200px){
+				body{
+					background: pink;
+					font-size: 70px;
+				}
+			}
+			@media screen and (max-width: 1000px){
+				body{
+					background: lightblue;
+					font-size: 50px;
+				}
+			}
+			@media screen and (max-width: 700px){
+				body{
+					background: orange;
+					font-size: 25px;
+				}
+			}
+			@media screen and (max-width: 480px){
+				body{
+					background: red;
+					font-size: 14px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Yahoo Baba : CSS @media Query</h1>
+	</body>	
+</html>
+```
+
+---
+
+### Example 2: Media Query with Basic HTML Layout
+
+```html
+<html>
+	<head>
+		<title>Basic Layout</title>		
+		<style>		
+			body {
+				font-family: arial, helvetica;
+				background: slategrey;
+				margin: 0;
+				padding: 0;
+			}
+			#wrapper {
+				border: 0px solid black;
+				width: 1000px;
+				background: white;
+				margin: 0 auto;
+			}
+			#header {
+				background: crimson;
+				color: white;
+				height: 100px;
+			}
+			#header h1 {
+				padding: 30px 0 0 20px;
+			}
+			#menu {
+				background: lightsalmon;
+			}
+			#menu ul {
+				padding: 0;
+				margin: 0;
+			}
+			#menu li {
+				display: inline-block;
+			}
+			#menu li a {
+				color: black;
+				display: block;
+				padding: 10px 13px;
+				text-decoration: none;
+			}
+			#menu li a:hover {
+				background: crimson;
+				color: white;
+			}
+			#content {
+				width: 800px;
+				min-height: 500px;
+				padding: 15px;
+				float: left;
+				box-sizing: border-box;
+			}
+			#sidebar {
+				background: lightblue;
+				width: 200px;
+				min-height: 500px;
+				float: right;
+			}
+			#sidebar a {
+				color: black;
+				text-decoration: none;
+			}
+			#footer {
+				background: lightsalmon;
+				clear: both;
+				text-align: right;
+				padding: 5px 10px;
+			}
+			@media screen and (max-width: 1020px) {
+				#wrapper {
+					width: 800px;
+				}
+				#content {
+					width: 80%;
+				}
+				#sidebar {
+					width: 18%;
+				}
+			}
+			@media screen and (max-width: 810px) {
+				#wrapper {
+					width: 500px;
+				}
+				#content {
+					width: 65%;
+				}
+				#sidebar {
+					width: 34%;
+				}
+			}
+			@media screen and (max-width: 510px) {
+				#wrapper {
+					width: auto;
+				}
+				#content {
+					width: 100%;
+					float: none;
+				}
+				#sidebar {
+					width: 100%;
+					float: none;
+				}
+				#header h1 {
+					padding: 30px 0 0 0;
+					text-align: center;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<h1>Yahoo Baba</h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Gallery</a></li>
+					<li><a href="">Contact us</a></li>
+				</ul>
+			</div>
+			<div id="content">
+				<h2>Design Basic Layout</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus vitae turpis.</p>
+			</div>
+			<div id="sidebar">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Gallery</a></li>
+					<li><a href="">Contact us</a></li>
+				</ul>
+			</div>
+			<div id="footer">
+				yahoobaba@copyright 2021.
+			</div>
+		</div>		
+	</body>	
+</html>
+``` 
+
+
+
+
+
+
+
+
+
+# CSS Table Properties
+
+A table in CSS is used to apply the various styling properties to the HTML Table elements to arrange the data in rows and columns, or possibly in a more complex structure in a properly organized manner. Tables are widely used in communication, research, and data analysis. The `table-layout` property in CSS can be utilized to display the layout of the table. This property is basically used to set the algorithm that is used to layout `<table>` cells, rows, and columns.
+
+### Properties:
+- **Border:** It is used for specifying borders in the table.
+- **Border Collapse:** The `border-collapse` property tells us whether the browser should control the appearance of the adjacent borders that touch each other or whether each cell should maintain its style.
+    - Syntax: `border-collapse: collapse/separate;`
+- **Border Spacing:** This property specifies the space between the borders of the adjacent cells.
+- **Caption Side:** `caption-side` property is used for controlling the placement of the caption in the table. By default, captions are placed above the table.
+- **Empty Cells:** This property specifies whether or not to display borders and background on empty cells in a table.
+    - Syntax: `empty-cells: show/hide;`
+
+```html
+<html>
+	<head>
+		<title>Basic Layout</title>		
+		<style>	
+			body{
+				font-family:arial,helvetica;
+			}
+			table{
+				width: 300px;
+				table-layout:auto;
+				border-collapse:collapse;
+			}
+			
+			table, td, th {    
+				border: 1px solid #ddd;
+			}
+			td,th{
+				vertical-align:top;
+				padding:5px 20px;
+			}
+			caption{
+				caption-side:top;
+			}
+			tr:hover{
+				
+			}
+			tr:nth-child(even){
+				background: #f2f2f2;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Yahoo Baba : CSS Table Properties</h1>
+		
+		<table>
+		<caption>Employee Record</caption>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Savings</th>
+			</tr>
+			<tr>
+				<td>Mohansdfsdfdsfsdfsdfsdfdf Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, minima.</td>
+				<td>Kumarsdfdsfsdfsdfsdfsd</td>
+				<td>$100</td>
+			</tr>
+			<tr>
+				<td>Salimdsfdsfdsfsdfdsfdsf Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, veritatis.</td>
+				<td>Khan</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Inder</td>
+				<td>Singh</td>
+				<td>$300</td>
+			</tr>
+			<tr>
+				<td>Peter</td>
+				<td>Brown</td>
+				<td>$250</td>
+			</tr>
+			<tr>
+				<td>Peter</td>
+				<td>Brown</td>
+				<td>$250</td>
+			</tr>
+			<tr>
+				<td>Peter</td>
+				<td>Brown</td>
+				<td>$250</td>
+			</tr>
+			<tr>
+				<td>Peter</td>
+				<td>Brown</td>
+				<td>$250</td>
+			</tr>
+			<tr>
+				<td>Peter</td>
+				<td>Brown</td>
+				<td>$250</td>
+			</tr>
+		</table>
+	</body>	
+</html>
+```
+
+---
+
+### Additional Data:
+- **Table Layout:** The `table-layout` property can also accept the `fixed` value, which makes the table's column widths be determined by the width of the first row of cells. This can improve performance, especially for tables with many rows.
+    - Syntax: `table-layout: fixed;`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Icons
+
+**Last Updated**: 04 Jul, 2024
+
+CSS Icons are an essential part of modern web design, offering a visual representation of actions, ideas, and objects. CSS icons offer a compelling way to achieve this by seamlessly integrating scalable and customizable icons into your web design. CSS Icons from various libraries can be effortlessly styled and customized with CSS, allowing for alterations in size, color, shadow, and more. These icons serve as intuitive graphical elements, enhancing navigation and conveying specific meanings.
+
+## Choosing and Implementing CSS Icons from Libraries
+
+Implementing CSS icons from various libraries is straightforward and enhances the aesthetic appeal and functionality of your web pages. Here’s how you can effectively integrate and customize icons using popular libraries:
+
+- **Font Awesome Icons**
+- **Google Icons**
+- **Bootstrap Icons**
+
+## Table of Content
+
+1. [Font Awesome Icons](#font-awesome-icons)
+2. [Google Icons](#google-icons)
+3. [Bootstrap Icons](#bootstrap-icons)
+
+## How To Add Icons
+
+Here’s a general workflow for using a CSS icon library:
+
+1. Choose your preferred library and locate the CDN link for the icons you wish to use.
+2. Add the CDN link to the `<head>` section of your HTML document.
+3. Include the desired icon class names within your HTML elements, typically `<span>` or `<i>` tags.
+
+Note: All the above-mentioned libraries do not require any downloading or installation.
+
+## 1. Font Awesome Icons
+
+Font Awesome is a widely-used icon library that provides a comprehensive set of icons. To integrate Font Awesome icons into your project:
+
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+```
+
+### Syntax:
+```html
+<i class="fa fa-cloud"></i>
+```
+
+We can use the `font-size` property to make it large-size icons for display. The below example illustrates the use of the `font-size` property.
+
+### Example 1:
+In this example, we have used the `font-size` property with each icon class & whose value is set to `32px`.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>GeeksforGeeks</h1>
+    <i class="fa fa-cloud" style="font-size:32px;"></i>
+    <i class="fa fa-heart" style="font-size:32px;"></i>
+    <i class="fa fa-file" style="font-size:32px;"></i>
+    <i class="fa fa-car" style="font-size:32px;"></i>
+    <i class="fa fa-bars" style="font-size:32px;"></i>
+</body>
+</html>
+```
+
+**Output**: Font Awesome Icons Example
+
+### Example 2:
+In this example, we have used the `fa fa-heart` class having the `font-size` property & `color` property whose values are set to `28px` & `red`, `blue` respectively.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>GeeksforGeeks</h1>
+    <i class="fa fa-heart" style="font-size:28px;color:red;"></i>
+    <i class="fa fa-heart" style="font-size:30px;color:blue;"></i>
+    <i class="fa fa-heart" style="font-size:32px;color:red;"></i>
+    <i class="fa fa-heart" style="font-size:34px;color:blue;"></i>
+    <i class="fa fa-heart" style="font-size:36px;color:red;"></i>
+</body>
+</html>
+```
+
+**Output**: Font Awesome Icons Example
+
+## 2. Google Icons
+
+Google Icons, available through Google’s Material Icons library, offer a sleek and modern icon set that integrates seamlessly with Google’s design language:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+```
+
+### Syntax:
+```html
+<i class="material-icons">cloud</i> 
+```
+
+Please refer to the **How to use Google material icon as list-style in a webpage using HTML and CSS?** article to know how to use CSS properties with the pre-defined class.
+
+### Example 1:
+In this example, we have used the `material-icons` class with the required icon.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <h1>GeekforGeeks</h1>
+    <i class="material-icons">cloud</i>
+    <i class="material-icons">favorite</i>
+    <i class="material-icons">attachment</i>
+    <i class="material-icons">computer</i>
+    <i class="material-icons">traffic</i>
+</body>
+</html>
+```
+
+**Output**: Google Icons Example
+
+### Example 2:
+In this example, we have used the `material-icons` class with the cloud shape.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <h1>GeekforGeeks</h1>
+    <i class="material-icons" style="font-size:30px;">cloud</i>
+    <i class="material-icons" style="font-size:40px;">cloud</i>
+    <i class="material-icons" style="font-size:50px;">cloud</i>
+    <i class="material-icons" style="font-size:60px;">cloud</i>
+    <i class="material-icons" style="font-size:70px;">cloud</i>
+</body>
+</html>
+```
+
+**Output**: Google Icons Example
+
+## 3. Bootstrap Icons
+
+Bootstrap Icons provide a collection of icons designed specifically for Bootstrap users, enhancing compatibility and integration within Bootstrap-based projects:
+
+```html
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+```
+
+### Syntax:
+```html
+<i class="glyphicon glyphicon-cloud"></i>
+```
+
+We can use the `font-size` property to make it large-size icons for display. The below example illustrates the use of the `font-size` property with the pre-defined class.
+
+### Example 1:
+In this example, we have used the `font-size` property with each glyphicon class & all the values are set to different numbers.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>GeekforGeeks</h1>
+    <i class="glyphicon glyphicon-cloud" style="font-size:28px;"></i>
+    <i class="glyphicon glyphicon-user" style="font-size:30px;"></i>
+    <i class="glyphicon glyphicon-thumbs-up" style="font-size:32px;"></i>
+    <i class="glyphicon glyphicon-remove" style="font-size:34px;"></i>
+    <i class="glyphicon glyphicon-envelope" style="font-size:36px;"></i>
+</body>
+</html>
+```
+
+**Output**: Bootstrap Icons Example
+
+### Example 2:
+In this example, we have used the `glyphicon glyphicon-thumbs-up` class with the thumbs-up shape & all the values are set to different numbers.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>GeekforGeeks</h1>
+    <i class="glyphicon glyphicon-thumbs-up" style="font-size:20px;"></i>
+    <i class="glyphicon glyphicon-thumbs-up" style="font-size:30px;"></i>
+    <i class="glyphicon glyphicon-thumbs-up" style="font-size:40px;"></i>
+    <i class="glyphicon glyphicon-thumbs-up" style="font-size:50px;"></i>
+    <i class="glyphicon glyphicon-thumbs-up" style="font-size:60px;"></i>
+</body>
+</html>
+```
+
+**Output**: Bootstrap Icons Example
+```
