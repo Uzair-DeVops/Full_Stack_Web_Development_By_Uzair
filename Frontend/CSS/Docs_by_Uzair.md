@@ -1173,7 +1173,7 @@ The `height` and `width` properties may have the following values:
   </head>
 
   <body>
-    <h1>Yahoo Baba : CSS Width & Height</h1>
+    <h1>uzair : CSS Width & Height</h1>
 
     <div id="first">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
@@ -1218,7 +1218,7 @@ The `max-height` property defines the maximum height of an element.
   </head>
 
   <body>
-    <h1>Yahoo Baba : CSS Min-Height & Min-Height</h1>
+    <h1>uzair : CSS Min-Height & Min-Height</h1>
 
     <div id="first">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
@@ -1263,7 +1263,7 @@ The `max-width` property defines the maximum width of an element.
   </head>
 
   <body>
-    <h1>Yahoo Baba : CSS Min-Width & Min-Width</h1>
+    <h1>uzair : CSS Min-Width & Min-Width</h1>
 
     <div id="first">
         <!-- random image from unsplash.com -->
@@ -1542,7 +1542,7 @@ The overflow property has the following values:
     </style>
   </head>
   <body>
-    <h1>Yahoo Baba : CSS Overflow</h1>
+    <h1>uzair : CSS Overflow</h1>
     <div id="box">
       <img src="images/salman.jpg" alt="">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
@@ -1620,7 +1620,7 @@ This property can have from one to four values. Here are the rules:
   </head>
 
   <body>
-    <h1>Yahoo Baba : Box-Radius</h1>
+    <h1>uzair : Box-Radius</h1>
 
     <div id="box">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
@@ -1672,7 +1672,7 @@ The `box-shadow` CSS property adds shadow effects around an element’s frame. Y
     </style>
   </head>
   <body>
-    <h1>Yahoo Baba : CSS Box-Shadow</h1>
+    <h1>uzair : CSS Box-Shadow</h1>
     <div id="box">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
     </div>
@@ -1733,7 +1733,7 @@ The `float` property is a positioning property. It is used to push an element to
   </head>
 
   <body>
-    <h1>Yahoo Baba : Float</h1>
+    <h1>uzair : Float</h1>
 
     <div id="first">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
@@ -1793,7 +1793,7 @@ The `clear` property is used to specify which side of floating elements are not 
   </head>
 
   <body>
-    <h1>Yahoo Baba : CSS Clear</h1>
+    <h1>uzair : CSS Clear</h1>
 
     <div id="box">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
@@ -1931,7 +1931,7 @@ In a small-caps font, all lowercase letters are converted to uppercase letters. 
   </head>
 
   <body>
-    <h1>Yahoo Baba : Font</h1>
+    <h1>uzair : Font</h1>
 
     <div id="box">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
@@ -1992,7 +1992,7 @@ There are two steps to start using the Google font API:
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS with Google Fonts</h1>
+		<h1>uzair : CSS with Google Fonts</h1>
 		
 		<div id="box">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis.Curabitur aliquam commodo dolor vulputate porttitor.Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. 	
@@ -2056,7 +2056,7 @@ The `@font-face` CSS at-rule is used to associate a font name that can be used i
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS @font-face Rule</h1>
+		<h1>uzair : CSS @font-face Rule</h1>
 		
 		<div id="box">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. 
@@ -2133,7 +2133,7 @@ These are the following text formatting properties:
   </head>
 
   <body>
-    <h1>Yahoo Baba : CSS Text Properties</h1>
+    <h1>uzair : CSS Text Properties</h1>
 
     <div id="box">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
@@ -2223,7 +2223,7 @@ Both of the following properties are required for `text-overflow` to work:
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS Text-Overflow</h1>
+		<h1>uzair : CSS Text-Overflow</h1>
 		
 		<div id="box">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis.Curabitur aliquam commodo dolor vulputate porttitor.Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. 	
@@ -2278,7 +2278,7 @@ text-shadow: h-shadow v-shadow blur-radius color | none | initial | inherit;
 	</head>
 
 	<body>
-		<h1>Yahoo Baba : CSS Text-Shadow</h1>
+		<h1>uzair : CSS Text-Shadow</h1>
 
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat.
@@ -2356,7 +2356,7 @@ word-break: normal | keep-all | break-all | inherit;
   </head>
 
   <body>
-    <h1>Yahoo Baba : CSS Word-wrap & Word-break</h1>
+    <h1>uzair : CSS Word-wrap & Word-break</h1>
 
     <div id="box">
       Lorem vvvvvvvvvvvvvvvvvvvvvvvvvvveryloooooooooooooooooooooooooooooooong ipsum dolor sit amet, consecteturkshdgjvltkehf adipiscing elit. Donec quis lectus ac ipsum lobortis malesuada vitae vitae lorem. Vestibulum euismod, lacus a dictum ultrices, lorem libero porttitor dui, in feugiat sem lacus eget elit. Nunc ultricies varius ligula in egestas. Nunc blandit malesuada nisi ut dapibus. Cras in malesuada lectus, eu rhoncus erat. Vivamus fermentum nisi malesuada mauris accumsan, cursus convallis dolor dictum. Sed hendrerit dictum dignissim. Maecenas eget luctus neque, at sollicitudin metus. Etiam urna turpis, aliquam quis semper at, rutrum et risus. Duis laoreet, nulla non maximus laoreet, risus erat mollis augue, sit amet consequat magna orci et dolor. Praesent fermentum nisl quis urna gravida, ac lacinia velit pretium. Aliquam at arcu et erat porta convallis ut non turpis.
@@ -2413,7 +2413,7 @@ white-space: normal | nowrap | pre | pre-line | pre-wrap | break-spaces | initia
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS White-Space</h1>
+		<h1>uzair : CSS White-Space</h1>
 		
 		<div id="box">
 			Lorem ipsum dolor sit amet, consectetur                 adipiscing elit. 
@@ -2483,7 +2483,7 @@ writing-mode: horizontal-tb | vertical-rl | vertical-lr;
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS Writing-Mode</h1>
+		<h1>uzair : CSS Writing-Mode</h1>
 		
 		<div id="box">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. 
@@ -2579,7 +2579,7 @@ The shorthand property for setting all list-related properties in one declaratio
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS List Style</h1>
+		<h1>uzair : CSS List Style</h1>
 		
 		<ul>
 			<li>Orange</li>
@@ -2653,7 +2653,7 @@ background-image: url('url') | none | initial | inherit;
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS Background-Image</h1>
+		<h1>uzair : CSS Background-Image</h1>
 		
 		<div id="box">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis.Curabitur aliquam commodo dolor vulputate porttitor.Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis.Curabitur aliquam commodo dolor vulputate porttitor.Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis.Curabitur aliquam commodo dolor vulputate porttitor.Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat.</p>
@@ -2725,7 +2725,7 @@ The values of this property are defined as follows.
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS Background-Attachment</h1>
+		<h1>uzair : CSS Background-Attachment</h1>
 		
 		<div id="box">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis.Curabitur aliquam commodo dolor vulputate porttitor.Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis.Curabitur aliquam commodo dolor vulputate porttitor.Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis.Curabitur aliquam commodo dolor vulputate porttitor.Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis.Curabitur aliquam commodo dolor vulputate porttitor.Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis.Curabitur aliquam commodo dolor vulputate porttitor.Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis.Curabitur aliquam commodo dolor vulputate porttitor.Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat.</p>
@@ -2816,7 +2816,7 @@ background-size: auto | length | cover | contain | initial | inherit;
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS Background-Size</h1>
+		<h1>uzair : CSS Background-Size</h1>
 		
 		<div id="box">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat.</p>
@@ -2895,7 +2895,7 @@ background-origin: padding-box | border-box | content-box | initial | inherit;
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS Background-Origin</h1>
+		<h1>uzair : CSS Background-Origin</h1>
 		
 		<div id="box">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat.</p>
@@ -2982,7 +2982,7 @@ background-clip: border-box | padding-box | content-box | inherit;
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS Background-Clip</h1>
+		<h1>uzair : CSS Background-Clip</h1>
 		
 		<div id="box">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat.</p>
@@ -3100,7 +3100,7 @@ background-image: repeating-radial-gradient(circle, red, yellow 50px, green 100p
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS Gradient Background</h1>
+		<h1>uzair : CSS Gradient Background</h1>
 		
 		<div id="box">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor. Vivamus ut sodales lacus, in semper libero. Phasellus malesuada tincidunt elit vitae feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit dolor, ornare in tempus vel, cursus vitae turpis. Curabitur aliquam commodo dolor vulputate porttitor.</p>
@@ -3187,7 +3187,7 @@ Opacity% = Opacity * 100
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS Opacity</h1>
+		<h1>uzair : CSS Opacity</h1>
 		
 		<div id="box">
 			<img src="IMAGE_PATH" width="200px" alt="">
@@ -3285,7 +3285,7 @@ hue | color-burn | color;
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS Background-Blend-Mode</h1>
+		<h1>uzair : CSS Background-Blend-Mode</h1>
 		
 		<div id="box">
 			<h2 class="red">Background-Blend-Mode</h2>
@@ -3358,7 +3358,7 @@ The `mix-blend-mode` property is used to specify how an element's background ble
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS Mix-Blend-Mode</h1>
+		<h1>uzair : CSS Mix-Blend-Mode</h1>
 		
 		<div id="box">				
 			<h2 class="first">Mix-Blend-Mode</h2>
@@ -3462,7 +3462,7 @@ display: value;
 		</style>
 	</head>
 	<body>
-		<h1>Yahoo Baba : CSS Display</h1>
+		<h1>uzair : CSS Display</h1>
 		
 		<ul>
 			<li>List Item 1</li>
@@ -3494,12 +3494,1011 @@ display: value;
 
 
 
-
-
-
-
-
-
-
-
 ![alt text](image-9.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Visibility
+
+The CSS `visibility` property is used to specify whether an element is visible or not.
+
+**Note:**  
+An invisible element still takes up space on the page. To make an element invisible without taking space, use the `display` property instead.
+
+## Syntax
+```css
+visibility: visible | hidden | collapse | initial | inherit;
+```
+
+## CSS Visibility Parameters
+
+- **`visible`**:  
+  - Default value.  
+  - Specifies that the element is visible.
+
+- **`hidden`**:  
+  - Specifies that the element is invisible but still occupies space.
+
+- **`collapse`**:  
+  - Used for table elements to remove a row or column without affecting the table layout.
+  - If applied to non-table elements, it acts as `hidden`.
+
+- **`initial`**:  
+  - Sets the property to its default value.
+
+- **`inherit`**:  
+  - Inherits the property from the parent element.
+
+## Example Code
+
+```html
+<html>
+	<head>
+		<title>CSS Visibility</title>		
+		<style>	
+			body {
+				font-family: arial;	
+				background: lightsalmon;				
+			}
+			ul {
+				visibility: visible;
+			}
+			tr.first {
+				visibility: collapse;
+			}
+			.second {
+				visibility: collapse;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>uzair : CSS Visibility</h1>
+		
+		<ul>
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+			<li>List Item 4</li>
+			<li>List Item 5</li>			
+		</ul>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet molestiae aliquam quibusdam rerum!</p>
+	
+		<table border="1">
+			<tr>
+				<td>muhammad</td>
+				<td>uzair</td>
+			</tr>
+			<tr class="first">
+				<td>uzair</td>
+				<td>muhammad</td>
+			</tr>
+			<tr>
+				<td class="second">muhammad</td>
+				<td>uzair</td>
+			</tr>
+		</table>
+	</body>	
+</html>
+```
+
+## Additional Data
+
+- Use `visibility: hidden;` when you want to hide elements but keep their layout intact.
+- Use `display: none;` if you want to remove elements from the layout completely.
+- The `collapse` value is useful for dynamic table modifications.
+
+
+
+
+
+
+
+# CSS HTML Basic Layout Design
+
+A website can be divided into various sections comprising of header, menus, content, and footer based on which there are many different layout designs available for developers. Different layouts can be created by using the `div` tag and applying CSS properties to style it.
+
+## The most common structure of website layout is given below:
+
+1. **Header Section:**  
+   The header section is generally placed either at the top of the website or just below a top navigation menu. It often comprises the name of the website or the logo of the website.
+
+2. **Navigation Menu:**  
+   A navigation bar/menu is basically a list of links that allows visitors to navigate through the website comfortably with easy access.
+
+3. **Content Section:**  
+   The content section is the main body of the website. The user can divide the content section into n-column layout.  
+   The most common layouts are:
+   - **1-Column Layout:** It is mostly used for mobile layouts.
+   - **2-Column Layout:** This website layout is mostly used for tablets or laptops.
+   - **3-Column Layout:** This website layout is mostly used for desktops.
+
+4. **Footer Section:**  
+   A footer section is placed at the bottom of the webpage and it generally consists of information like contact info, copyrights, About us, etc.
+
+```html
+<html>
+<head>
+    <title>Basic Layout</title>
+    <style>
+        body {
+            font-family: arial, helvetica;
+            background: slategrey;
+            margin: 0;
+            padding: 0;
+        }
+        #wrapper {
+            border: 0px solid black;
+            width: 1000px;
+            background: white;
+            margin: 0 auto;
+        }
+        #header {
+            background: crimson;
+            color: white;
+            height: 100px;
+        }
+        #header h1 {
+            padding: 30px 0 0 20px;
+        }
+        #menu {
+            background: lightsalmon;
+        }
+        #menu ul {
+            padding: 0;
+            margin: 0;
+        }
+        #menu li {
+            display: inline-block;
+        }
+        #menu li a {
+            color: black;
+            display: block;
+            padding: 10px 13px;
+            text-decoration: none;
+        }
+        #menu li a:hover {
+            background: crimson;
+            color: white;
+        }
+        #content {
+            width: 800px;
+            min-height: 500px;
+            padding: 15px;
+            float: left;
+            box-sizing: border-box;
+        }
+        #sidebar {
+            background: lightblue;
+            width: 200px;
+            min-height: 500px;
+            float: right;
+        }
+        #sidebar a {
+            color: black;
+            text-decoration: none;
+        }
+        #footer {
+            background: lightsalmon;
+            clear: both;
+            text-align: right;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>uzair</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>Design Basic Layout</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            uzair@copyright 2021.
+        </div>
+    </div>
+</body>
+</html>
+```
+![alt text](image-10.png)
+
+
+
+
+
+
+
+
+
+
+# CSS Positioning Elements
+**Last Updated:** 04 Jan, 2025
+
+CSS positioning defines how elements are placed within a web page. It allows you to control the layout, stacking order, and alignment of elements. The primary positioning types in CSS are:
+
+| **Position Property** | **Description** |
+|------------------------|-----------------|
+| **Fixed**             | An element with `position: fixed` property remains in the same position relative to the viewport even when the page is scrolled. |
+| **Static**            | Default positioning method. Elements with `position: static` are positioned according to the normal flow of the document. |
+| **Relative**          | Elements with `position: relative` are positioned relative to their normal position in the document flow. Other elements will not fill the gap left by this element when adjusted. |
+| **Absolute**          | Positioned concerning its nearest non-static ancestor. Elements with `position: absolute` are taken out of the normal document flow. |
+| **Sticky**            | Combines features of `position: relative` and `position: fixed`. The element is treated as `position: relative` until it reaches a specified threshold, then it becomes `position: fixed`. |
+
+---
+
+## 1. Static Positioning
+**Static** is the default position of an element. It does not accept properties like `top`, `left`, `right`, or `bottom`.
+
+```html
+<style>
+    div {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
+```
+
+- The boxes follow the normal flow of the document.
+- There’s no overlap or displacement of elements.
+
+---
+
+## 2. Relative Positioning
+**Relative** positioning places an element relative to its normal position. You can move it using `top`, `left`, `right`, or `bottom`.
+
+```html
+<style>
+    div {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+    }
+    .relative {
+        position: relative;
+        top: 20px;
+        left: 30px;
+    }
+</style>
+```
+
+- Box 2 is shifted **20px down** and **30px to the right** from its normal position.
+
+---
+
+## 3. Absolute Positioning
+**Absolute** positioning removes the element from the document flow and places it relative to the nearest ancestor with a positioning context (`relative`, `absolute`, or `fixed`).
+
+```html
+<style>
+    .container {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 20px auto;
+    }
+    .absolute {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        background-color: pink;
+        padding: 10px;
+    }
+</style>
+```
+
+- The pink box (`.absolute`) is positioned **50px down** and **50px right** within the `.container`.
+- It does not affect other elements in the flow.
+
+---
+
+## 4. Fixed Positioning
+**Fixed** positioning removes the element from the flow and positions it relative to the viewport. It remains in place even when the page scrolls.
+
+```html
+<style>
+    .fixed {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background-color: lightgreen;
+        padding: 20px;
+        border: 2px solid black;
+    }
+    .content {
+        height: 1200px;
+        padding: 10px;
+    }
+</style>
+```
+
+- The fixed element stays at the **top-right corner** of the viewport even as the user scrolls.
+
+---
+
+## 5. Sticky Positioning
+**Sticky** positioning switches between relative and fixed based on the scroll position.
+
+```html
+<style>
+    .sticky {
+        position: sticky;
+        top: 0;
+        background-color: yellow;
+        padding: 10px;
+    }
+</style>
+```
+
+- The sticky element stays at the **top of the viewport** as you scroll but only within its containing element.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS `object-position` Property
+**Last Updated:** 04 Jan, 2025
+
+The `object-position` property of CSS specifies how an image or video element is positioned with x/y coordinates inside its content box.
+
+---
+
+## Syntax 
+
+```css
+object-position: <position> | initial | inherit;
+```
+
+---
+
+## Property Values
+
+- **`position:`**  
+  Specifies the position of the element. It takes two numerical values corresponding to the distance from the left of the content-box and the distance from the top of the content-box, respectively. It is also possible to use negative values.
+
+---
+
+## Example 1
+
+```html
+<style>
+    img {
+        width: 300px;
+        height: 250px;
+        background-color: silver;
+        object-fit: none;
+        object-position: 10px 30px;
+    }
+</style>
+```
+
+**Output:**  
+`object-position: 10px 30px`
+
+---
+
+## Example 2
+
+```html
+<style>
+    img {
+        width: 300px;
+        height: 250px;
+        background-color: silver;
+        object-fit: none;
+        object-position: 50% 75%;
+    }
+</style>
+```
+
+**Output:**  
+`object-position: 50% 75%`
+
+---
+
+## Example 3
+
+```html
+<style>
+    img {
+        width: 300px;
+        height: 250px;
+        background-color: silver;
+        object-fit: none;
+        object-position: left bottom;
+    }
+</style>
+```
+
+**Output:**  
+`object-position: left bottom`
+
+---
+
+## Example 4
+
+```html
+<style>
+    img {
+        width: 300px;
+        height: 250px;
+        background-color: silver;
+        object-fit: none;
+        object-position: center top;
+    }
+</style>
+```
+
+**Output:**  
+`object-position: center top`
+
+---
+
+## `initial` Value
+
+This sets the default value of the property, which is `50% 50%`, meaning the element is centered in the content box.
+
+```html
+<style>
+    img {
+        width: 300px;
+        height: 250px;
+        background-color: silver;
+        object-fit: none;
+        object-position: initial;
+    }
+</style>
+```
+
+**Output:**  
+`object-position: initial`
+
+---
+
+## `inherit` Value
+
+This receives the property from the parent element. When used with the root element, the `initial` property is applied instead.
+
+```html
+<style>
+    #parent {
+        object-position: 60% 80%;
+    }
+    img {
+        width: 300px;
+        height: 250px;
+        background-color: silver;
+        object-fit: none;
+        object-position: inherit;
+    }
+</style>
+```
+
+**Output:**  
+`object-position: inherit`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS `z-index` Property
+**Last Updated:** 04 Jan, 2025
+
+The CSS `z-index` property is used to control the stacking order of overlapping elements. It decides whether an element appears on top or behind others based on their assigned value.
+
+- It works only on positioned elements (`relative`, `absolute`, or `fixed`).
+- If no `z-index` is defined, the default stacking order applies.
+- The `z-index` property can take various values, which are covered below.
+
+---
+
+## Property Values
+
+| Value   | Description                                               |
+|---------|-----------------------------------------------------------|
+| `auto`  | The stack order is equal to that of the parent (default).  |
+| `number`| The stack order depends on the specified number.            |
+| `initial` | Sets the property to its default value (`auto`).           |
+| `inherit` | Inherits the property from the parent element.             |
+
+---
+
+## 1. Using `z-index` with `auto`
+
+The `auto` value applies the default stacking order without explicitly defining the stacking context.
+
+```html
+<style>
+    div {
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+    .box1 {
+        background-color: red;
+        z-index: auto;
+        top: 50px;
+        left: 50px;
+        position: absolute;
+    }
+    .box2 {
+        background-color: blue;
+        top: 70px;
+        left: 70px;
+        position: absolute;
+    }
+</style>
+```
+
+**Output:**  
+The red box (`.box1`) and blue box (`.box2`) overlap. Since both boxes have their `z-index` set to `auto`, the default stacking order applies, and the blue box is rendered on top because it comes later in the DOM.
+
+---
+
+## 2. Using `z-index` with Numbers
+
+Specifying numerical values controls the stacking order. Higher values stack above lower ones.
+
+```html
+<style>
+    div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+    }
+    .box1 {
+        background-color: red;
+        z-index: 1;
+        top: 50px;
+        left: 50px;
+    }
+    .box2 {
+        background-color: blue;
+        z-index: 2;
+        top: 70px;
+        left: 70px;
+    }
+</style>
+```
+
+**Output:**  
+The blue box (`z-index: 2`) appears above the red box (`z-index: 1`).
+
+---
+
+## 3. Using `z-index` with `initial`
+
+The `initial` value resets the `z-index` to its default value of `auto`.
+
+```html
+<style>
+    div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+    }
+    .box1 {
+        background-color: red;
+        z-index: initial;
+        top: 50px;
+        left: 50px;
+    }
+    .box2 {
+        background-color: blue;
+        z-index: 1;
+        top: 70px;
+        left: 70px;
+    }
+</style>
+```
+
+**Output:**  
+The red box follows the default stacking order since `z-index: initial` resets to `auto`.
+
+---
+
+## 4. Using `z-index` with `inherit`
+
+The `inherit` value ensures the element inherits its `z-index` value from its parent.
+
+```html
+<style>
+    .parent {
+        position: relative;
+        z-index: 5;
+    }
+    .child {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        z-index: inherit;
+        top: 50px;
+        left: 50px;
+    }
+</style>
+```
+
+**Output:**  
+The child element inherits the `z-index` value (`5`) from its parent.
+
+---
+
+## 5. Combining `z-index` with Multiple Contexts
+
+When working with multiple stacking contexts, the `z-index` applies only within its context.
+
+```html
+<style>
+    .parent {
+        position: relative;
+        z-index: 1;
+        background-color: lightgray;
+        width: 200px;
+        height: 200px;
+    }
+
+    .child1 {
+        position: absolute;
+        z-index: 2;
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+
+    .child2 {
+        position: absolute;
+        z-index: 1;
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        top: 50px;
+        left: 50px;
+    }
+</style>
+```
+
+**Output:**  
+The red box stacks above the blue box within the same stacking context defined by the parent element.
+
+
+
+# CSS Resize
+
+The `resize` property in CSS is used to resize the element according to the user's requirements. It does not apply to inline elements or to block elements where overflow is visible.
+
+## Syntax:
+```css
+resize: none | both | horizontal | vertical | initial;
+```
+
+## Property values:
+
+- **none**: No resizing is allowed.
+- **both**: Resizing is allowed in both horizontal and vertical directions.
+- **horizontal**: Resizing is allowed in the horizontal direction only.
+- **vertical**: Resizing is allowed in the vertical direction only.
+- **initial**: Sets the property to its default value.
+
+## Example Code:
+
+```html
+<html>
+	<head>
+		<title>Basic Layout</title>		
+		<style>	
+			body {
+				font-family: arial, helvetica;
+			}
+			#box {
+				border: 1px solid black;
+				background: papayawhip;
+				text-align: center;
+				width: 500px;
+				height: 300px;
+				overflow: auto;
+				resize: both;
+				margin-bottom: 20px;
+			}
+			textarea {
+				
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Yahoo Baba : CSS Resize</h1>
+		
+		<div id="box">
+			<h2>Resize the Div</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, impedit, assumenda, placeat quod eligendi quia hic facilis provident praesentium error quos quidem natus ducimus quisquam maxime vel et aspernatur expedita aliquam deserunt facere numquam nam suscipit dicta amet sunt asperiores nihil cum inventore unde ut enim eius fugit voluptatum molestiae illum ipsam possimus. Repellat, dolorum, iure, possimus, iste qui autem ad debitis nulla dolore assumenda reprehenderit sint reiciendis aliquid vitae exercitationem nam quasi quisquam quos magnam nisi quia facilis quis. Natus, dolore debitis consectetur quasi sint rerum fugit dolor eius architecto unde! Illo, nemo, magni, alias, quod veritatis accusantium consectetur sed similique expedita eveniet totam incidunt vero id doloribus mollitia veniam ipsum blanditiis vitae cupiditate saepe odit qui quam omnis libero asperiores! Soluta, adipisci, dolores, sed, facilis saepe nisi perferendis hic iste eligendi totam dolore iure molestias voluptatibus quidem libero laboriosam quo aut alias cumque ea impedit architecto modi rerum ipsam et. Aliquid, quidem voluptatem necessitatibus numquam tempore doloremque quis soluta quo non earum hic enim quas cupiditate ratione illum aliquam praesentium facilis et facere eius illo ipsum voluptates? Odio, veniam, sequi, amet animi laudantium sit mollitia aperiam ipsa illum recusandae illo nesciunt dolores tempore debitis vel porro at delectus.</p>
+		</div>
+		
+		<textarea name="" id="" cols="30" rows="10"></textarea>
+	</body>	
+</html>
+```
+
+## Additional Data
+
+The `resize` property in CSS allows users to control the resizability of elements. This feature is commonly used for resizable elements like textareas and div containers. 
+
+Here are some key points:
+
+- The **none** value ensures the element cannot be resized, useful when you want to maintain a fixed size for elements.
+- The **both** value allows resizing in both horizontal and vertical directions.
+- The **horizontal** value restricts resizing to the horizontal axis.
+- The **vertical** value restricts resizing to the vertical axis.
+- **Initial** resets the property to its default value, which depends on the browser’s default behavior. 
+
+For more details on how the `resize` property works in different browsers, refer to the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/resize).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Cursor
+
+It is used to define the type of mouse cursor when the mouse pointer is on the element. It allows us to specify the cursor type, which will be displayed to the user. When a user hovers on the link, then by default, the cursor transforms into the hand from a pointer.
+
+### Values and Usage
+
+| Value            | Usage                                                                 |
+|------------------|-----------------------------------------------------------------------|
+| `alias`          | It is used to display the indication of the cursor of something that is to be created. |
+| `auto`           | It is the default property in which the browser sets the cursor.      |
+| `all-scroll`     | It indicates the scrolling.                                           |
+| `col-resize`     | Using it, the cursor will represent that the column can be horizontally resized. |
+| `cell`           | The cursor will represent that a cell or the collection of cells is selected. |
+| `context-menu`   | It indicates the availability of the context menu.                    |
+| `default`        | It indicates an arrow, which is the default cursor.                   |
+| `copy`           | It is used to indicate that something is copied.                      |
+| `crosshair`      | In it, the cursor changes to the crosshair or the plus sign.          |
+| `e-resize`       | It represents the east direction and indicates that the edge of the box is to be shifted towards right. |
+| `ew-resize`      | It represents the east/west direction and indicates a bidirectional resize cursor. |
+| `n-resize`       | It represents the north direction that indicates that the edge of the box is to be shifted to up. |
+| `ne-resize`      | It represents the north/east direction and indicates that the edge of the box is to be shifted towards up and right. |
+| `move`           | It indicates that something is to be shifted.                         |
+| `help`           | It is in the form of a question mark or balloon, which represents that help is available. |
+| `none`           | It is used to indicate that no cursor is rendered for the element.    |
+| `no-drop`        | It is used to represent that the dragged item cannot be dropped here. |
+| `s-resize`       | It indicates an edge box is to be moved down. It indicates the south direction. |
+| `row-resize`     | It is used to indicate that the row can be vertically resized.       |
+| `se-resize`      | It represents the south/east direction, which indicates that an edge box is to be moved down and right. |
+| `sw-resize`      | It represents south/west direction and indicates that an edge of the box is to be shifted towards down and left. |
+| `wait`           | It represents an hourglass.                                          |
+| `<url>`          | It indicates the source of the cursor image file.                    |
+| `w-resize`       | It indicates the west direction and represents that the edge of the box is to be shifted left. |
+| `zoom-in`        | It is used to indicate that something can be zoomed in.               |
+| `zoom-out`       | It is used to indicate that something can be zoomed out.              |
+
+### Example
+
+```html
+<html>
+    <head>
+        <title>All Cursors</title>        
+        <style>    
+            body{
+                font-family:arial,helvetica;
+            }
+            .box{
+                border:1px solid black;
+                background: papayawhip;
+                text-align: center;
+                width: 180px;
+                height: 150px;
+                float:left;
+                margin: 0 10px 10px 0;
+            }
+            .box:nth-child(2n){
+                background: lightgreen;
+            }
+            .box:nth-child(3n){
+                background: lightpink;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>Yahoo Baba : CSS Cursor</h1>
+        
+        <div class="box" style="cursor:auto;">
+            <h3>auto</h3>            
+        </div>
+        <div class="box" style="cursor:default;">
+            <h3>default</h3>            
+        </div>
+        <div class="box" style="cursor:none ;">
+            <h3>none </h3>            
+        </div>
+        <div class="box" style="cursor:help;">
+            <h3>Help</h3>            
+        </div>
+        <div class="box" style="cursor:pointer;">
+            <h3>pointer</h3>            
+        </div>
+        <div class="box" style="cursor:progress;">
+            <h3>progress</h3>            
+        </div>
+        <div class="box" style="cursor:wait;">
+            <h3>wait</h3>            
+        </div>
+        <div class="box" style="cursor:cell;">
+            <h3>cell</h3>            
+        </div>
+        <div class="box" style="cursor:crosshair;">
+            <h3>crosshair</h3>            
+        </div>
+        <div class="box" style="cursor:text;">
+            <h3>text</h3>            
+        </div>
+        <div class="box" style="cursor:vertical-text;">
+            <h3>vertical-text</h3>            
+        </div>
+        <div class="box" style="cursor:alias;">
+            <h3>alias</h3>            
+        </div>
+        <div class="box" style="cursor:move;">
+            <h3>move</h3>            
+        </div>
+        <div class="box" style="cursor:no-drop ;">
+            <h3>no-drop </h3>            
+        </div>
+        <div class="box" style="cursor:not-allowed;">
+            <h3>not-allowed</h3>            
+        </div>
+        <div class="box" style="cursor:e-resize;">
+            <h3>e-resize</h3>            
+        </div>
+        <div class="box" style="cursor:n-resize;">
+            <h3>n-resize</h3>            
+        </div>
+        <div class="box" style="cursor:ne-resize ;">
+            <h3>ne-resize </h3>            
+        </div>
+        <div class="box" style="cursor:nw-resize ;">
+            <h3>nw-resize </h3>            
+        </div>
+        <div class="box" style="cursor:s-resize ;">
+            <h3>s-resize </h3>            
+        </div>
+        <div class="box" style="cursor:se-resize;">
+            <h3>se-resize</h3>            
+        </div>
+        <div class="box" style="cursor:sw-resize;">
+            <h3>sw-resize</h3>            
+        </div>
+        <div class="box" style="cursor:w-resize;">
+            <h3>w-resize</h3>            
+        </div>
+        <div class="box" style="cursor:ew-resize;">
+            <h3>ew-resize</h3>            
+        </div>
+        <div class="box" style="cursor:ns-resize;">
+            <h3>ns-resize</h3>            
+        </div>
+        <div class="box" style="cursor:nesw-resize;">
+            <h3>nesw-resize</h3>            
+        </div>
+        <div class="box" style="cursor:nwse-resize;">
+            <h3>nwse-resize</h3>            
+        </div>
+        <div class="box" style="cursor:col-resize;">
+            <h3>col-resize</h3>            
+        </div>
+        <div class="box" style="cursor:row-resize;">
+            <h3>row-resize</h3>            
+        </div>
+        <div class="box" style="cursor:all-scroll;">
+            <h3>all-scroll</h3>            
+        </div>
+        <div class="box" style="cursor:zoom-in;">
+            <h3>zoom-in</h3>            
+        </div>
+        <div class="box" style="cursor:zoom-out;">
+            <h3>zoom-out</h3>            
+        </div>
+        <div class="box" style="-webkit-cursor:grab;">
+            <h3>grab</h3>            
+        </div>
+        <div class="box" style="-webkit-cursor:grabbing ;">
+            <h3>grabbing </h3>            
+        </div>
+        <div class="box" style="cursor:context-menu;">
+            <h3>context-menu </h3>            
+        </div>
+    </body>    
+</html>
+```
+
+### Additional Data
+
+- The cursor property is very useful for improving the user experience and visual feedback during interaction with elements on the page.
+- It is widely used with interactive elements like buttons, links, drag-and-drop functionality, and more.
