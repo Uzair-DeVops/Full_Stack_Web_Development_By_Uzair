@@ -3373,3 +3373,133 @@ The `mix-blend-mode` property is used to specify how an element's background ble
 
 - The `mix-blend-mode` property allows you to create interesting visual effects by blending the colors and content of an element with its surrounding content.
 - This property is widely used for creating effects like overlays and blending images or text with backgrounds.
+
+
+
+
+
+
+
+# CSS Display
+
+CSS `display` is one of the most important properties used to control the layout of an element. It specifies how an element is displayed on a webpage.
+
+Every element has a default display value according to its nature. On a webpage, every element is considered a rectangular box, and the `display` property defines how this box behaves.
+
+## CSS Display Default Properties
+
+| Property         | Value              |
+|-----------------|--------------------|
+| Default Value   | `inline`             |
+| Inherited       | No                   |
+| Animation       | Not Supported        |
+| Version         | CSS1                 |
+| JavaScript Syntax | `object.style.display="none"` |
+
+### Syntax
+```css
+display: value;
+```
+
+## Common CSS Display Values
+
+- `display: inline;`
+- `display: inline-block;`
+- `display: block;`
+- `display: run-in;`
+- `display: none;`
+
+## Other CSS Display Values
+
+| Property Value         | Description                                         |
+|-----------------------|-----------------------------------------------------|
+| `flex`                | Displays an element as a block-level flex container (CSS3). |
+| `inline-flex`          | Displays an element as an inline-level flex container (CSS3). |
+| `inline-table`         | Displays an element as an inline-level table.       |
+| `list-item`            | Makes the element behave like an `<li>` element.    |
+| `table`                | Makes the element behave like a `<table>` element.  |
+| `table-caption`        | Makes the element behave like a `<caption>` element. |
+| `table-column-group`   | Makes the element behave like a `<colgroup>` element. |
+| `table-header-group`   | Makes the element behave like a `<thead>` element.  |
+| `table-footer-group`   | Makes the element behave like a `<tfoot>` element.  |
+| `table-row-group`      | Makes the element behave like a `<tbody>` element.  |
+| `table-cell`           | Makes the element behave like a `<td>` element.     |
+| `table-row`            | Makes the element behave like a `<tr>` element.     |
+| `table-column`         | Makes the element behave like a `<col>` element.    |
+
+## Example Code
+
+```html
+<html>
+	<head>
+		<title>CSS Display</title>		
+		<style>	
+			body {
+				font-family: arial;				
+			}
+			ul {
+				border: 2px solid black;
+			}
+			li {
+				border: 1px solid red;
+				display: inline;
+			}
+			span {
+				border: 2px solid green;
+				display: list-item;
+				width: 150px;
+				padding: 10px;
+				margin: 20px;
+				list-style-position: inside;
+			}
+			a {
+				border: 2px solid blue;
+				width: 200px;
+				margin: 20px;
+				padding: 10px;
+				display: list-item;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Yahoo Baba : CSS Display</h1>
+		
+		<ul>
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+			<li>List Item 4</li>
+			<li>List Item 5</li>			
+		</ul>
+		<span>One</span>
+		<span>Two</span>
+		<span>Three</span>
+		<span>Four</span>
+		<span>Five</span>
+		<a href="">First</a>
+		<a href="">Second</a>
+		<a href="">Third</a>
+	</body>	
+</html>
+```
+
+## Additional Data
+
+- The `inline` value ensures elements stay in the same line.
+- The `block` value makes elements take up the full width.
+- The `none` value hides elements completely from the page layout.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![alt text](image-9.png)
