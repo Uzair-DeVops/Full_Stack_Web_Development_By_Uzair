@@ -4282,7 +4282,7 @@ resize: none | both | horizontal | vertical | initial;
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS Resize</h1>
+		<h1>uzair . : CSS Resize</h1>
 		
 		<div id="box">
 			<h2>Resize the Div</h2>
@@ -4387,7 +4387,7 @@ It is used to define the type of mouse cursor when the mouse pointer is on the e
     </head>
     
     <body>
-        <h1>Yahoo Baba : CSS Cursor</h1>
+        <h1>uzair . : CSS Cursor</h1>
         
         <div class="box" style="cursor:auto;">
             <h3>auto</h3>            
@@ -4606,7 +4606,7 @@ The browsers supported by CSS media query are listed below:
 		</style>
 	</head>
 	<body>
-		<h1>Yahoo Baba : CSS @media Query</h1>
+		<h1>uzair . : CSS @media Query</h1>
 	</body>	
 </html>
 ```
@@ -4727,7 +4727,7 @@ The browsers supported by CSS media query are listed below:
 	<body>
 		<div id="wrapper">
 			<div id="header">
-				<h1>Yahoo Baba</h1>
+				<h1>uzair .</h1>
 			</div>
 			<div id="menu">
 				<ul>
@@ -4750,7 +4750,7 @@ The browsers supported by CSS media query are listed below:
 				</ul>
 			</div>
 			<div id="footer">
-				yahoobaba@copyright 2021.
+				uzair.@copyright 2021.
 			</div>
 		</div>		
 	</body>	
@@ -4812,7 +4812,7 @@ A table in CSS is used to apply the various styling properties to the HTML Table
 	</head>
 	
 	<body>
-		<h1>Yahoo Baba : CSS Table Properties</h1>
+		<h1>uzair . : CSS Table Properties</h1>
 		
 		<table>
 		<caption>Employee Record</caption>
