@@ -3377,3 +3377,1203 @@ The `display: flow-root` property generates a block element box that establishes
 ```
 
 This example demonstrates the use of `display: flow-root` on the `#parent` element. It creates a new block formatting context for the parent element, which affects how the floated `.child` element is displayed within the container. This ensures that the child element's float does not collapse the height of the parent.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS CurrentColor
+
+The `currentColor` keyword in CSS is used to define the color property by referring to the currently used color on the element. It acts like a variable for the current value of the color property. This can be useful when you want to use the same color in multiple places without explicitly repeating the color value.
+
+## Example
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CurrentColor</title>
+	<style>
+		body{ font-family: arial; }
+
+    h1{
+      text-align: center;
+    }
+
+		#test{
+			color: blue;
+			width: 500px;
+			padding: 10px;
+			margin: 0 auto;
+			border: 2px solid CurrentColor;
+    }
+		#test h2{
+			border-bottom : 2px solid CurrentColor;
+		}
+		#test .readmore{
+			color:CurrentColor;
+			background: red;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>CSS CurrentColor Mode</h1>
+
+  <div id="test">
+    <h2>Yahoo Baba</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ut error aliquid! Iste libero voluptatum cum, earum hic amet quae eos. Numquam perspiciatis amet, velit provident odio ex, itaque accusamus?</p>
+    <a class="readmore" href="">Readmore</a>
+		<div class="abc"></div>
+  </div>
+
+</body>
+</html>
+```
+
+This example demonstrates how `currentColor` is used to apply the same color throughout different elements. In this case, the color of the text in `#test` is blue, and `currentColor` is applied to the border, the `h2` element's bottom border, and the `.readmore` link, so they all inherit the same color without needing to be explicitly set.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS3 ::Marker Pseudo Element
+
+The `::marker` CSS pseudo-element targets the marker box of a list item. The marker box typically contains a bullet or number and applies to elements or pseudo-elements that are set to `display: list-item`, such as the `<li>` and `<summary>` elements.
+
+## Example
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>::marker</title>
+	<style>
+		body{
+			font-family: arial;
+			font-size: 20px;
+			line-height: 24px;
+		}
+
+		h1{
+			text-align: center;
+		}
+		
+		ul li::marker{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+<h1>Pesudo Element  ::marker</h1>
+<ul>
+	<li>Orange</li>
+	<li>Apple</li>
+	<li>Banana</li>
+	<li>Grapes</li>
+</ul>
+
+<ol>
+	<li>Orange</li>
+	<li>Apple</li>
+	<li>Banana</li>
+	<li>Grapes</li>
+</ol>
+</body>
+</html>
+```
+
+In this example, the `::marker` pseudo-element is used to change the color of the bullets in the unordered list (`<ul>`) to red. This doesn't affect the numbers in the ordered list (`<ol>`), as `::marker` only applies to the marker (bullet or number) of list items.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS !important
+
+The `!important` rule in CSS is used to give more importance to a specific property/value. When applied, it overrides all previous styling rules for that property on the element, making it the most specific rule.
+
+## Example
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>!important</title>
+	<style>
+		body{
+			font-family: arial;
+			font-size: 40px;
+		}
+
+		h1{
+			padding-left: 20px;
+			color: red !important;
+			font-size: 18px !important;
+		}
+		.first{
+			color: green;
+		}
+		#second{
+			color: blue;
+			font-size: 38px;
+		}
+	</style>
+</head>
+<body>
+
+<h1 class="first" id="second" style="color:orange;">Yahoo Baba</h1>
+
+</body>
+</html>
+```
+
+In this example, the `color: red !important;` and `font-size: 18px !important;` in the `h1` tag are applied despite other conflicting styles (such as inline `style="color:orange;"` and class `first`). The `!important` rule ensures that the red color and 18px font size are enforced.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS3 @supports
+
+The `@supports` rule in CSS checks if a specific CSS property is supported by the browser. If the condition is true, the corresponding block of code is executed; otherwise, it is not. It allows you to apply styles conditionally based on feature support.
+
+### Syntax:
+```css
+@supports (condition) {
+  /* Style you want to apply */
+}
+```
+
+### Keywords Used with @supports:
+1. **not**: Checks for the absence of support for a feature.
+2. **and**: Checks if multiple conditions are true.
+3. **or**: Checks if at least one condition is true.
+
+### Example
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>@support</title>
+  <style>
+    :root{
+      --test : green;
+    }
+    @supports (--test : green){
+      body{
+        background: var(--test);
+      }
+    }
+  </style>
+</head>
+<body>
+
+</body>
+</html>
+```
+
+In this example, the `@supports (--test : green)` checks if custom properties (CSS variables) are supported by the browser. If supported, it applies a green background color to the body.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS :placeholder-shown
+
+The `:placeholder-shown` pseudo-class in CSS selects an input or textarea element that is currently displaying placeholder text. Unlike the `::placeholder` pseudo-element, which styles the placeholder text itself, `:placeholder-shown` targets the input field when the placeholder is visible.
+
+### Syntax:
+```css
+:placeholder-shown {
+   /* CSS Property */ 
+}
+```
+
+### Example:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>:placeholder-shown</title>
+	<style>
+    body{
+			font-family: arial;
+			font-size: 20px;
+			line-height: 24px;
+		}
+    h1{
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    input{
+      font-size: 20px;
+      border: 3px solid black;
+      width: 300px;
+      padding: 5px;
+    }
+		input[type="text"]:placeholder-shown{
+			border: 3px solid red;
+		}
+
+  </style>
+</head>
+<body>
+  <h1>:placeholder-shown</h1>
+
+  <form action="">
+    <input type="text" placeholder="Enter Name"><br><br>
+    <input type="text" placeholder="Enter Address"><br><br>
+    <input type="number" placeholder="Enter Percentage"><br><br>
+    <input type="email" placeholder="Enter Email"><br><br>
+		<input type="month" placeholder="Enter Email"><br><br>
+  </form>
+</body>
+</html>
+```
+
+In this example, when the placeholder text is shown in any text input field, the border of the input will turn red. This is achieved using the `:placeholder-shown` pseudo-class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS List Style Type : String
+
+The `list-style-type` property in CSS allows you to specify the type of list marker to be used for a list. This example demonstrates how you can use a custom string as the list marker.
+
+### Example:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>:placeholder-shown</title>
+	<style>
+    body{
+			font-family: arial;
+			font-size: 20px;
+			line-height: 24px;
+		}
+        h1{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+		ul{
+			list-style-type: "? ";
+			list-style-position: inside;
+			line-height: 35px;
+		}
+
+  </style>
+</head>
+<body>
+  <h1>list-style-type : string</h1>
+
+  <ul>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+  </ul>
+</body>
+</html>
+```
+
+In this example, the list uses a custom string `"? "` as the marker for each list item. The `list-style-type` property is set to `"? "` to customize the list marker.
+
+
+
+
+
+
+
+
+# CSS Scroll-Behavior
+
+The `scroll-behavior` property specifies whether to smoothly animate the scroll position, instead of a straight jump, when the user clicks on a link within a scrollable box.
+
+## Syntax
+```css
+scroll-behavior: auto|smooth|initial|inherit;
+```
+
+## Property Values
+
+| Value    | Description                                                                                     |
+|----------|-------------------------------------------------------------------------------------------------|
+| `auto`   | Allows a straight jump "scroll effect" between elements within the scrolling box. This is default. |
+| `smooth` | Allows a smooth animated "scroll effect" between elements within the scrolling box.              |
+| `initial`| Sets this property to its default value.                                                        |
+| `inherit`| Inherits this property from its parent element.                                                 |
+```
+
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  html{
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: white;
+    margin: 0;
+    font-family:arial;
+    /*height: 100vh;
+    overflow: hidden;*/
+  }
+
+  nav {
+    background-color: #000;
+    display: block;
+    padding: 1em 0;
+    text-align: center;
+    position:sticky;
+    top: 0;
+  }
+  nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+  }
+  nav a{
+    font-size: 30px;
+  }
+
+  .scrolling-box {
+    background-color: #eaeaea;
+    display: block;
+    height: 200px;
+    overflow-y: scroll;
+
+    text-align: center;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  section {
+    padding-top: 70px;
+  }
+  section h2{
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#1">1</a>
+  <a href="#2">2</a>
+  <a href="#3">3</a>
+</nav>
+
+  <section id="1">
+    <h2>Section 1</h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, itaque at nam quibusdam qui tenetur accusamus quas maxime expedita repellat sed fugit eius ipsam dignissimos quasi excepturi, beatae? Eveniet 
+  </section>
+
+  <section id="2">
+    <h2>Section 2</h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad facilis enim eos iusto accusantium repellat facere quam pariatur excepturi animi voluptatum harum, ab officia hic libero placeat inventore nemo quod! Odio reiciendis consectetur quasi autem ipsam, natus nisi suscipit eligendi! Necessitatibus dolores eum maxime, omnis facilis aliquam ipsum tenetur, molestias ipsam dolorum illo hic eos aperiam vitae quasi ipsa! Hic incidunt corporis sed autem cumque? Accusantium hic cum, quaerat! Excepturi velit odio assumenda commodi saepe quod ab aut accusantium ducimus sint impedit, vitae dolores doloribus iusto deleniti maxime accusamus omnis at autem a? Ut ipsum odio qui culpa eligendi 
+  </section>
+
+  <section id="3">
+    <h2>Section 3</h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident asperiores unde, deserunt vel, voluptas, fugiat beatae earum sed, necessitatibus officia itaque! Nulla asperiores ullam maxime doloribus tenetur laborum adipisci quisquam excepturi at sapiente, nam, perspiciatis aliquam delectus id hic dolorum officia accusamus iure alias tempora aperiam possimus. Adipisci enim asperiores incidunt sapiente sit voluptas alias necessitatibus, dicta corporis voluptatem modi, odio ducimus, laborum! Eos perspiciatis alias tenetur iste dolore, quia quos impedit commodi ipsam nulla officia quod nostrum odio, officiis repellendus natus neque nesciunt, nobis, vero nisi totam aliquid. Nulla earum deleniti delectus corporis voluptatum, necessitatibus id, fugit iure obcaecati ipsum perferendis ut qu
+  </section>
+
+</body>
+</html>
+
+```
+
+
+
+
+
+
+
+
+
+
+# CSS Scroll-Snap
+
+The `scroll-snap-type` property specifies how the elements will snap into focus when you stop scrolling and in what direction. To achieve scroll snap behavior, the `scroll-snap-type` property must be set on the parent element, and the `scroll-snap-align` property must be set on the child elements.
+
+### Syntax
+
+```css
+scroll-snap-type: none|x|y|block|inline|both|mandatory|proximity|initial|inherit;
+```
+
+### Property Values
+
+| Value       | Description                                                                 |
+|-------------|-----------------------------------------------------------------------------|
+| `none`      | No scroll snap effect. This is the default.                                 |
+| `x`         | Scroll snap effect is set on the x-axis.                                    |
+| `y`         | Scroll snap effect is set on the y-axis.                                    |
+| `block`     | Scroll snap effect is set on the block direction.                           |
+| `inline`    | Scroll snap effect is set on the inline direction.                          |
+| `both`      | Scroll snap effect is set on both x- and y-axis.                            |
+| `mandatory` | Scroll will automatically move to snap point after the scroll action is finished. |
+| `proximity` | Similar to `mandatory`, but not as strict. Scroll will automatically move to snap point after scroll action is finished, but in-between snap points, there is an area without the snap effect. Depends on browser parameters. |
+| `initial`   | Sets this property to its default value.                                    |
+| `inherit`   | Inherits this property from its parent element.                             |
+``
+
+# HTML Example: Scroll Snap
+
+This HTML example demonstrates how to create a scrollable page with sections that snap into focus when scrolling, using the `scroll-snap-type` and `scroll-snap-align` properties.
+
+### Code:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scroll Snap</title>
+  <style>
+  html{
+    scroll-snap-type : y proximity;
+  }
+  body {
+    margin: 0;
+    font-family:arial;
+  }
+
+  div.section {
+    padding: 60px 40px;
+    min-height: 100vh;
+    scroll-snap-align : start;
+  }
+  div.section h2{
+    font-size: 30px;
+    text-align: center;
+  }
+  #section1{
+    background-color: #fad390;
+  }
+  #section2{
+    background-color: #82ccdd;
+  }
+  #section3{
+    background-color: #b8e994;
+  }
+  #section4{
+    background-color: #FDA7DF;
+  }
+
+  </style>
+</head>
+<body>
+
+  <div class="section" id="section1">
+    <h2>Section 1</h2>
+    Lorem ipsum dolor sit aquo et fuga qui, exercitationem ratione asperiores debitis eos ad dolorum ipsa temporibus quam delectus, dolor cupiditate eius voluptatem quod tenetur suscipit necessitatibus a? Voluptatum officiis possimus veniam delectus placeat incidunt quis labore excepturi nam fugit, dolore magnam, laudantium dolor voluptatem! Assumenda debitis cum recusandae, quibusdam vel ratione, perspiciatis quod accusantium adipisci doloremque numquam animi. Veritatis consectetur accusamus maxime quos assumenda minima!
+  </div>
+  <div class="section" id="section4">
+    <h2>Section 4</h2>
+    Lorem ipsum dolor sit amet, cassumenda minima!
+  </div>
+
+</body>
+</html>
+```
+
+### Explanation:
+- The `scroll-snap-type: y proximity;` property on the `html` element enables vertical scroll snapping with proximity-based snapping behavior.
+- The `scroll-snap-align: start;` on each `.section` ensures that each section aligns to the top when scrolling.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS File-Selector-Button Pseudo Element
+
+The `::file-selector-button` is a CSS pseudo-element that targets the file input button (`<input type="file">`) in HTML. This is commonly used to customize the file upload button’s appearance in forms.
+
+### Code:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Selector Button</title>
+  <style>
+    input[type=file]::file-selector-button{
+      background-color: #a28bfe;
+      border: 1px solid #6c5ce7;
+      border-radius: 4px;
+      padding: 4px 10px;
+      color: #fff;
+    }
+    input[type=file]::file-selector-button:hover{
+      background-color: #81ecec;
+      border: 1px solid #00cec9;
+    }
+    input[type=file]::-webkit-file-upload-button{
+      background-color: #a28bfe;
+      border: 1px solid #6c5ce7;
+      border-radius: 4px;
+      padding: 4px 10px;
+    }
+    input[type=file]::-webkit-file-upload-button:hover{
+      background-color: #81ecec;
+      border: 1px solid #00cec9;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <label>Upload File</label>
+    <input type="file" id="fileUpload">
+  </form>
+</body>
+</html>
+```
+
+### Explanation:
+- The `::file-selector-button` pseudo-element is used to style the file input button. 
+- The `background-color`, `border`, and `padding` properties are applied to change the appearance of the button.
+- The `hover` state changes the button's color when the user hovers over it.
+
+
+
+
+
+
+
+
+
+
+
+```markdown
+# CSS Backdrop Filter
+
+The `backdrop-filter` property in CSS is used to apply graphical effects to the area behind an element, rather than the element itself. This can be used to create effects like blur, brightness, or contrast on the background, eliminating the need for an extra element to style the background separately.
+
+### Syntax:
+```css
+backdrop-filter: blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | none | initial | inherit;
+```
+
+### Property Values:
+
+- **blur()**: Applies a Gaussian blur to the background. The default value is `0`, which means no blur.
+- **brightness()**: Adjusts the lightness or darkness of the background. Values over 100% brighten the image, and values below 100% darken it.
+- **contrast()**: Changes the contrast of the background. The default is 100%, and values below 0% will black out the image.
+- **drop-shadow()**: Adds a drop shadow effect. It takes horizontal, vertical shadow amounts, spread, and color.
+- **grayscale()**: Converts the image to black and white. `0%` means the original image, and `100%` means completely grayscale.
+- **hue-rotate()**: Applies a hue rotation to the background, shifting its color values.
+- **invert()**: Inverts the background colors. `0%` means the original, and `100%` fully inverts the colors.
+- **opacity()**: Adjusts the opacity of the background. `0%` is fully transparent, and `100%` is fully opaque.
+- **saturate()**: Controls the saturation of the background. `0%` means unsaturated (grayscale), and values above 100% increase saturation.
+- **sepia()**: Applies a sepia effect, giving a warm tone to the background. `0%` is the original, and `100%` is fully sepia.
+- **none**: No effect is applied.
+- **initial**: Sets the property to its default value.
+- **inherit**: Inherits the property value from the parent element.
+
+### Code Example:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Underline Position</title>
+  <style>
+    #container {
+    	width: 600px;
+    	height: 600px;
+    	border: 1px solid #000;
+    	background: url(https://source.unsplash.com/user/erondu/1600x900) no-repeat;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+    }
+    #inner {
+    	color: #fff;
+    	text-align: center;
+		width: 400px;
+		height: 250px;
+		border: 2px solid #fff;
+		border-radius: 5px;
+		backdrop-filter: blur(4px) saturate(70%);
+    }
+  </style>
+</head>
+<body>
+ 	<div id="container">
+ 		<div id="inner">
+ 			<h1>Yahoo Baba</h1>
+ 		</div>
+ 	</div>
+</body>
+</html>
+```
+
+### Explanation:
+- The `backdrop-filter` property is applied to the `#inner` element, which applies a blur and saturation effect to the background image behind it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS3 `:is()` Pseudo-Class
+
+The `:is()` pseudo-class in CSS is used to simplify complex selectors by grouping multiple selectors together. This allows for a more efficient way to apply the same styles to various elements without repeating the styles for each selector.
+
+### Syntax:
+```css
+:is(selector1, selector2, ...)
+```
+
+The `:is()` function accepts a comma-separated list of selectors, and it matches any element that matches one of the selectors in the list.
+
+### Code Example:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>:is Pseudo Class</title>
+  <style>
+    /* Grouping selectors with :is() */
+    :is(#test1, #test2) :is(h1, p) {
+      font-family: arial;
+      color: red;
+    }
+
+    /* Applying hover effect using :is() */
+    :is(#test1, #test2) p:hover {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+	<h1>Heading Outside Div</h1>
+ 	<div id="test1">
+		<h1>Section One</h1>
+		<h2>Sub Heading</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula risus, fermentum a elit quis, scelerisque bibendum mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec et enim diam. Quisque vel lorem rutrum, convallis nunc id, facilisis nibh. Phasellus hendrerit ornare mi ut pretium. Nam pulvinar aliquet nulla nec vestibulum. In ut turpis justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae</p>
+		<h3>Sub Heading 2</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula risus, fermentum a elit quis</p>
+	</div>
+	<div id="test2">
+		<h1>Section Two</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula risus, fermentum a elit quis, scelerisque bibendum mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec et enim diam. Quisque vel lorem rutrum, convallis nunc id, facilisis nibh. Phasellus hendrerit ornare mi ut pretium. Nam pulvinar aliquet nulla nec vestibulum. In ut turpis justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae</p>
+	</div>
+</body>
+</html>
+```
+
+### Explanation:
+- The first rule targets the `h1` and `p` elements inside both the `#test1` and `#test2` divs, applying a red font color and Arial font family.
+- The second rule changes the color of any `p` element inside the `#test1` or `#test2` div to green when hovered over.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Text-orientation
+
+The `text-orientation` property in CSS is used to specify the orientation of characters when the text is displayed vertically. This property is effective only in vertical writing mode and does not affect horizontal text.
+
+### Property Values:
+
+| **Value**               | **Description**                                                                 |
+|-------------------------|---------------------------------------------------------------------------------|
+| `mixed`                 | Default value. It rotates characters 90° clockwise, setting vertical text naturally. |
+| `upright`               | Keeps horizontal scripts upright and treats vertical scripts as left-to-right.  |
+| `sideways`              | Rotates the text 90° clockwise, displaying the text horizontally. This value works only in Firefox. |
+| `sideways-right`        | Alias for `sideways`, kept for compatibility.                                   |
+| `use-glyph-orientation` | Deprecated and no longer used.                                                 |
+| `initial`               | Sets the property to its default value.                                         |
+| `inherit`               | Inherits the property from its parent element.                                  |
+
+### Example:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text-Orientation</title>
+  <style>
+    #test {
+		width: 550px;
+		border: 2px solid #000;
+		font: 17px arial;
+		padding: 10px;
+		writing-mode: vertical-lr;
+		text-orientation: upright;
+		/*text-orientation: mixed;*/
+	}
+  </style>
+</head>
+<body>
+ 	<div id="test">
+		<h1>Yahoo Baba</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula risus, fermentum a elit quis, scelerisque bibendum mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec et enim diam. Quisque vel lorem rutrum, convallis nunc id, facilisis nibh. Phasellus hendrerit ornare mi ut pretium. Nam pulvinar aliquet nulla nec vestibulum. In ut turpis justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae</p>
+	</div>
+</body>
+</html>
+```
+
+### Explanation:
+- The `#test` div uses the `writing-mode: vertical-lr;` property to set the text flow vertically.
+- The `text-orientation: upright;` property ensures that the text appears in an upright position in the vertical writing mode.
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+
+# CSS :focus-within Pseudo Class
+
+The `:focus-within` pseudo-class selects an element that contains a focused child element. This means the CSS rules are applied when any child element (like an input or link) within the element receives focus.
+
+### Syntax:
+```css
+:focus-within {
+    /* CSS Properties */
+}
+```
+
+### Example:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>:focus-within</title>
+  <style>
+    *{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	body{
+		font-family: Roboto, Helvetica, Arial;
+		line-height: 1.4;
+		padding: 20px 10%;
+		background: #3c889b;
+	}
+	
+	form{
+		background: white;
+	}
+    form:focus-within {
+        background: #ffeaa7;
+    }
+
+    form header {
+        padding: 2rem;
+    }
+
+    form header div {
+        font-size: 90%;
+        color: #999;
+    }
+
+    form header h2 {
+        margin: 0 0 5px 0;
+    }
+
+    form > div {
+        clear: both;
+        overflow: hidden;
+        padding: 0.5rem 2rem;
+    }
+
+    form > div:focus-within {
+        background: #81ecec;
+    }
+
+    form > div:last-child {
+        padding-bottom: 2rem;
+    }
+
+    form > div > fieldset > div > div {
+        margin: 0 0 5px 0;
+    }
+
+    form > div > label, legend {
+        width: 25%;
+        float: left;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+
+    form > div > div, form > div > fieldset > div {
+        width: 75%;
+        float: right;
+    }
+
+    form > div > fieldset label {
+        font-size: 90%;
+    }
+
+    fieldset {
+        border: 0;
+        padding: 0;
+    }
+
+    input[type=text], input[type=email], input[type=url], input[type=password], textarea {
+        width: 100%;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+
+    input[type=text], input[type=email], input[type=url], input[type=password] {
+        width: 50%;
+    }
+
+    input[type=text]:focus, input[type=email]:focus, input[type=url]:focus, input[type=password]:focus, textarea:focus {
+        outline: 0;
+        border-color: #4697e4;
+    }
+  </style>
+</head>
+<body>
+  <form action="#">
+    <header>
+      <h2>CSS :focus-within Pseudo Class</h2>
+    </header>
+    <div>
+      <label for="fullname">Full Name</label>
+      <div>
+        <input id="fullname" type="text" value="" autocomplete="off">
+      </div>
+    </div>
+    <div>
+      <label for="fullname">Email</label>
+      <div>
+        <input id="fullname" type="email" value="" autocomplete="off">
+      </div>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Gender</legend>
+        <div>
+          <div>
+            <input type="radio" name="gender">
+            <label for="">Male</label>
+          </div>
+          <div>
+            <input type="radio" name="gender">
+            <label for="">Female</label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Hobbies</legend>
+        <div>
+          <div>
+            <input type="checkbox" name="hobbies">
+            <label for="">Travel</label>
+          </div>
+          <div>
+            <input type="checkbox" name="hobbies">
+            <label for="">Reading Books</label>
+          </div>
+          <div>
+            <input type="checkbox" name="hobbies">
+            <label for="">Photography</label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </form>
+</body>
+</html>
+```
+
+### Explanation:
+- The `form:focus-within` selector changes the background color of the form when any child element inside the form is focused.
+- The `form > div:focus-within` selector changes the background of the div to a different color when any child element inside the div is focused.
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+# CSS Display Table
+
+The CSS `display` property is used to set whether an element is treated as a block or inline box and the layout used for its children, such as flow layout, grid, or flex.
+
+The `table` value of the `display` property is used to define an element as a table.
+
+- The `table-cell` value is used to define an element as a table cell.
+- The `table-row` value is used to define an element as a table row.
+
+You can use the `table-layout` CSS property to set the algorithm used to lay out `<table>` cells, rows, and columns. By default, most browsers use an automatic table layout algorithm, which adjusts the widths of the table and its cells to fit the content.
+
+### Example:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display : Table</title>
+  <style>
+    body{
+		font-family: arial;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	h1{
+		text-align: center;
+		margin-bottom; 20px;
+	}
+	#table{
+		display: table;
+		width: 600px;
+		border: 1px solid #000;
+		margin: 0 auto;
+	}
+	.row{
+		display: table-row;
+	}
+	.col{
+		border: 1px solid #000;
+		padding: 10px;
+		display: table-cell;
+	}
+	#table-header{
+		display: table-header-group;
+		background: lightblue;
+		text-align: center;
+		font-weight: bold;
+	}
+	#table-footer{
+		display: table-footer-group;
+		background: lightgreen;
+	}
+	#row-group{
+		/*background: pink;*/ 
+		display: table-row-group;
+	}
+	#table-colgroup{
+		display: table-column-group;
+	}
+	.table-col{
+		display: table-column;
+	}
+	.col-2{
+		background: pink;
+		width: 400px;
+	}
+	.col-1{
+		background: yellowgreen;
+	}
+	.caption{
+		display: table-caption;
+		text-align: center;
+		text-transform: uppercase;
+		color: red;
+	}
+  </style>
+</head>
+<body>
+	<h1>Display : Table</h1>
+ 	
+	<div id="table">
+		<div class="caption">
+			<h3>Student Information</h3>
+		</div>
+		<div id="table-colgroup">
+			<div class="table-col col-1">Col 1</div>
+			<div class="table-col col-2">Col 2</div>
+			<div class="table-col col-3">Col 3</div>
+		</div>
+		<div id="table-header">
+			<div class="col">Roll No.</div>
+			<div class="col">Student Name</div>
+			<div class="col">Age</div>
+		</div>
+		<div id="row-group">
+			<div class="row">
+				<div class="col">1</div>
+				<div class="col">Yahoo Baba</div>
+				<div class="col">25</div>
+			</div>
+			<div class="row">
+				<div class="col">2</div>
+				<div class="col">Salman Khan</div>
+				<div class="col">24</div>
+			</div>
+			<div class="row">
+				<div class="col">3</div>
+				<div class="col">Shahid Kapoor</div>
+				<div class="col">23</div>
+			</div>
+		</div>
+		<div id="table-footer">
+			<div class="col"></div>
+			<div class="col">Total Records :</div>
+			<div class="col">3</div>
+		</div>
+	</div>
+</body>
+</html>
+```
+
+### Explanation:
+- The `#table` div is displayed as a table with borders.
+- The `#table-header`, `#table-footer`, and `#row-group` are used to define the respective parts of the table.
+- The `display: table-cell` property is applied to the `.col` class to make the elements act as table cells.
+- The `caption` class is used to display a caption for the table, centered and with a red color.
