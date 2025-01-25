@@ -4577,3 +4577,513 @@ You can use the `table-layout` CSS property to set the algorithm used to lay out
 - The `#table-header`, `#table-footer`, and `#row-group` are used to define the respective parts of the table.
 - The `display: table-cell` property is applied to the `.col` class to make the elements act as table cells.
 - The `caption` class is used to display a caption for the table, centered and with a red color.
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Accent-Color
+
+The `accent-color` property in CSS specifies the color of user interface elements/controls like checkboxes, radio buttons, range, and progress elements.
+
+### Syntax:
+```css
+accent-color: auto | <color> | initial | inherit;
+```
+
+### Property Values:
+- **auto**: This represents the UA-chosen color that will set the accent color for the control elements.
+- **<color>**: Specifies the color for an accent color in RGB representation, hex representation, or with the color name.
+- **initial**: Sets the `accent-color` property to its default value. The default value of this property is `auto`.
+- **inherit**: Inherits this property from its parent component.
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+# CSS Prefers-color-scheme
+
+The `prefers-color-scheme` media query lets you create light and dark color schemes based on your system preferences. In browsers that support `prefers-color-scheme` queries, the background of this page will be green. Otherwise, the background will be orange.
+
+### Example:
+```css
+body {
+    background-color: #d70;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #0f0;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0f0;
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+# CSS3 Aspect-Ratio
+
+The `aspect-ratio` property allows you to define the ratio between the width and height of an element.
+
+If both `aspect-ratio` and `width` properties are set, the height will follow the defined aspect ratio.
+
+### Syntax
+```css
+aspect-ratio: number/number | initial | inherit;
+```
+
+### Property Values
+| Property Value | Description |
+| -------------- | ----------- |
+| `number`       | The first number specifies the width in the aspect ratio. |
+| `number`       | The second number specifies the height in the aspect ratio. If not set, the default height number is 1. |
+| `initial`      | Sets this property to its default value. |
+| `inherit`      | Inherits this property from its parent element. |
+```
+
+
+
+
+
+
+
+
+
+```
+
+# CSS Display-Mode @media rule
+
+The `display-mode` is a CSS media feature that selectively applies CSS based on the display mode of the application.
+
+### Example
+```css
+@media all and (display-mode: fullscreen) {
+    body {
+        margin: 0;
+        border: 5px solid black;
+    }
+}
+``` 
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Fullscreen Pseudo class
+
+The `:fullscreen` selector is used to select the element(s) that are in full-screen mode.
+
+### Syntax
+```css
+:fullscreen {
+    /* CSS declarations */
+}
+```
+
+### Example
+Set the background color to yellow when the page is in full-screen mode:
+```css
+:fullscreen {
+    background-color: yellow;
+}
+``` 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CSS Min(), Max(), Clamp() Function
+
+The `min()`, `max()`, and `clamp()` functions in CSS allow you to work with dynamic and responsive values by applying different logic based on the given values.
+
+### 1. `min()` Function
+The `min()` function allows you to set a property to the smallest value from a given list of values.
+
+#### Syntax:
+```css
+min(value1, value2, ...);
+```
+
+#### Example:
+```css
+div {
+    width: min(50%, 300px);
+}
+```
+This will set the width to the smaller of 50% of the parent element's width or 300px.
+
+---
+
+### 2. `max()` Function
+The `max()` function allows you to set a property to the largest value from a given list of values.
+
+#### Syntax:
+```css
+max(value1, value2, ...);
+```
+
+#### Example:
+```css
+div {
+    width: max(20%, 200px);
+}
+```
+This will set the width to the larger of 20% of the parent element's width or 200px.
+
+---
+
+### 3. `clamp()` Function
+The `clamp()` function allows you to set a value that is bound within a defined minimum and maximum range.
+
+#### Syntax:
+```css
+clamp(minimum, preferred, maximum);
+```
+
+#### Example:
+```css
+div {
+    font-size: clamp(12px, 5vw, 24px);
+}
+```
+This will set the font size to be at least `12px`, at most `24px`, and ideally `5vw` based on the viewport width.
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+# CSS :has Pseudo Class
+
+The CSS `:has()` pseudo-class is a relatively new feature that enables developers to select elements based on their children. This powerful tool allows for more specific and dynamic styling, which can be used alongside other pseudo-classes and selectors.
+
+The `:has()` pseudo-class selects a parent element if it contains the specified children. You can also combine it with the `:not()` pseudo-class to select elements that do not have certain children.
+
+### Syntax:
+```css
+parent:has(child) {
+  /* CSS properties */
+}
+```
+
+### Example 1: Select a `div` element if it contains a `button` element:
+```css
+div:has(button) {
+    border: 2px solid blue;
+}
+```
+In this example, any `div` that contains a `button` will have a blue border.
+
+### Example 2: Select a `form` element that contains an input of type `text`:
+```css
+form:has(input[type="text"]) {
+    background-color: lightgreen;
+}
+```
+Here, the `form` element will have a light green background if it contains an `input` element of type `text`.
+
+### Example 3: Using `:not()` with `:has()` to select elements that do not have a `p` tag:
+```css
+div:has(:not(p)) {
+    background-color: yellow;
+}
+```
+This will apply a yellow background to `div` elements that do not contain a `p` tag.
+```
+
+
+
+
+
+
+
+
+
+```
+# CSS @page At-rule
+
+The CSS `@page` rule defines the dimensions of the page for printing. When you want to print a web page, several factors must be controlled, such as page size, orientation, margins, borders, and padding. The `@page` rule helps manage these elements for a printed page.
+
+### Things You Can Control with `@page`:
+- Page size, orientation, margins, borders, and padding.
+- Page breaks.
+- Headers and footers.
+- Page counters.
+- Orphans (the first line of a paragraph that appears alone on a new page).
+
+### Syntax:
+```css
+@page [:left | :right | :first] {
+    /* print-specific rules */
+}
+```
+
+### Page Descriptors:
+There are three descriptors in the `@page` rule:
+
+1. **size**: Specifies the size of the page box's containing block.
+   ```css
+   @page {
+       size: A4;
+   }
+   ```
+   In this example, the page size is set to A4.
+
+2. **marks**: Helps trim the page when printing.
+   ```css
+   @page {
+       marks: crop cross;
+   }
+   ```
+   This will add crop marks and cross marks for trimming the page.
+
+3. **bleed**: Extends the bleed area of the box to ensure no white margins on the printed page.
+   ```css
+   @page {
+       bleed: 7pt;
+   }
+   ```
+   This adds a bleed area of 7 points around the page.
+
+### Example:
+```css
+@page {
+    size: A4;
+    margin: 1in;
+    bleed: 5mm;
+    marks: crop cross;
+}
+```
+This CSS rule specifies an A4 page size, sets a 1-inch margin, adds a 5mm bleed area, and includes crop and cross marks for printing.
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+# CSS Break-Before, Break-After, & Break-Inside
+
+### CSS Break-Before
+The `break-before` property specifies whether a page break, column break, or region break should occur before the specified element.
+
+#### Syntax:
+```css
+break-before: auto|all|always|avoid|avoid-column|avoid-page|avoid-region|column|left|page|recto|region|right|verso|initial|inherit;
+```
+
+#### Property Values:
+- **auto**: Default. Automatic page/column/region break before the element.
+- **all**: Always insert a page-break right before the principal box.
+- **always**: Always insert a page-break before the element.
+- **avoid**: Avoid a page/column/region break before the element.
+- **avoid-column**: Avoid a column-break before the element.
+- **avoid-page**: Avoid a page-break before the element.
+- **avoid-region**: Avoid a region-break before the element.
+- **column**: Always insert a column-break before the element.
+- **left**: Insert page-breaks so the next page is formatted as a left page.
+- **page**: Always insert a page-break before the element.
+- **recto**: Insert page-breaks so the next page is formatted as a recto page.
+- **region**: Always insert a region-break before the element.
+- **right**: Insert page-breaks so the next page is formatted as a right page.
+- **verso**: Insert page-breaks so the next page is formatted as a verso page.
+- **initial**: Sets this property to its default value.
+- **inherit**: Inherits this property from its parent element.
+
+### CSS Break-After
+The `break-after` property specifies whether a page break, column break, or region break should occur after the specified element.
+
+#### Syntax:
+```css
+break-after: auto|all|always|avoid|avoid-column|avoid-page|avoid-region|column|left|page|recto|region|right|verso|initial|inherit;
+```
+
+#### Property Values:
+- **auto**: Default. Automatic page/column/region break after the element.
+- **all**: Always insert a page-break right after the principal box.
+- **always**: Always insert a page-break after the element.
+- **avoid**: Avoid a page/column/region break after the element.
+- **avoid-column**: Avoid a column-break after the element.
+- **avoid-page**: Avoid a page-break after the element.
+- **avoid-region**: Avoid a region-break after the element.
+- **column**: Always insert a column-break after the element.
+- **left**: Insert page-breaks so the next page is formatted as a left page.
+- **page**: Always insert a page-break after the element.
+- **recto**: Insert page-breaks so the next page is formatted as a recto page.
+- **region**: Always insert a region-break after the element.
+- **right**: Insert page-breaks so the next page is formatted as a right page.
+- **verso**: Insert page-breaks so the next page is formatted as a verso page.
+- **initial**: Sets this property to its default value.
+- **inherit**: Inherits this property from its parent element.
+
+### CSS Break-Inside
+The `break-inside` property specifies whether a page break, column break, or region break should occur inside the specified element.
+
+#### Syntax:
+```css
+break-inside: auto|all|always|avoid|avoid-column|avoid-page|avoid-region|column|left|page|recto|region|right|verso|initial|inherit;
+```
+
+#### Property Values:
+- **auto**: Default. Automatic page/column/region break inside the element.
+- **avoid**: Avoid a page/column/region break inside the element.
+- **avoid-column**: Avoid a column-break inside the element.
+- **avoid-page**: Avoid a page-break inside the element.
+- **avoid-region**: Avoid a region-break inside the element.
+- **initial**: Sets this property to its default value.
+- **inherit**: Inherits this property from its parent element.
+```
+
+
+
+
+
+
+
+
+
+```
+# CSS Inset
+
+The `inset` property in CSS is used to define physical offset, not for the inline offset or logical block. This property can apply to any writing-mode property.
+
+### Syntax:
+```css
+inset: length|percentage|auto|inherit|initial|unset;
+```
+
+### Property Values:
+- **length**: Sets a fixed value defined in units such as `px`, `cm`, `pt`, etc. Negative values are also allowed. Its default value is `0px`.
+- **percentage**: Similar to length, but sets the size as a percentage of the window size.
+- **auto**: Used when it is desired that the browser determines the inset size.
+- **initial**: Resets the `inset` property to its default value.
+- **inherit**: Inherits the `inset` property value from its parent element.
+- **unset**: Unsets the `inset` property, which is also the default value.
+```
+```
+# CSS Object-View-Box
+
+To specify a view box over an element, use the `object-view-box` property with the `inset()` function to control the four edges. The `inset()` function is a shorthand way to specify values for the element’s top, right, bottom, and left properties, in that order.
+```
+
+
+
+
+```
+# CSS Hyphens & Hyphenate-Characters
+
+This CSS property is used to control the hyphenation of the text in block-level elements. It defines how a word is hyphenated if it is too long or when the text wraps across multiple lines. This property allows us to split the word into two lines to improve the text layout.
+
+### Syntax:
+```css
+hyphens: none | manual | auto | initial | inherit;
+```
+
+### Property Values:
+- **none**: This value does not hyphenate the words. It never hyphenates the words at line breaks or even if the word is too long.
+  
+- **manual**: The default value. It hyphenates the word only when the characters in the word suggest hyphenation opportunities. Two Unicode characters are defined for this:
+  - **U+2010 (HYPHEN)**: A 'hard' hyphen character that specifies a visible line-break opportunity. The hyphen is rendered, even if the line is not broken at that point.
+  - **U+00AD (SHY)**: An invisible 'soft' hyphen. It is not visibly rendered but marks where the word should break. In HTML, we can use `&shy;` for a soft hyphen.
+
+- **auto**: The algorithm automatically decides where the words are hyphenated.
+
+- **initial**: Sets the property to its default value.
+
+- **inherit**: Inherits the value from its parent element.
+```
+
+
+
+
+
+
+```
+# CSS Nesting
+
+The nesting property in CSS facilitates nesting one style rule inside another, with the selector of the child rule that is relative to the selector of the parent rule. It helps to increase the modularity and maintainability of CSS stylesheets & hence increase the overall readability of the code. For instance, if you write a structured CSS module, instead of specifying the separate selectors for every HTML element (i.e., by using many classes or ID selectors), you can simply specify properties to selectors within other selectors. While nesting the CSS properties, HTML elements form a tree-structured shape. Nesting is a shortcut to create CSS rules for multiple selectors for a specific property. So, instead of rewriting the same set of properties for the different selectors, we can simply nest selectors inside other selectors. For this reason, we are not only reducing the size of the code but also reducing the overall loading time.
+
+### Syntax:
+```css
+class1_selector class2_selector id_selector  {
+  property: value;
+}
+```
+```
