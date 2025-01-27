@@ -85,7 +85,7 @@ To create a grid container:
     </style>
 </head>
 <body>
-    <h1>Yahoo Baba : CSS Grid</h1>
+    <h1>uzair . : CSS Grid</h1>
 
     <div class="container">
         <div class="items items1">First</div>
@@ -160,7 +160,7 @@ grid-gap: grid-row-gap grid-column-gap;
 	</style>
 </head>
 <body>
-	<h1>Yahoo Baba : CSS Grid Gap</h1>
+	<h1>uzair . : CSS Grid Gap</h1>
 
 	<div class="container">
 		<div class="items items1">First</div>
@@ -265,7 +265,7 @@ grid-area: 2 / 2 / 3 / 3;
 	</style>
 </head>
 <body>
-	<h1>Yahoo Baba : CSS Grid Items Positioning</h1>
+	<h1>uzair . : CSS Grid Items Positioning</h1>
 
 	<div class="container">
 		<div class="items items1">First</div>
@@ -370,7 +370,7 @@ This will make the item start at the first column and span three columns.
 	</style>
 </head>
 <body>
-	<h1>Yahoo Baba : CSS Spanning of Grid Items</h1>
+	<h1>uzair . : CSS Spanning of Grid Items</h1>
 
 	<div class="container">
 		<div class="items items1">First</div>
@@ -664,7 +664,7 @@ grid-template-columns: minmax(100px, 1fr);
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Grid MinMax() Function</h1>
+  <h1>uzair . : CSS Grid MinMax() Function</h1>
   <div class="container">
     <div class="items item1">One Lorem ipsum dolor sit amet.</div>
     <div class="items item2">Two</div>
@@ -872,7 +872,7 @@ You can use the following properties to position the grid itself within its cont
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Grid Items Alignment</h1>
+  <h1>uzair . : CSS Grid Items Alignment</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -972,7 +972,7 @@ You can use the following properties for grid track alignment:
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Grid Tracks Alignment</h1>
+  <h1>uzair . : CSS Grid Tracks Alignment</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -1103,7 +1103,7 @@ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Grid Auto-fill and Auto-fit</h1>
+  <h1>uzair . : CSS Grid Auto-fill and Auto-fit</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -1217,7 +1217,7 @@ grid-template-columns: minmax(150px, fit-content(300px));
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Grid Fit-Content</h1>
+  <h1>uzair . : CSS Grid Fit-Content</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -1326,7 +1326,7 @@ The `order` property is used to specify the order of a flexible item inside the 
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Grid Order</h1>
+  <h1>uzair . : CSS Grid Order</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -1406,7 +1406,7 @@ Grid items can become grids themselves with CSS grid layout. You can then place 
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Grid - Nested Grids</h1>
+  <h1>uzair . : CSS Grid - Nested Grids</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -1506,7 +1506,7 @@ The `z-index` property specifies the stack order of an element. An element with 
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : Overlapping Grid Items</h1>
+  <h1>uzair . : Overlapping Grid Items</h1>
 
   <div class="container">
     <div class="items item1">One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, porro.</div>

@@ -1,3 +1,245 @@
+
+# HTML Introduction
+HTML is the standard markup language for creating Web pages.
+
+## What is HTML?
+- HTML stands for Hyper Text Markup Language.
+- HTML is the standard markup language for creating Web pages.
+- HTML describes the structure of a Web page.
+- HTML consists of a series of elements.
+- HTML elements tell the browser how to display the content.
+- HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+
+## A Simple HTML Document
+
+### Example
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+```
+
+### Example Explained
+- The `<!DOCTYPE html>` declaration defines that this document is an HTML5 document.
+- The `<html>` element is the root element of an HTML page.
+- The `<head>` element contains meta information about the HTML page.
+- The `<title>` element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab).
+- The `<body>` element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+- The `<h1>` element defines a large heading.
+- The `<p>` element defines a paragraph.
+
+```
+
+
+
+
+```
+# HTML Elements
+An HTML element is defined by a start tag, some content, and an end tag.
+
+## HTML Elements
+The HTML element is everything from the start tag to the end tag:
+
+```html
+<tagname>Content goes here...</tagname>
+```
+
+Examples of some HTML elements:
+
+```html
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+```
+
+| Start tag | Element content | End tag |
+| --------- | --------------- | ------- |
+| `<h1>`    | My First Heading | `</h1>` |
+| `<p>`     | My first paragraph. | `</p>` |
+| `<br>`    | none            | none    |
+
+**Note:** Some HTML elements have no content (like the `<br>` element). These elements are called **empty elements**. Empty elements do not have an end tag!
+
+## Nested HTML Elements
+HTML elements can be nested (this means that elements can contain other elements).
+
+All HTML documents consist of nested HTML elements.
+
+The following example contains four HTML elements (`<html>`, `<body>`, `<h1>`, and `<p>`):
+
+### Example
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+```
+
+### Example Explained
+- The `<html>` element is the root element and it defines the whole HTML document.  
+  It has a start tag `<html>` and an end tag `</html>`.
+- Inside the `<html>` element, there is a `<body>` element:
+  ```html
+  <body>
+  <h1>My First Heading</h1>
+  <p>My first paragraph.</p>
+  </body>
+  ```
+  The `<body>` element defines the document's body. It has a start tag `<body>` and an end tag `</body>`.
+- Inside the `<body>` element, there are two other elements: `<h1>` and `<p>`:
+  ```html
+  <h1>My First Heading</h1>
+  <p>My first paragraph.</p>
+  ```
+  The `<h1>` element defines a heading. It has a start tag `<h1>` and an end tag `</h1>`.
+  The `<p>` element defines a paragraph. It has a start tag `<p>` and an end tag `</p>`.
+
+## Never Skip the End Tag
+Some HTML elements will display correctly, even if you forget the end tag:
+
+### Example
+```html
+<html>
+<body>
+
+<p>This is a paragraph
+<p>This is a paragraph
+
+</body>
+</html>
+```
+
+However, **never rely on this!** Unexpected results and errors may occur if you forget the end tag!
+
+## Empty HTML Elements
+HTML elements with no content are called empty elements.
+
+The `<br>` tag defines a line break and is an empty element without a closing tag:
+
+### Example
+```html
+<p>This is a <br> paragraph with a line break.</p>
+```
+
+## HTML is Not Case Sensitive
+HTML tags are not case sensitive: `<P>` means the same as `<p>`.
+
+The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.
+
+## Additional Data
+
+### Common Empty HTML Elements
+- `<br>`: Line break
+- `<img>`: Image
+- `<hr>`: Horizontal rule
+- `<input>`: Input field
+- `<meta>`: Metadata for a document
+```
+
+
+
+
+
+
+
+```
+# HTML Attributes
+HTML attributes provide additional information about HTML elements.
+
+## HTML Attributes
+- All HTML elements can have attributes.
+- Attributes provide additional information about elements.
+- Attributes are always specified in the start tag.
+- Attributes usually come in name/value pairs like: `name="value"`
+
+## The `href` Attribute
+The `<a>` tag defines a hyperlink. The `href` attribute specifies the URL of the page the link goes to:
+
+### Example
+```html
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+```
+
+## Additional Data
+
+### Common HTML Attributes
+- `href`: Specifies the URL for a hyperlink.
+- `src`: Specifies the source file for an image.
+- `alt`: Provides alternative text for an image.
+- `class`: Defines one or more class names for an element (used for CSS or JavaScript).
+- `id`: Specifies a unique identifier for an element.
+- `style`: Defines inline CSS for an element.
+- `target`: Specifies where to open the linked document (e.g., `_blank` for a new tab).
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
 ## **HTML Formatting**  
 
 HTML formatting is used to enhance the appearance of text on a web page. It includes various tags that define how text should be displayed, such as bold, italic, underlined, and highlighted text.
@@ -696,7 +938,7 @@ The `<pre>` HTML element is used to define **preformatted text**. The text insid
   </head>
 
   <body>
-     <pre>                Hello              World                 YahooBaba</pre>
+     <pre>                Hello              World                 uzair.</pre>
   </body>
 </html>
 ```
@@ -1002,7 +1244,7 @@ The HTML `<a>` tag is used to create hyperlinks. Hyperlinks are clickable links 
     <title>Anchor Tag</title>
   </head>
   <body>
-    <a href="https://www.yahoobaba.net">Go to YahooBaba</a>
+    <a href="https://www.uzair..net">Go to uzair.</a>
   </body>
 </html>
 ```
@@ -1023,7 +1265,7 @@ The `target` attribute specifies where to open the linked document. The value `_
     <title>Anchor Tag</title>
   </head>
   <body>
-    <a href="https://www.yahoobaba.net" target="_blank">Go to YahooBaba</a>
+    <a href="https://www.uzair..net" target="_blank">Go to uzair.</a>
   </body>
 </html>
 ```
@@ -1084,7 +1326,7 @@ I have checked the information based on your request and reviewed HTML documenta
    **Example**:
 
    ```html
-   <a href="mailto:hello@yahoobaba.net?subject=Hello World&cc=someone@domain.com&bcc=another@domain.com&body=this is just test">Contact Us</a>
+   <a href="mailto:hello@uzair..net?subject=Hello World&cc=someone@domain.com&bcc=another@domain.com&body=this is just test">Contact Us</a>
    ```
 
 ### Internal Page Link
@@ -1122,7 +1364,7 @@ Here is an example of how to create an internal link:
 ### Mail to link
 
 To create a link to an email address in HTML, you can use the `<a>` tag with the `href` attribute set to “mailto:” followed by the email address.  
-In this example, clicking on the link will open the default email client with the recipient set to “<hello@yahoobaba.net>” with subject as Hello World and body as this is just test.
+In this example, clicking on the link will open the default email client with the recipient set to “<hello@uzair..net>” with subject as Hello World and body as this is just test.
 
 ```html
 <html>
@@ -1130,7 +1372,7 @@ In this example, clicking on the link will open the default email client with th
   <title>Anchor Tag II</title>
  </head>
  <body>
-  <a href="mailto:hello@yahoobaba.net?subject=Hello World&body=this is just test">Contact Us</a>
+  <a href="mailto:hello@uzair..net?subject=Hello World&body=this is just test">Contact Us</a>
  </body>
 </html>
 ```
@@ -1336,7 +1578,7 @@ The HTML `<form>` element is used to create an HTML form for user input.
       <br><br>
 
       <label>Message</label> 
-      <textarea rows="10" cols="60">Yahoo baba</textarea> 
+      <textarea rows="10" cols="60">uzair .</textarea> 
       <br><br>
     </form>
   </body>
@@ -1374,7 +1616,7 @@ Here is the Example of Simple Form containing labels.
 			
 			<label>Hobbies</label> <input type="checkbox" name="hobby" id="music" /><label for="music">Music</label> <input type="checkbox" name="hobby" id="football"><label for="football">Football</label> <br><br>
 		
-			<label>Message</label> <textarea rows="10" cols="60">Yahoo baba</textarea> <br><br>
+			<label>Message</label> <textarea rows="10" cols="60">uzair .</textarea> <br><br>
 		</form>
 	</body>
 </html>
@@ -1443,7 +1685,7 @@ The `<datalist>` tag specifies a list of pre-defined options for an `<input>` el
             <input type="checkbox" name="hobby" id="football"><label for="football">Football</label> <br><br>
 		
 			<label>Message</label>
-            <textarea rows="10" cols="60">Yahoo baba</textarea> <br><br>
+            <textarea rows="10" cols="60">uzair .</textarea> <br><br>
 			
 			<label>Country</label>
             <select name="" size="3" multiple>
@@ -1757,3 +1999,311 @@ The `<input type="image">` defines an image as a submit button. The path to the 
 
 *Reference: [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)*
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# HTML Semantic Elements
+
+## Semantic Elements
+Semantic elements are elements that carry meaning, both for the browser and the developer.
+
+### What are Semantic Elements?
+A semantic element clearly describes its meaning to both the browser and the developer.
+
+#### Examples of non-semantic elements:
+- `<div>` and `<span>`: Do not provide any information about the content.
+
+#### Examples of semantic elements:
+- `<form>`, `<table>`, and `<article>`: Clearly define their content.
+
+## Semantic Elements in HTML
+In many websites, HTML code like:
+```html
+<div id="nav">
+  <div class="header">
+    <div id="footer">
+```
+is used to indicate navigation, header, and footer. HTML provides several semantic elements to define different parts of a webpage:
+
+- `<article>`
+- `<aside>`
+- `<details>`
+- `<figcaption>`
+- `<figure>`
+- `<footer>`
+- `<header>`
+- `<main>`
+- `<mark>`
+- `<nav>`
+- `<section>`
+- `<summary>`
+- `<time>`
+
+### HTML `<section>` Element
+The `<section>` element defines a section in a document. 
+
+According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."
+
+#### Examples of where a `<section>` element can be used:
+- Chapters
+- Introduction
+- News items
+- Contact information
+
+### Example:
+```html
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+<section>
+  <h1>WWF's Panda symbol</h1>
+  <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+</section>
+```
+
+### HTML `<article>` Element
+The `<article>` element specifies independent, self-contained content.
+
+An article should make sense on its own, and it should be possible to distribute it independently from the rest of the website.
+
+#### Examples of where the `<article>` element can be used:
+- Forum posts
+- Blog posts
+- User comments
+- Product cards
+- Newspaper articles
+
+### Example 1:
+```html
+<article>
+  <h2>Google Chrome</h2>
+  <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</article>
+
+<article>
+  <h2>Mozilla Firefox</h2>
+  <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+</article>
+
+<article>
+  <h2>Microsoft Edge</h2>
+  <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+</article>
+```
+
+### Example 2 - Using CSS to Style the `<article>` Element:
+```html
+<html>
+<head>
+<style>
+.all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+
+.browser {
+  background: white;
+}
+
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+</style>
+</head>
+<body>
+
+<article class="all-browsers">
+  <h1>Most Popular Browsers</h1>
+  <article class="browser">
+    <h2>Google Chrome</h2>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+  </article>
+  <article class="browser">
+    <h2>Mozilla Firefox</h2>
+    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+  </article>
+  <article class="browser">
+    <h2>Microsoft Edge</h2>
+    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+  </article>
+</article>
+
+</body>
+</html>
+```
+
+### Nesting `<article>` in `<section>` or Vice Versa?
+- The `<article>` element specifies independent, self-contained content.
+- The `<section>` element defines a section in a document.
+
+We cannot decide how to nest them based purely on their definitions. Thus, HTML pages might have `<section>` elements containing `<article>` elements, and `<article>` elements containing `<section>` elements.
+
+### HTML `<header>` Element
+The `<header>` element represents a container for introductory content or a set of navigational links. It typically contains:
+- One or more heading elements (`<h1> - <h6>`)
+- Logo or icon
+- Authorship information
+
+Note: Multiple `<header>` elements can be used in one HTML document. However, `<header>` cannot be placed within `<footer>`, `<address>`, or another `<header>` element.
+
+#### Example - Header for an `<article>`:
+```html
+<article>
+  <header>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission:</p>
+  </header>
+  <p>WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.</p>
+</article>
+```
+
+### HTML `<footer>` Element
+The `<footer>` element defines a footer for a document or section. It typically contains:
+- Authorship information
+- Copyright information
+- Contact information
+- Sitemap
+- Back to top links
+- Related documents
+
+Multiple `<footer>` elements can be used in one document.
+
+#### Example - Footer Section:
+```html
+<footer>
+  <p>Author: Hege Refsnes</p>
+  <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+```
+
+### HTML `<nav>` Element
+The `<nav>` element defines a set of navigation links. However, not all links should be inside a `<nav>` element. This element is for major blocks of navigation links, such as main menus.
+
+Browsers and screen readers can use this element to determine whether to skip the initial rendering of this content.
+
+#### Example - Navigation Links:
+```html
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+```
+
+### HTML `<aside>` Element
+The `<aside>` element defines content aside from the main content, such as a sidebar. The content in `<aside>` is indirectly related to the surrounding content.
+
+#### Example 1 - Content Aside:
+```html
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside>
+  <h4>Epcot Center</h4>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+```
+
+#### Example 2 - CSS Styling for `<aside>`:
+```html
+<html>
+<head>
+<style>
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+</style>
+</head>
+<body>
+
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside>
+  <p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+</body>
+</html>
+```
+
+### HTML `<figure>` and `<figcaption>` Elements
+The `<figure>` tag specifies self-contained content, like illustrations, diagrams, photos, or code listings. The `<figcaption>` tag defines a caption for a `<figure>` element.
+
+The `<figcaption>` element can be placed as the first or last child of a `<figure>` element.
+
+#### Example - Image with Caption:
+```html
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli">
+  <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+</figure>
+```
+
+## Why Semantic Elements?
+According to the W3C: "A semantic Web allows data to be shared and reused across applications, enterprises, and communities."
+
+## List of HTML Semantic Elements
+| Tag           | Description                                    |
+|---------------|------------------------------------------------|
+| `<article>`   | Defines independent, self-contained content    |
+| `<aside>`     | Defines content aside from the page content    |
+| `<details>`   | Defines additional details that the user can view or hide |
+| `<figcaption
+
+>`| Defines a caption for a `<figure>` element     |
+| `<figure>`    | Specifies self-contained content, like images |
+| `<footer>`    | Defines a footer for a document or section     |
+| `<header>`    | Defines a header for a document or section     |
+| `<main>`      | Specifies the main content of a document       |
+| `<mark>`      | Specifies text that has been highlighted       |
+| `<nav>`       | Defines navigation links                       |
+| `<section>`   | Defines a section in a document                |
+| `<summary>`   | Defines a summary for a `<details>` element    |
+| `<time>`      | Defines a specific time or date                |
+
+## Additional Data
+
+### HTML5 Semantic Elements Documentation
+For more details on semantic elements, visit the official [HTML5 semantic elements documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+
+### Accessibility and Semantic Elements
+Semantic elements play a crucial role in web accessibility. For instance, screen readers rely on semantic HTML to understand the structure and context of the content on the page.

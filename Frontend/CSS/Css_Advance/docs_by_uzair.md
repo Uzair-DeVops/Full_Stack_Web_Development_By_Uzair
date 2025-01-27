@@ -154,7 +154,7 @@ Fallback values are not used to fix the compatibility of the browser. The fallba
  <body>
   <div id="wrapper">
    <div id="header">
-    <h1>Yahoo Baba</h1>
+    <h1>uzair.</h1>
    </div>
    <div id="menu">
     <ul>
@@ -179,7 +179,7 @@ Fallback values are not used to fix the compatibility of the browser. The fallba
     </ul>
    </div>
    <div id="footer">
-    yahoobaba@copyright 2021.
+    yahoo.@copyright 2021.
    </div>
   </div>  
  </body> 
@@ -303,7 +303,7 @@ clip-path: <clip-source> | [ <basic-shape> || <geometry-box> || none ];
   </head>
   
   <body>
-    <h1>Yahoo Baba : CSS Clip-path</h1>  
+    <h1>uzair. : CSS Clip-path</h1>  
     
     <img src="IMAGE_PATH" alt="">
     <div id="box"></div>
@@ -372,7 +372,7 @@ shape-outside: <basic-shape> | <shape-box> | <image> | none | initial | inherit
 </head>
 
 <body>
- <h1>Yahoo Baba : CSS Shape-outside</h1>
+ <h1>uzair. : CSS Shape-outside</h1>
 
  <img src="IMAGE_PATH" alt="">
 
@@ -457,7 +457,7 @@ It is used to transform the image into a sepia tone. A 0% value represents the o
     </style>
 </head>
 <body>
-    <h1>Yahoo Baba : CSS Filter</h1>        
+    <h1>uzair. : CSS Filter</h1>        
     <img src="IMAGE_PATH" alt="Filtered Image">
 </body>    
 </html>
@@ -578,14 +578,14 @@ transition: (property name) | (duration) | (timing function) | (delay);
     </style>
 </head>
 <body>
-    <h1>Yahoo Baba : CSS Transition</h1>        
+    <h1>uzair. : CSS Transition</h1>        
         
     <div id="box"></div>
     <div id="box2"></div>
     
     <div id="box3">
         <div class="box-content">
-            <h2>Yahoo Baba</h2>
+            <h2>uzair.</h2>
         </div>
     </div>
 </body>    
@@ -667,9 +667,9 @@ There are six main types of transformations which are listed below:
     </style>
 </head>
 <body>
-    <h1>Yahoo Baba: CSS Transform</h1>
+    <h1>uzair.: CSS Transform</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, voluptatem, asperiores reprehenderit fugit atque eos ipsa doloremque alias illum sunt culpa explicabo ducimus distinctio numquam assumenda totam!</p>
-    <div id="box">Yahoo Baba</div>
+    <div id="box">uzair.</div>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, non quos ex dicta voluptatem maxime quod quisquam architecto sunt cupiditate!</p>
 </body>    
 </html>
@@ -833,7 +833,7 @@ This method is used to rotate an element around Z-axis at a given degree.
   </style>
  </head>
  <body>
-  <h1 style="margin-bottom: 50px;">Yahoo Baba : CSS Transform 3D Examples</h1>  
+  <h1 style="margin-bottom: 50px;">uzair. : CSS Transform 3D Examples</h1>  
   <table>
    <tr>
     <td valign="top" width="400px">
@@ -994,9 +994,9 @@ perspective: inherit;
 </head>
 
 <body>
-    <h1>Yahoo Baba : CSS Perspective</h1>		
+    <h1>uzair. : CSS Perspective</h1>		
     <div class="base">
-        <div id="box">Yahoo Baba</div>
+        <div id="box">uzair.</div>
     </div>
 </body>	
 </html>
@@ -1081,10 +1081,10 @@ It is used to inherit the property from its parent element.
 </head>
 
 <body>
-    <h1 style="margin-bottom: 50px;">Yahoo Baba : CSS Transform-Style</h1>		
+    <h1 style="margin-bottom: 50px;">uzair. : CSS Transform-Style</h1>		
                 
     <div class="parent">
-        <div id="box">Yahoo Baba</div>
+        <div id="box">uzair.</div>
     </div>
 
 </body>	
@@ -1179,7 +1179,7 @@ The `backface-visibility` property is one of the CSS3 properties.
 </head>
 
 <body>
-    <h1 style="margin-bottom: 50px;">Yahoo Baba : CSS Backface-Visibility</h1>		
+    <h1 style="margin-bottom: 50px;">uzair. : CSS Backface-Visibility</h1>		
                 
     <div class="card">
         <div class="content">
@@ -1257,8 +1257,8 @@ There are certain animation properties given below:
     </style>
   </head>
   <body>
-    <h1 style="margin-bottom: 50px;">Yahoo Baba : CSS Animation</h1>
-    <div class="card">Yahoo Baba</div>
+    <h1 style="margin-bottom: 50px;">uzair. : CSS Animation</h1>
+    <div class="card">uzair.</div>
   </body>
 </html>
 ```
@@ -1370,7 +1370,7 @@ The `animation-fill-mode` property contains many values which are listed below:
     </style>
   </head>
   <body>
-    <h1 style="margin-bottom: 50px;">Yahoo Baba : CSS Animation-Play-State</h1>
+    <h1 style="margin-bottom: 50px;">uzair. : CSS Animation-Play-State</h1>
     <div class="box"></div>
   </body>
 </html>
@@ -1513,7 +1513,7 @@ The property can take the following values:
     </style>
   </head>
   <body>
-    <h1 style="margin-bottom: 30px;">Yahoo Baba : CSS Object-fit</h1>		
+    <h1 style="margin-bottom: 30px;">uzair. : CSS Object-fit</h1>		
     <div class="container">
       <div class="box">
         <img src="https://picsum.photos/300/400" alt="">
@@ -1616,7 +1616,7 @@ user-select: auto | none | text | all;
   </head>
 	
   <body>
-    <h1 style="margin-bottom: 50px;">Yahoo Baba : CSS User-select</h1>		
+    <h1 style="margin-bottom: 50px;">uzair. : CSS User-select</h1>		
 					
     <div class="box">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, necessitatibus, sit facilis reiciendis similique veritatis itaque amet ut ipsam deserunt at ipsa ea commodi magnam aperiam maxime dolores quas repellendus aliquam debitis! Modi, commodi, veritatis, esse nesciunt perspiciatis corrupti sapiente soluta iusto debitis officia placeat id minus pariatur magnam maiores suscipit laboriosam. Vel, laboriosam, molestias voluptatum voluptatem omnis quam dolores dolorum nostrum dignissimos error assumenda est libero alias sapiente natus accusantium culpa id voluptatibus accusamus eum. Odio, beatae, impedit similique vel fugiat nulla officiis in optio nihil nam voluptate repellat commodi fuga aspernatur quidem inventore quia hic maiores nemo amet.
@@ -1732,7 +1732,7 @@ box-decoration-break: slice | clone | initial | inherit;
   </head>
 	
   <body>
-    <h1 style="margin-bottom: 50px;">Yahoo Baba: CSS Box-Decoration-Break</h1>		
+    <h1 style="margin-bottom: 50px;">uzair.: CSS Box-Decoration-Break</h1>		
 					
     <div class="container">
       <div class="content">This is some content inside a box.</div>
@@ -1837,7 +1837,7 @@ quotes: none | string | initial;
   </head>
   
   <body>
-    <h1 style="margin-bottom: 50px;">Yahoo Baba: CSS Quotes Property</h1>		
+    <h1 style="margin-bottom: 50px;">uzair.: CSS Quotes Property</h1>		
     
     <q>Lorem ipsum dolor <q>sit amet</q>, consectetur adipisicing elit.</q>		
   </body>	
@@ -1969,7 +1969,7 @@ border-image: source slice width outset repeat | initial | inherit;
   </head>
 
   <body>
-    <h1 style="margin-bottom: 50px;">Yahoo Baba: CSS Border-Image</h1>
+    <h1 style="margin-bottom: 50px;">uzair.: CSS Border-Image</h1>
 
     <div id="box">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, perferendis, beatae sit odit doloremque eligendi temporibus aperiam inventore sed adipisci quia in fugiat perspiciatis officiis praesentium at repudiandae magni eos saepe ipsa. Maiores, qui, ad, iste dicta provident voluptatibus ratione nemo tenetur optio libero error quisquam ipsum odit excepturi tempora ipsa rem eligendi facilis non accusamus magnam in quibusdam sapiente. Illum, repellendus, incidunt quasi necessitatibus laudantium doloribus suscipit commodi natus quos quisquam? Recusandae, repudiandae, perspiciatis, ullam, voluptate libero corporis doloremque error dolores officia est commodi enim sed id architecto ratione iusto laudantium dolor quaerat explicabo nemo voluptatibus distinctio dolorem? Ab?
@@ -2127,7 +2127,7 @@ parent * {
     <body>
         <div id="wrapper">
             <div id="header">
-                <h1>Yahoo Baba</h1>
+                <h1>uzair.</h1>
             </div>
             <div id="menu">
                 <ul>
@@ -2142,7 +2142,7 @@ parent * {
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
             </div>
             <div id="footer">
-                yahoobaba@copyright 2018.
+                yahoo.@copyright 2018.
             </div>
         </div>
     </body>
@@ -2183,7 +2183,7 @@ selector1 selector2 {
     </head>
 
     <body>
-        <h1>Yahoo Baba : CSS Descendant Selectors</h1>
+        <h1>uzair. : CSS Descendant Selectors</h1>
         <div id="box">
             <span>Hello</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
@@ -2226,7 +2226,7 @@ element > element {
     </head>
 
     <body>
-        <h1>Yahoo Baba : CSS Direct Child Selectors</h1>
+        <h1>uzair. : CSS Direct Child Selectors</h1>
         <ul id="list">
             <li>Lorem ipsum dolor sit amet.</li>
             <li>Modi nihil in animi necessitatibus.</li>
@@ -2262,7 +2262,7 @@ element + element {
     </head>
 
     <body>
-        <h1>Yahoo Baba : CSS Adjacent Sibling Selector</h1>
+        <h1>uzair. : CSS Adjacent Sibling Selector</h1>
         <ul id="list">
             <li>Lorem ipsum dolor sit amet.</li>
             <li>Modi nihil in animi necessitatibus.</li>
@@ -2396,11 +2396,11 @@ Combinator selectors help in creating more efficient and targeted CSS rules for 
 	</style>
 </head>
 <body>
-	<h1>Yahoo Baba : CSS Attribute Selectors</h1>
+	<h1>uzair. : CSS Attribute Selectors</h1>
 
 	<img src="images/cat.jpg" width="200px" alt="Image of cat">
 
-	<p>Lorem <a href="">ipsum dolor</a> sit amet, consectetur adipisicing elit. Dolore, tempora minus! Illum totam iure <a href="www.yahoobaba.net" target="_blank">laborum</a>	 maxime? Libero illo ad eos vel quam veniam facilis, commodi inventore recusandae officiis nulla a, nisi corrupti adipisci explicabo praesentium nobis unde reprehenderit quas sequi, quia aliquid placeat culpa! <a href="images/logo.png">Voluptate omnis</a> delectus optio repellendus nihil?</p>
+	<p>Lorem <a href="">ipsum dolor</a> sit amet, consectetur adipisicing elit. Dolore, tempora minus! Illum totam iure <a href="www.yahoo..net" target="_blank">laborum</a>	 maxime? Libero illo ad eos vel quam veniam facilis, commodi inventore recusandae officiis nulla a, nisi corrupti adipisci explicabo praesentium nobis unde reprehenderit quas sequi, quia aliquid placeat culpa! <a href="images/logo.png">Voluptate omnis</a> delectus optio repellendus nihil?</p>
 
 	<img src="images/flower." title="flower" width="200px">
 	<br><br>
@@ -2607,7 +2607,7 @@ selector { properties }::after
 	</head>
 
 	<body>
-		<h1>Yahoo Baba : ::after & ::before Selectors</h1>
+		<h1>uzair. : ::after & ::before Selectors</h1>
 
 		<p>Learn web design from us.</p>
 
@@ -2638,7 +2638,7 @@ selector { properties }::after
 	</head>
 
 	<body>
-		<h1>Yahoo Baba : ::after & ::before Selectors</h1>
+		<h1>uzair. : ::after & ::before Selectors</h1>
 
 		<p>Learn web design from us.</p>
 
@@ -2713,9 +2713,9 @@ This function returns the value of the attribute of the selected elements.
 	</head>
 
 	<body>
-		<h1>Yahoo Baba : CSS Attribute Function</h1>
+		<h1>uzair. : CSS Attribute Function</h1>
 
-		<p class="test" data-caption=" Baba">Yahoo</p>
+		<p class="test" data-caption=" .">Yahoo</p>
 
 	</body>
 </html>
@@ -2743,9 +2743,9 @@ This function returns the value of the attribute of the selected elements.
 	</head>
 
 	<body>
-		<h1>Yahoo Baba : CSS Attribute Function</h1>
+		<h1>uzair. : CSS Attribute Function</h1>
 
-		<p class="test" data-caption=" Baba">Yahoo</p>
+		<p class="test" data-caption=" .">Yahoo</p>
 
 	</body>
 </html>
@@ -2811,7 +2811,7 @@ Following is a list of properties that are used with CSS counters:
 	</head>
 
 	<body>
-		<h1>Yahoo Baba : CSS Counter-Increment</h1>
+		<h1>uzair. : CSS Counter-Increment</h1>
 
 		<h2>Lorem ipsum dolor sit.</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore reiciendis incidunt rerum voluptatum sint nulla quidem eaque alias, tempore ducimus adipisci ea necessitatibus ut. Placeat.</p>
@@ -2938,7 +2938,7 @@ caret-color: auto|color;
 	</head>
 
 	<body>
-		<h1>Yahoo Baba : CSS Caret-Color</h1>
+		<h1>uzair. : CSS Caret-Color</h1>
 
 		<form action="">
 			<label>First Name :</label> <input type="text"> <br><br>
@@ -3013,7 +3013,7 @@ The `@import` rule is used to import one style sheet into another style sheet. T
 	<body>
 		<div id="wrapper">
 			<div id="header">
-			   <h1>Yahoo Baba</h1>
+			   <h1>uzair.</h1>
 			</div>
 			<div id="menu">
 				<ul>
@@ -3046,7 +3046,7 @@ The `@import` rule is used to import one style sheet into another style sheet. T
 				</ul>
 			</div>
 			<div id="footer">
-				yahoobaba@copyright 2018.
+				yahoo.@copyright 2018.
 			</div>
 		</div>
 	</body>
@@ -3430,7 +3430,7 @@ The `currentColor` keyword in CSS is used to define the color property by referr
 	<h1>CSS CurrentColor Mode</h1>
 
   <div id="test">
-    <h2>Yahoo Baba</h2>
+    <h2>uzair.</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ut error aliquid! Iste libero voluptatum cum, earum hic amet quae eos. Numquam perspiciatis amet, velit provident odio ex, itaque accusamus?</p>
     <a class="readmore" href="">Readmore</a>
 		<div class="abc"></div>
@@ -3558,7 +3558,7 @@ The `!important` rule in CSS is used to give more importance to a specific prope
 </head>
 <body>
 
-<h1 class="first" id="second" style="color:orange;">Yahoo Baba</h1>
+<h1 class="first" id="second" style="color:orange;">uzair.</h1>
 
 </body>
 </html>
@@ -4110,7 +4110,7 @@ backdrop-filter: blur() | brightness() | contrast() | drop-shadow() | grayscale(
 <body>
  	<div id="container">
  		<div id="inner">
- 			<h1>Yahoo Baba</h1>
+ 			<h1>uzair.</h1>
  		</div>
  	</div>
 </body>
@@ -4234,7 +4234,7 @@ The `text-orientation` property in CSS is used to specify the orientation of cha
 </head>
 <body>
  	<div id="test">
-		<h1>Yahoo Baba</h1>
+		<h1>uzair.</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula risus, fermentum a elit quis, scelerisque bibendum mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec et enim diam. Quisque vel lorem rutrum, convallis nunc id, facilisis nibh. Phasellus hendrerit ornare mi ut pretium. Nam pulvinar aliquet nulla nec vestibulum. In ut turpis justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae</p>
 	</div>
 </body>
@@ -4548,7 +4548,7 @@ You can use the `table-layout` CSS property to set the algorithm used to lay out
 		<div id="row-group">
 			<div class="row">
 				<div class="col">1</div>
-				<div class="col">Yahoo Baba</div>
+				<div class="col">uzair.</div>
 				<div class="col">25</div>
 			</div>
 			<div class="row">

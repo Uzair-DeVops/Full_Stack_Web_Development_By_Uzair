@@ -43,7 +43,7 @@ Flexbox specifies how items are placed inside a container, aligning them along a
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Flexbox</h1>
+  <h1>uzair. : CSS Flexbox</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -131,7 +131,7 @@ flex-direction: row | row-reverse | column | column-reverse | initial | inherit;
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Flexbox</h1>
+  <h1>uzair. : CSS Flexbox</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -241,7 +241,7 @@ flex-wrap: nowrap | wrap | wrap-reverse | initial;
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Flexbox</h1>
+  <h1>uzair. : CSS Flexbox</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -327,7 +327,7 @@ The `justify-content` property in CSS defines how the browser distributes space 
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Flexbox</h1>
+  <h1>uzair. : CSS Flexbox</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -411,7 +411,7 @@ The `align-items` property in CSS sets the `align-self` value on all direct chil
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Flexbox</h1>
+  <h1>uzair. : CSS Flexbox</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -512,7 +512,7 @@ The `align-content` property in CSS sets the distribution of space between and a
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Flexbox</h1>
+  <h1>uzair. : CSS Flexbox</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -600,7 +600,7 @@ The `align-self` property in CSS allows an individual item to override the `alig
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Flexbox</h1>
+  <h1>uzair. : CSS Flexbox</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -674,7 +674,7 @@ The `order` property in CSS Flexbox specifies the order of items in a flex conta
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Flexbox</h1>
+  <h1>uzair. : CSS Flexbox</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -744,7 +744,7 @@ The `flex-grow` property in CSS Flexbox defines how much a flex item should grow
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Flexbox</h1>
+  <h1>uzair. : CSS Flexbox</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -835,7 +835,7 @@ The `flex-basis` property in CSS Flexbox defines the initial length of a flex it
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Flexbox</h1>
+  <h1>uzair. : CSS Flexbox</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -914,7 +914,7 @@ The `flex-shrink` property in CSS Flexbox specifies the shrink factor of a flex 
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Flexbox</h1>
+  <h1>uzair. : CSS Flexbox</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -983,7 +983,7 @@ Using `auto` margins with Flexbox allows for great flexibility without disruptin
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Flexbox</h1>
+  <h1>uzair. : CSS Flexbox</h1>
 
   <div class="container">
     <div class="item">One</div>
@@ -1029,7 +1029,7 @@ In this example, the item is aligned both vertically and horizontally using `mar
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : CSS Flexbox</h1>
+  <h1>uzair. : CSS Flexbox</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -1100,7 +1100,7 @@ You can create two-dimensional layouts by nesting a flex container inside anothe
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : Nested Flexbox</h1>
+  <h1>uzair. : Nested Flexbox</h1>
 
   <div class="container">
     <div class="items item1">One</div>
@@ -1191,7 +1191,7 @@ You can align form elements using CSS Flexbox by setting the `align-items` prope
   </style>
 </head>
 <body>
-  <h1>Yahoo Baba : Align Form with Flexbox</h1>
+  <h1>uzair. : Align Form with Flexbox</h1>
 
   <form action="">
     <ul id="wrapper">
@@ -1257,7 +1257,7 @@ In this example:
     </ul>
   </nav>
   <div id="logo">
-    <a href="">Yahoo Baba</a>
+    <a href="">uzair.</a>
   </div>
   <nav id="social-links">
     <ul>
@@ -1333,7 +1333,7 @@ In this example:
 
 </div>
 <footer>
-  Made by YahooBaba
+  Made by Yahoo.
 </footer>
 </body>
 </html>
