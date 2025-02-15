@@ -1,0 +1,26 @@
+.root{
+    font-size: 10px;
+}
+.parent{
+
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    font-size: 20px;
+
+}
+.child{
+
+    height: 70%;
+    width: 70%;
+    background-color: green;
+    font-size: 1em;
+}
+.child2 {
+    
+        height: 20%;
+        width: 20%;
+        background-color: blue;
+        font-size: 3rem;
+
+}
