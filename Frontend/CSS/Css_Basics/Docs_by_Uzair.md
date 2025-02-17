@@ -52,7 +52,7 @@ CSS is the language we use to style a web page.
 A CSS rule consists of:
 
 - **Selector:** Specifies the HTML element to be styled.
-- **Declaration Block:** Contains property-value pairs.
+- **Declaration Block:** Contains property-value pair
 
 Example:
 
