@@ -1,4 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 .root{
+
     font-size: 10px;
 }
 .parent{
@@ -23,4 +30,11 @@
         background-color: blue;
         font-size: 3rem;
 
+}
+
+
+.test {
+    border : 1px solid black;
+    padding-left: 10px;
+    margin: 10px;
 }
