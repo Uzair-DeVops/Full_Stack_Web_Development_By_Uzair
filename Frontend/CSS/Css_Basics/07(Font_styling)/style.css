@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+
+.font{
+    font-family: 'Oswald', sans-serif;  
+    font-size: 100%;
+    font-weight: bold;
+    color: #3CA45C;
+    text-align: center; 
+    font-style: normal;
+    font-variant: small-caps;
+}
+
+
