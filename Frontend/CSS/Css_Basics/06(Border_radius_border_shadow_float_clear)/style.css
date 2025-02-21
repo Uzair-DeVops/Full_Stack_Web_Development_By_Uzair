@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+}
+
+.border{
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 500px;
+    padding: 10px;
+    margin: 10px;
+}
+.border-shadow{
+    border: 1px solid black;
+    box-shadow: 10px 10px 20px 50px red;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.parent{
+    border: 1px solid black;
+    height: 500px;
+}
+
+.child1{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    float: left;
+    font-size: 50px;
+
+}
+.child2{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    float: right;
+    font-size: 50px;
+
+}
+.child3{
+    border: 3px solid black;
+    height: 50px;
+    clear: both;
+    font-size: 50px;
+
+
+}
