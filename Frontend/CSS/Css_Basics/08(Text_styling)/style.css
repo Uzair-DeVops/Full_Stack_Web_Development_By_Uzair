@@ -1,0 +1,44 @@
+h3{
+     text-shadow : 2px 2px 5px red , 2px 2px 5px blue;
+
+}
+.container{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border : 1px solid black;
+    text-align: justify;
+    text-align-last : center ;
+    text-indent: 200px;
+    text-transform: Uppercase;
+    line-height: 4;
+    word-wrap: break-word;
+    /* word-spacing: 10px;
+    letter-spacing: 10px; */
+
+
+
+}
+
+.dec{
+    margin:auto;
+    border : 1px solid black;
+    margin-top: 20px;
+    word-break: break-all;
+    /* text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: dotted; */
+
+    /* short hand */
+    /* text-decoration : overline yellow wavy; */
+    whitespace: nowrap;
+    overflow: hidden;
+}
+
+.dec a{
+    text-decoration: none;
+    color: black;
+}
+
+
+

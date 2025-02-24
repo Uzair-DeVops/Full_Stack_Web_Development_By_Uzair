@@ -2095,7 +2095,7 @@ The CSS text formatting properties are used to format text, style the text, and 
 ## CSS Text Formatting Properties:
 These are the following text formatting properties:
 
-- **Text Color**: This property is used to set the color of the text. The color can be set by using a color name like “red”, hex value “#ff0000”, or by its RGB value “rgb(255,0,0)”;
+
 - **text-align**: This property in CSS is used to specify the horizontal alignment of text in an element inside a block element or table-cell box.
 - **text-align-last**: It is used to set the last line of the paragraph just before the line break. It sets the alignment of all the last lines occurring in the element in which the text-align-last property is applied.
 - **text-decoration**: The text-decoration property is used to “decorate” the content of the text.
