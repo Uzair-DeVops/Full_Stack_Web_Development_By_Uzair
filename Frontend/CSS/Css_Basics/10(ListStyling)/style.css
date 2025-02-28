@@ -1,0 +1,15 @@
+.list1{
+    list-style-type: circle;
+    list-style-position: inside;
+
+    list-style-image: url("arrow.png");  ; 
+}
+
+.con{
+    border:1px solid black;
+    /* padding-left:20px; */
+}
+
+.list2{
+    list-style-type:none;
+}

@@ -1,0 +1,14 @@
+.gradient{
+    border:1px solid black;
+    width:80%;
+    height:200px;
+    margin:auto;
+    /* background-image: url("https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+
+    background-image: linear-gradient(to right, red,rgba(255, 255, 255, 0.5));
+
+    /* background-image: radial-gradient(closest-corner at 10% 10% , red 10%,yellow 40%  ,green 60%) ; */
+}
