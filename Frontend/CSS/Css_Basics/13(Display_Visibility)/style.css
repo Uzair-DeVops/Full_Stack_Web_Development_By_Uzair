@@ -1,0 +1,41 @@
+*{
+ margin :0%;
+ padding :0%;
+
+}
+
+.title{
+    text-align: center;
+}
+
+.first{
+    display: inline;
+}
+.second{
+    display: inline;
+}
+span{
+    display: inline-block;
+    padding:20px;
+    margin-top:20px;
+}
+
+
+.Display{
+    display:none;
+}
+
+/* .Display:hover{
+    display:none;
+} */
+
+
+.visibile{
+    text-align : center;
+}
+
+
+.uz{
+    /* visibility:hidden; */
+    /* display: none; */
+}

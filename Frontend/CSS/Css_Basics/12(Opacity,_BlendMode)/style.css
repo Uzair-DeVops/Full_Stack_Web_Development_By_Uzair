@@ -1,0 +1,18 @@
+.op{
+    text-align: center;
+}
+
+
+.first{
+    border:1px solid black;
+    width: 30%;
+    height: 200px;
+    margin: auto;
+    background-image:linear-gradient(to right , red ,green)  ,url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ718nztPNJfCbDJjZG8fOkejBnBAeQw5eAUA&s");
+    background-blend-mode:multiply;
+    padding:10px;
+    color:white;
+    font-size:15px;
+    text-align:justify;
+    /* opacity:0.2 */
+}
