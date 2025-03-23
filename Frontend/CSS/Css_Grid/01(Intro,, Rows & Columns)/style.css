@@ -1,0 +1,61 @@
+
+.container{
+    width:80%;
+    margin:auto;
+    background-color :gray;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows: 200px  repeat(5,100px);
+    grid-column-gap : 10px;
+    grid-row-gap : 10px;
+    grid-gap:20px;
+}
+
+.item1{
+    background-color: blue;
+
+}
+.item2{
+    background-color: yellow;
+
+}
+.item3{
+    background-color: green;
+
+}
+.item4{
+    background-color: pink;
+
+}
+.item5{
+    background-color: white;
+
+}
+.item6{
+    background-color: red;
+
+}
+.item7{
+    background-color: royalblue;
+
+}
+.item8{
+    background-color: skyblue;
+
+}
+.item9{
+    background-color: indigo;
+
+}
+.item10{
+    background-color: purple;
+
+}
+.item11{
+    background-color: lightblue;
+
+}
+.item12{
+    background-color: orange;
+
+}
