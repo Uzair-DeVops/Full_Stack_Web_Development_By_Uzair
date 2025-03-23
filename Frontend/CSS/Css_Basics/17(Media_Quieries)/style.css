@@ -1,0 +1,84 @@
+body{
+    background-color:rgb(255, 255, 255);
+    transition: all 0.7s; 
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.con{
+    width:80%;
+    margin:auto;
+    border:1px solid black;
+    height:400px;
+}
+
+.box1{
+    width:50%;
+    height:200px;
+    background-color: rgb(19, 151, 2);
+    font-size: 40px;
+    float:left;
+}
+
+.box2{
+    width:50%;
+    height:200px;
+    background-color: rgb(151, 2, 129);
+    font-size: 40px;
+    float:right;
+
+}
+
+
+/* media query for navbar */
+@media screen and (max-width:1251px){
+    .box2{
+        float:none;
+        width:100%;
+    }
+    .box1{
+        float: none;
+        width:100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* @media screen and (max-width: 1200px){
+    body{
+        background-color: rgb(2, 2, 151);
+    }
+}
+@media screen and (max-width: 1000px){
+    body{
+        background-color: rgb(151, 2, 129);
+    }
+}
+@media screen and (max-width: 800px){
+    body{
+        background-color: rgb(2, 134, 151);
+    }
+}
+@media screen and (max-width: 600px){
+    body{
+        background-color: rgb(19, 151, 2);
+    }
+} */
+@media screen and (max-width: 690px){
+    body{
+        font-size:30px;
+    }
+}

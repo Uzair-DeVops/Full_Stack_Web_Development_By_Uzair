@@ -1,0 +1,27 @@
+.container{
+    border: 2px solid black;
+    height:500px;
+    width:700px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.items{
+    text-align: center;
+    width: 500px;
+    height: 500px:
+}
+.item1{
+    background-color: red;
+}
+.item2{
+    background-color: yellow;
+}
+.item3{
+    background-color: orange;
+}
+.item4{
+    background-color: blue;
+}

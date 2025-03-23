@@ -8,16 +8,17 @@
 
     .container{
       background: #eee;
-      margin: 50px auto 0;
+      margin: 50px;
       padding: 10px;
       border: 3px solid #000;
+      height: 500px;
       display: flex;
-      flex-direction: row;
-      /* justify-content: flex-start;
-      align-items: flex-start; */
+      align-items: flex-start;
       flex-wrap: wrap;
-        
-      
+      /* align-content: space-around; */
+      justify-content: flex-end;
+      align-items: flex-end;
+
     }
 
     .items{
@@ -26,15 +27,25 @@
       font-weight: bold;
       text-align: center;
       padding:10px;
-      flex-grow: 1;
     }
-    .item1{ background: orangered;
-            align-self: auto;
-            flex-basis: 200px;
+    .item1{ 
+        background: orangered;
+        /* width: 400px; */
+        align-self: flex-start;
+        /* flex-shrink: 1; */
+        margin-right: auto;
+        
+        }
+    .item2{ background: yellowgreen;
     }
-    .item2{ background: yellowgreen;  flex-basis: 200px; }
-    .item3{ background: MEDIUMPURPLE;   flex-basis: 200px;}
-    .item4{ background: hotpink;   flex-basis: 200px;}
+    .item3{ background: MEDIUMPURPLE;
+    }
+    .item4{ background: hotpink;
+        /* flex-basis: 500px; */
+        /* margin-left: auto;
+        margin-top: auto; */
+    
+    }
   </style>
 </head>
 <body>
@@ -45,8 +56,6 @@
     <div class="items item2">Two</div>
     <div class="items item3">Three</div>
     <div class="items item4">Four</div>
-
-
 
   </div>
 </body>
