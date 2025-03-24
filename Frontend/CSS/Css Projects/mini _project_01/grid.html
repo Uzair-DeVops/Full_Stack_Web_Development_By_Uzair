@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: repeat(4,400px);
+            grid-gap:40px;
+        }
+
+        .items{
+            border:1px solid black;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+
+            & h6{
+                position: absolute;
+                top:90%;
+                font-size:20px
+
+            }
+        }
+        @media (max-width:700px){
+            .main{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(8,400px);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="items item1"> <h6>items</h6> </div>
+        <div class="items item2"><h6>items</h6></div>
+        <div class="items item3"><h6>items</h6></div>
+        <div class="items item4"><h6>items</h6></div>
+        <div class="items item5"><h6>items</h6></div>
+        <div class="items item6"><h6>items</h6></div>
+        <div class="items item7"><h6>items</h6></div>
+        <div class="items item8"><h6>items</h6></div>
+
+    </div>
+</body>
+</html>

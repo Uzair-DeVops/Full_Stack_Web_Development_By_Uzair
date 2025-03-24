@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>A Blog Post</h1>
+        <p>Typography is one of the most important elements of front end design and development! In this exercise, we'll play around with some of the common CSS properties to manage and style our fonts by making a nice blog post-like web page.</p>
+        <div class="border"></div>
+
+    </div>
+
+    <div class="main">
+        <h1>All About TypoGraphy</h1>
+        <p class="para">Headlines, like this one, are great ways to quickly capture the reader's attention, to give them a sumary, intro, or other important information in a web page. You can use text-transform: uppercase; to make a whole body of text uppercase using CSS if you really need to grab attention!</p>
+
+        <p>Okay, now that we're done screaming in the headline in all caps (which you should do sparingly) - it's time to chat more about other components of typography. You'll notice that we chose a nice serif font for our headings, and a nice sans-serif font for our body text. This is intentional! Serif font faces are generally considered pretty inaccessible as a body text style, since at smaller sizes it's much more difficult to visually differentiate the characters from one another. At large font sizes, such as those seen in most headings, serif fonts are considered fine, since the larger style makes it easier to see where serif characters start and where they end.</p>
+        <p>But wait! What if you want more than just normal text on your page? Another common thing you might see in web pages are quotes. To make quotes, we can use the blockquote element and style it accordingly, so it stands out a bit as a non-body text quote.</p>
+
+        <div class="comment">o</div>
+        <h2>A New Section        </h2>
+        <p>And just like that, we've got a new section of content separated by a hr element (a 'horizontal rule' or a divider) and a new heading. Isn't putting content together fun?</p>
+        <p>Notice as well that when we entered in the H3 content, it was all lowercase, but now it's in a nice Title Case, where the first letter of each word is capitalized. We did that with CSS! Using text-transform: capitalize; we can implement title cased content.</p>
+        <h3>Heading 4       </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero minima pariatur quasi veniam, sapiente placeat magnam. Exercitationem accusantium vitae, illum delectus quisquam atque fugiat nesciunt possimus expedita sunt officiis adipisci!</p>
+
+        <h4>Heading 5        </h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nam alias aliquid, dolores inventore fugiat voluptatibus similique. Voluptatibus aliquam voluptas, velit maiores culpa molestiae distinctio numquam neque temporibus vel earum.</p>
+
+        <h5>Heading 6        </h5>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ullam similique suscipit velit voluptas mollitia dolor non nulla libero incidunt obcaecati quisquam, deleniti fugiat dolorum commodi accusantium enim. Cum, natus!</p>
+        <h2>Common Font Sizing Approaches</h2>
+        <h3>px (pixels)</h3>
+        <p>Pixels are the simplest way to hard code your font size. By default the browser sets the root font size to 16px, but you can change the font size in the body element or any other HTML element by setting font-size to any number of px.</p>
+        <h3>em</h3>
+        <p>em units size font relative to the parent element. For example, if the body element is 16px, and a nested div element's font size is set to 1.5em, the browser will multiply 16px x 1.5, resulting in 24px font in the div.</p>
+        <h3>rem (root em)</h3>
+        <p>Root em units are similar to em, but they are relative to the root font size instead of the parent element of whatever is being styled. For example, if the root font size (the font size of the body element) is set to 16px, and we have a p element nested many layers down with a font-size set to 2rem, that paragraph will have 32px font. If the body font size ever changes, this paragraph will also change accordingly.</p>
+        <h3>Which one do I use? </h3>
+        <p>Great question! Generally, people try to stick to using em or rem over px, since they make responsive typography that scales up and down across different device widths much easier. Using px for your font sizes is not as dynamic, and you may find that writing media queries to update all the various element font sizes in pixels at different screen widths is not the most scalable approach to typography</p>
+        <p>Between em and rem, rem has a nice advantage of all elements being relative to one single root font value, where nested elements with parent/child font size dependencies can still be hard to manage with em units. When writing responsive styles, rem allows you to simply update the root font size at different screen sizes and all elements using rem units will adjust themselves accordingly creating a super easy-to-manage typography size system.</p>
+        <p>In small projects you may not have an issues hard coding pixelage, but it's always important to understand the drawbacks of writing styles that may not be responsive or dynamic.</p>
+    </div>
+    <div class="footer">
+        <a href="">Privacy Policy </a>
+        <a href="">Terms & Conditions </a>
+        <a href="">About  </a>
+        <a href="">Contact Us</a>
+        <a href="">More Info </a>
+    </div>
+</body>
+</html>
