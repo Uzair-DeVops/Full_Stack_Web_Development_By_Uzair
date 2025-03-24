@@ -1,0 +1,47 @@
+
+:root{
+    --para-height : 20px;
+    --primary-color : red;
+    --secondary-color : gray;
+    --primary-heading-size:50px;
+
+
+
+}
+
+p{
+    font-size : var(--para-height);
+    color : var(--primary-color);
+}
+
+h4{
+    font-size : var(--para-height);
+    color : var(--secondary-color);
+}
+
+
+span{
+    font-size : var(--para-height);
+    color : var(--primary-color);
+}
+
+.heading1{
+    font-size : var(--primary-heading-size);
+}
+
+.heading2{
+    font-size : calc(var(--primary-heading-size) - 10px)
+}
+
+.heading3{
+    font-size : calc(var(--primary-heading-size) - 20px)
+}
+
+
+.heading4{
+    font-size : calc(var(--primary-heading-size) - 30px)
+}
+
+.heading5{
+    font-size : calc(var(--primary-heading-size) - 40px)
+}
