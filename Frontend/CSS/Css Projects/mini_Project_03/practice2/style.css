@@ -139,7 +139,7 @@ a{
         display: flex;
 
         & .left , .right{
-            width: 50%;
+            width: 90%;
             
         }
 
@@ -173,6 +173,12 @@ a{
         flex-direction: column;
         justify-content:center;
         align-items:center;
+        max-width:100%;
+        gap:20px;
+
+        & .left{
+            width: 100px;
+        }
     }
 }
 .main2{
