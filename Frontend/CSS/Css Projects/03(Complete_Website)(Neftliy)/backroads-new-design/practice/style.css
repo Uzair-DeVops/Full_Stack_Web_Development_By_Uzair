@@ -1,0 +1,123 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+
+    font-family: "Lato", sans-serif;
+}
+
+
+/* variables */
+:root{
+    --clr-primary:  hsl(184, 65%, 59%);
+
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    
+}
+span{
+    color: var(--clr-primary);
+}
+/* navbar */
+
+.navbar{
+    width: 100%;
+    padding: 15px ;
+    display: flex;
+    justify-content: space-around;
+    border:2px solid black;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 1px 15px 25px -9px rgba(0,0,0,0.75);
+
+    & .logo{
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+
+    & .nav-items , .nav-icons{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        gap:10px;
+        color:var(--clr-primary);
+        letter-spacing:5px;
+    }
+
+    & .nav-icons{
+        font-size: 25px;
+    }
+    & .nav-items {
+        & a:hover{
+            background-color:var(--clr-primary);
+            display:block;
+            width:100%;
+        }
+    }
+    & .fa-bars, .fa-xmark{
+        display:none;
+    }
+
+}
+
+@media(max-width:1000px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+
+        & .nav-items{
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            padding-top:20px;
+            display: none;
+
+            & a{
+                padding: 10px 10px;
+            }
+
+        }
+        & .nav-icons{
+            display:none;
+        }
+
+
+        & .fa-bars , .fa-solid{
+            display: flex;
+            position: absolute;
+            font-size:30px;
+            color:var(--clr-primary);
+            right: 10%;
+            top:20px;
+            &:hover{
+                transform :translateY(-5%);
+                transition: all 0.3s ease;
+                }
+    
+        }
+        & .fa-bars{
+          z-index:2;  
+        }
+        & .fa-solid{
+            display: none;
+        }
+    }
+    
+
+}
+
+
+
+
+
+.main{
+    width: 100%;
+    height: 800px;
+    background-color: var(--clr-primary);
+}

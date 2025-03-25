@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+
+</head>
+<body>
+        <!-- navbar -->
+    <nav class="navbar">
+        <div class="logo">Back<span>Roads</span> </div>
+        <div class="nav-items" id="items">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Featured</a>
+            <a href="#">Gallery</a>
+
+        </div>
+        <div class="nav-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-squarespace"></i>
+
+
+        </div>
+        
+        <i class="fas fa-bars" id="toggle"></i>
+        <i class="fa-solid fa-xmark" id="cross"></i>
+
+    </nav>
+
+
+    <!-- hero -->
+
+    <div class="main">
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script> 
+        const navToggle = document.getElementById("toggle").addEventListener("click", function(){
+            document.getElementById("items").style.display = "flex";
+            document.getElementById("toggle").style.display = "none";
+            document.getElementById("cross").style.display = "block";
+
+        })
+        const cross = document.getElementById("cross").addEventListener("click", function(){
+            document.getElementById("items").style.display = "none";
+            document.getElementById("toggle").style.display = "block";
+            document.getElementById("cross").style.display = "none";});
+    </script>
+</body>
+</html>
