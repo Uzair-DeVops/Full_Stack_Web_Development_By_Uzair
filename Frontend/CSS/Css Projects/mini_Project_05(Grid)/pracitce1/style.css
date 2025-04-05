@@ -1,0 +1,122 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+
+a{
+  text-decoration:none;
+  color:black;
+}
+.navbar{
+    max-width:90%;
+    margin:100px auto;
+    height:100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+}
+
+.navbar span{
+  position:absolute;
+  right:0;
+  font-size:50px;
+  display:none;
+}
+.navbar .logo{
+  font-size:30px;
+  font-weight:bold;
+}
+.navbar .items{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+  font-size:20px;
+}
+.navbar .items img{
+  width:30px;
+}
+
+.project-container{
+  display: grid;
+  grid-template-areas:
+  "eth eth alphabet"
+  "eth eth traveler"
+  "astro cube traveler"
+  "cup insta insta"
+  "cup insta insta"
+  "foam foam dimensional"
+  "foam foam dimensional"; 
+  max-width:90%;
+  margin:auto;
+  grid-gap:16px;
+}
+#eth {
+  grid-area: eth;
+}
+#alphabet {
+  grid-area: alphabet;
+}
+#traveler {
+  grid-area: traveler;
+}
+#astro {
+  grid-area: astro;
+}
+#cube {
+  grid-area: cube;
+}
+#cup {
+  grid-area: cup;
+}
+#insta {
+  grid-area: insta;
+}
+#foam {
+  grid-area: foam;
+}
+#dimensional {
+  grid-area: dimensional;
+}
+
+
+
+
+
+
+.project{
+  /* width:600px; */
+}
+.project img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media(max-width:1000px){
+
+  .project-container{
+    grid-template-areas:
+  "eth eth "
+  "eth eth "
+  "alphabet traveler"
+  "astro cube "
+  "astro cube "
+  "insta insta "
+  "insta insta "
+  "cup foam "
+  "dimensional dimensional"
+  "dimensional dimensional";
+  }
+  .navbar .items{
+    display: none;
+  }
+  .navbar span{
+    display: block;
+    cursor:pointer;
+  }
+}

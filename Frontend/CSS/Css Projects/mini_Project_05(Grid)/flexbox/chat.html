@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .item {
+            flex: 1 1 calc(33.333% - 10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .item {
+                flex: 1 1 calc(50% - 10px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; padding: 20px;">Patrick Star</h1>
+    <div class="container">
+        <div class="item"><img src="../images/eth.avif" alt="Image 1"></div>
+        <div class="item"><img src="../images/alphabet.avif" alt="Image 2"></div>
+        <div class="item"><img src="../images/astro.avif" alt="Image 3"></div>
+        <div class="item"><img src="../images/cube.avif" alt="Image 4"></div>
+        <div class="item"><img src="../images/cup.avif" alt="Image 5"></div>
+        <div class="item"><img src="../images/foam.avif" alt="Image 6"></div>
+        <div class="item"><img src="../images/insta.avif" alt="Image 7"></div>
+        <div class="item"><img src="../images/dimensional.avif" alt="Image 8"></div>
+        <div class="item"><img src="image9.jpg" alt="Image 9"></div>
+    </div>
+</body>
+</html>
