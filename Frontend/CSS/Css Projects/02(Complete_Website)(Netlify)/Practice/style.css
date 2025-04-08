@@ -10,6 +10,7 @@
     --primary-font: "Catamaran", sans-serif;
     --secondary-font: "Grand Hotel", cursive;
     --primary-color: #678e3e;
+    --icon-size : 3rem;  
 }
 
 .hero{
@@ -69,6 +70,89 @@
     }
 
 }
+
+.icon-container{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    margin-bottom:100px;
+    & .item{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      background-color:rgb(215, 223, 249);
+      transition : all 0.3s ease-in-out;
+      &:hover{
+        background-color:rgb(255, 255, 255);
+        border-bottom:2px solid var(--primary-color);
+
+       & .icon{
+        transform:translateY(-15%);
+
+
+          }
+      }
+      & .icon {
+        font-size:var(--icon-size);
+        margin-bottom:1rem;
+        margin-top:4rem;
+        color:var(--primary-color)
+      }
+
+      & h3{
+        font-family:var(--primary-font);
+        font-size:1.5rem;
+        text-align:center;
+        margin-bottom:1rem;
+        word-spacing:0.5rem;
+        letter-spacing:0.3rem;
+      }
+
+      & p{
+        font-family:var(--primary-font);
+        font-size:1.4rem;
+        text-align:center;
+        margin-bottom:1rem;
+        max-width:90%;
+
+      }
+    }
+
+    @media (max-width: 900px) {
+        grid-template-columns: repeat(2,1fr);
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1,1fr);
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
