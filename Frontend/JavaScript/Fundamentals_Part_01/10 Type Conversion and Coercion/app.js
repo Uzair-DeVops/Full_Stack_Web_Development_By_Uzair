@@ -1,0 +1,2 @@
+// Type conversion is changing one data type into another  we will discuss here sting and number conversion and will discuss boolean conversion in next folder  
+// Type Coercion is when js change the typing for us in backend
