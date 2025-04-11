@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2017", "dom"],
+    "strict": true},
+    "files": [ "app.ts" ]
+
+}
