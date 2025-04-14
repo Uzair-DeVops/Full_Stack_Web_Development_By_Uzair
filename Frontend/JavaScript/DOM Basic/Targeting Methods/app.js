@@ -7,4 +7,4 @@ var docs = document.title;
 console.log(docs);
 // getelemetbyid
 // byclass
-// byname
+// bynam
