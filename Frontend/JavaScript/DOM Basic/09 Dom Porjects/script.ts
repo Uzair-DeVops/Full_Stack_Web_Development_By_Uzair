@@ -7,11 +7,13 @@ let CheckButton: HTMLButtonElement = document.querySelector(".check")!;; // chec
 let QuestionMark :HTMLSpanElement = document.querySelector(".win")!; // question mark
 // Values
 
+Highscore.innerText = "5"; 
 
 // ✅ NEW BLOCK: Load high score on page load
 const savedScore = localStorage.getItem("highscore");
 if (savedScore !== null) {
     Highscore.innerText = savedScore;
+    // remove from memory after loading
 }
 // generate a randow number btw 1 to 10
 const randomNumber = Math.floor(Math.random() * 20) + 1;

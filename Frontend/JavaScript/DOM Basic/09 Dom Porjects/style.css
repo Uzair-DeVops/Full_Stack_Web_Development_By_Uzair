@@ -10,7 +10,6 @@
     font-size:clamp(2rem ,8vw, 8rem); ;
     color: #333;
     text-align: center;
-    margin-top: 20px;
     font-family: "Oleo Script", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -28,9 +27,7 @@
 
 .inner{
     max-width: 75%;
-    height: 1000px;
     margin:auto;
-    margin-top:10px;
 
 }
 .btn-con{
@@ -53,7 +50,7 @@
 }
 .guess-cont{
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     border-top:10px solid white;
     height: 100px;
     position: relative;
@@ -89,6 +86,7 @@
     color:#FFA500;
     font-family: "Oleo Script", system-ui;
     text-transform: uppercase;
+    padding-bottom: 40px;
 }
 .check-con{
     display: flex;
