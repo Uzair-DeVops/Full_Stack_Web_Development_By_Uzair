@@ -1,0 +1,1 @@
+let head = document.getElementsByClassName("head")[0]  as HTMLHeadElement;
