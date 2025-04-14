@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.title{
+    font-size:clamp(2rem ,8vw, 8rem); ;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color:#FFA500;
+}
+.title2{
+    font-size:clamp(1rem ,4vw, 4rem); ;
+    color: white;
+}
+.con{
+    max-width: 100%;
+    height: 1000px;
+    background-color:#330033;
+}
+
+.inner{
+    max-width: 75%;
+    height: 1000px;
+    margin:auto;
+    margin-top:10px;
+
+}
+.btn-con{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btn{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+.guess-cont{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-top:10px solid white;
+    height: 100px;
+    position: relative;
+}
+
+.guess{
+    height: 100px;
+    width: 150px;
+    z-index: 1;
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+
+    & span{
+        font-size: 6rem;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.message{
+    position: relative;
+    font-size: 2rem;
+    text-align: center;
+    top:-5%;
+    font-weight: 400;
+    font-style: normal;
+    color:#FFA500;
+    font-family: "Oleo Script", system-ui;
+    text-transform: uppercase;
+}
+.check-con{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+    margin:auto;
+    height: 200px;
+    max-width: 60%;
+    
+    & input{
+        width: 200px;
+        padding: 20px;
+        display: inline-block;
+        border: none;
+        outline: none;
+        font-size: 2rem;
+        text-align: center;
+        background-color: white;
+    }
+
+    & button{
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+.enter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    color:#FFA500;
+    font-family: "Oleo Script", system-ui;
+    text-transform: uppercase;
+    text-align: center;
+}

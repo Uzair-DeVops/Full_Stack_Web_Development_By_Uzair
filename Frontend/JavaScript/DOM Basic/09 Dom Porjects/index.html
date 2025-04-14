@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=question_mark" />
+</head>
+<body>
+    <div class="con">
+        <h1 class="title">Guess the Number Game</h1>
+        <h2 class="title title2">Guess the Number between 1 to 20</h2>
+        <div class="inner">
+        <div class="btn-con">
+            <button class="btn reset">Reset</button>
+            <button class="btn">Highest Score : <span id="score">15</span></button>
+            <button class="btn">Tries left : <span id="attemp">10</span></button>
+        </div>
+        <div class="guess-cont">
+            <div class="guess"><span class="material-symbols-outlined win">
+                question_mark
+                </span></div>
+        </div>
+        <p class="message">Start guessing...</p>
+                <div class="check-con">
+                    <input type="text" name="number" id="number" class="guess-input" >
+                    <button class="btn check">Guess</button>
+                </div>
+                <h1 class="enter">Enter A Number above and click guess</h1>   
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
